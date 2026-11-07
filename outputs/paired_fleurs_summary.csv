@@ -1,0 +1,15 @@
+﻿fleurs_id,language,samples,wer,cer,gender,variety_note,detected_language
+1589,Arabic,1,0.000000,0.000000,female,Egyptian Arabic,ara
+1589,Cantonese,1,1.000000,0.000000,female,"Traditional script, Hong Kong",zho
+1589,English,1,0.000000,0.000000,female,US English,eng
+1589,Gujarati,1,0.040816,0.030769,female,,guj
+1589,Hindi,1,0.000000,0.000000,female,,hin
+1589,Mandarin Chinese,1,1.000000,0.000000,female,Simplified script,zho
+1589,Polish,1,0.000000,0.000000,female,,pol
+1589,Portuguese,1,0.000000,0.000000,male,Brazilian,por
+1589,Punjabi,1,0.200000,0.028169,female,Gurmukhi script,pan
+1589,Spanish,1,0.000000,0.000000,male,Latin American,spa
+1589,Tagalog,1,0.160000,0.013158,male,,fil
+1589,Tamil,1,0.078431,0.051948,male,India,tam
+1589,Urdu,1,0.095238,0.021978,female,Pakistan,urd
+1589,Vietnamese,1,0.000000,0.000000,male,,vie

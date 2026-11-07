@@ -1,0 +1,11 @@
+﻿dataset,language,true_label,predicted_label,count
+massive,Arabic,qa,play,1
+massive,Polish,recommendation,transport,1
+massive,Portuguese,play,transport,1
+massive,Spanish,iot,iot,1
+massive,Vietnamese,calendar,recommendation,1
+minds14,English,abroad,abroad,1
+minds14,Mandarin Chinese,pay_bill,pay_bill,1
+minds14,Polish,balance,balance,1
+minds14,Portuguese,latest_transactions,latest_transactions,1
+minds14,Spanish,card_issues,card_issues,1

@@ -1,0 +1,40 @@
+﻿dataset,language,samples,mean_wer,mean_cer,gender_counts,detected_languages,variety_notes
+accent,Arabic,1,0.000000,0.000000,female:1,eng,
+accent,Bengali,1,0.000000,0.000000,male:1,eng,
+accent,Cantonese,1,0.043478,0.029304,male:1,eng,
+accent,English,1,0.000000,0.000000,female:1,eng,
+accent,Gujarati,1,0.000000,0.000000,female:1,eng,
+accent,Hindi,1,0.000000,0.000000,male:1,eng,
+accent,Mandarin Chinese,1,0.101449,0.095238,female:1,eng,
+accent,Polish,1,0.014493,0.010989,male:1,eng,
+accent,Portuguese,1,0.000000,0.000000,female:1,eng,
+accent,Punjabi,1,0.014493,0.007326,female:1,eng,
+accent,Spanish,1,0.000000,0.000000,male:1,eng,
+accent,Tagalog,1,0.000000,0.000000,female:1,eng,
+accent,Tamil,1,0.000000,0.000000,female:1,eng,
+accent,Urdu,1,0.014493,0.010989,male:1,eng,
+accent,Vietnamese,1,0.028986,0.014652,male:1,eng,
+fleurs,Arabic,2,0.000000,0.000000,female:2,ara,Egyptian Arabic
+fleurs,Cantonese,1,1.000000,0.000000,female:1,zho,"Traditional script, Hong Kong"
+fleurs,English,2,0.000000,0.000000,female:1;male:1,eng,US English
+fleurs,Gujarati,2,0.035114,0.037607,female:1;male:1,guj,
+fleurs,Hindi,2,0.000000,0.000000,female:1;male:1,hin,
+fleurs,Mandarin Chinese,2,1.000000,0.000000,female:2,zho,Simplified script
+fleurs,Polish,2,0.000000,0.000000,female:1;male:1,pol,
+fleurs,Portuguese,2,0.000000,0.000000,male:2,por,Brazilian
+fleurs,Punjabi,2,0.123810,0.014084,female:2,pan,Gurmukhi script
+fleurs,Spanish,2,0.000000,0.000000,male:2,spa,Latin American
+fleurs,Tagalog,2,0.106316,0.012603,male:2,fil,
+fleurs,Tamil,2,0.063025,0.025974,female:1;male:1,tam,India
+fleurs,Urdu,1,0.095238,0.021978,female:1,urd,Pakistan
+fleurs,Vietnamese,2,0.000000,0.000000,male:2,vie,
+massive,Arabic,1,0.333333,0.062500,Female:1,ara,
+massive,Polish,1,0.000000,0.000000,Male:1,pol,
+massive,Portuguese,1,0.153846,0.017857,Female:1,por,
+massive,Spanish,1,0.000000,0.000000,Male:1,spa,
+massive,Vietnamese,1,0.000000,0.000000,Male:1,vie,
+minds14,English,1,0.000000,0.000000,unknown:1,eng,
+minds14,Mandarin Chinese,1,7.000000,0.172414,unknown:1,zho,
+minds14,Polish,1,0.000000,0.000000,unknown:1,pol,
+minds14,Portuguese,1,0.133333,0.093878,unknown:1,por,
+minds14,Spanish,1,0.000000,0.000000,unknown:1,spa,

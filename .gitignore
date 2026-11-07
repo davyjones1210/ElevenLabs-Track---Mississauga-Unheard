@@ -1,7 +1,6 @@
 .env
 .env.*
 !.env.example
-outputs/
 *.egg-info/
 __pycache__/
 .pytest_cache/

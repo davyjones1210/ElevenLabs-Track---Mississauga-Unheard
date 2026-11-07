@@ -1,0 +1,11 @@
+﻿dataset,language,label_type,samples,correct,accuracy,status
+minds14,English,intent,53,48,0.905660,ok
+minds14,Mandarin Chinese,intent,53,52,0.981132,ok
+minds14,Polish,intent,53,50,0.943396,ok
+minds14,Portuguese,intent,53,50,0.943396,ok
+minds14,Spanish,intent,53,52,0.981132,ok
+massive,Arabic,scenario,29,16,0.551724,ok
+massive,Polish,scenario,29,17,0.586207,ok
+massive,Portuguese,scenario,29,17,0.586207,ok
+massive,Spanish,scenario,29,17,0.586207,ok
+massive,Vietnamese,scenario,29,18,0.620690,ok

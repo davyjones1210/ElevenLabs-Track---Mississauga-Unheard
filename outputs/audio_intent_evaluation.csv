@@ -1,0 +1,11 @@
+﻿dataset,language,label_type,samples,correct,accuracy,status
+massive,Arabic,scenario,1,0,0.000000,audio transcript; exploratory sample
+massive,Polish,scenario,1,0,0.000000,audio transcript; exploratory sample
+massive,Portuguese,scenario,1,0,0.000000,audio transcript; exploratory sample
+massive,Spanish,scenario,1,1,1.000000,audio transcript; exploratory sample
+massive,Vietnamese,scenario,1,0,0.000000,audio transcript; exploratory sample
+minds14,English,intent,1,1,1.000000,audio transcript; exploratory sample
+minds14,Mandarin Chinese,intent,1,1,1.000000,audio transcript; exploratory sample
+minds14,Polish,intent,1,1,1.000000,audio transcript; exploratory sample
+minds14,Portuguese,intent,1,1,1.000000,audio transcript; exploratory sample
+minds14,Spanish,intent,1,1,1.000000,audio transcript; exploratory sample
