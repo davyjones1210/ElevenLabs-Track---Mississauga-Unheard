@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mississauga-unheard"
+version = "0.1.0"
+description = "Census and speech analysis workflow for the Mississauga Unheard datathon."
+readme = "python_workflow/README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "scikit-learn>=1.6,<2",
+]
+
+[project.optional-dependencies]
+elevenlabs = ["elevenlabs>=2.0,<3", "python-dotenv>=1.0,<2"]
+test = ["pytest>=8,<9"]
+
+[project.scripts]
+mississauga-unheard = "mississauga_unheard.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

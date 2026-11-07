@@ -1,0 +1,469 @@
+file,language,native_language,alternative_native_language,birth_city,birth_state_or_province,birth_country,age,gender,english_onset_age,english_residence,length_of_english_residence_years,learning_style,duration_sec
+audio/urdu1.mp3,Urdu,urdu,,karachi,,pakistan,22.0,male,18.0,usa,1.0,academic,48.43
+audio/urdu2.mp3,Urdu,urdu,,sialkot,,pakistan,48.0,female,6.0,usa,10.0,academic,32.1
+audio/urdu3.mp3,Urdu,urdu,,karachi,sind,pakistan,25.0,male,3.0,canada,2.0,academic,25.55
+audio/urdu4.mp3,Urdu,urdu,,kuwait city,,kuwait,29.0,male,4.0,usa,0.5,academic,27.27
+audio/urdu5.mp3,Urdu,urdu,,karachi,,pakistan,23.0,male,12.0,usa,8.5,academic,19.1
+audio/urdu6.mp3,Urdu,urdu,,bangalore,,india,24.0,female,3.0,usa,8.0,academic,24.82
+audio/urdu7.mp3,Urdu,urdu,,islamabad,,pakistan,23.0,male,5.0,usa,13.0,academic,27.77
+audio/urdu8.mp3,Urdu,urdu,,abu dhabi,,united arab emirates,21.0,female,5.0,usa,12.0,academic,26.31
+audio/urdu9.mp3,Urdu,urdu,,alexandria,virginia,usa,20.0,female,5.0,usa,20.0,academic,25.91
+audio/urdu10.mp3,Urdu,urdu,,karachi,,pakistan,20.0,male,3.0,usa,0.8,academic,19.98
+audio/urdu11.mp3,Urdu,urdu,,karachi,,pakistan,20.0,male,6.0,usa,4.0,academic,18.29
+audio/urdu12.mp3,Urdu,urdu,,islamabad,,pakistan,19.0,female,4.0,usa,4.0,academic,34.53
+audio/urdu13.mp3,Urdu,urdu,,lahore,,pakistan,22.0,female,4.0,usa,21.5,naturalistic,24.89
+audio/urdu14.mp3,Urdu,urdu,,islamabad,,pakistan,21.0,male,10.0,usa,2.5,academic,27.22
+audio/urdu15.mp3,Urdu,urdu,,mandi bahauddin,punjab,pakistan,28.0,male,8.0,uk,1.5,academic,23.35
+audio/urdu16.mp3,Urdu,urdu,,karachi,,pakistan,22.0,male,5.0,usa,5.0,academic,26.41
+audio/urdu17.mp3,Urdu,urdu,,islamabad,,pakistan,20.0,male,1.0,usa,1.5,academic,24.24
+audio/urdu18.mp3,Urdu,urdu,,hyderabad,,india,24.0,male,9.0,usa,0.8,academic,28.55
+audio/urdu19.mp3,Urdu,urdu,,lahore,,pakistan,20.0,male,5.0,usa,6.0,academic,31.14
+audio/urdu20.mp3,Urdu,urdu,,islamabad,,pakistan,32.0,male,4.5,usa,27.0,naturalistic,26.54
+audio/urdu21.mp3,Urdu,urdu,,islamabad,,pakistan,24.0,male,11.0,usa,14.0,academic,26.72
+audio/urdu22.mp3,Urdu,urdu,,islmamabad,,pakistan,22.0,female,5.0,usa,17.0,academic,23.28
+audio/urdu23.mp3,Urdu,urdu,,gujranwala,punjab,pakistan,24.0,male,8.0,usa,2.5,academic,24.76
+audio/urdu24.mp3,Urdu,urdu,,islamabad,,pakistan,22.0,male,3.0,uk,10.0,academic,23.9
+audio/urdu25.mp3,Urdu,urdu,,hyderabad,,india,31.0,female,3.0,usa,2.0,academic,44.7
+audio/urdu26.mp3,Urdu,urdu,,lahore,,pakistan,25.0,female,10.0,usa,3.0,academic,27.38
+audio/urdu27.mp3,Urdu,urdu,,new york,new york,usa,22.0,female,10.0,usa,4.0,academic,26.04
+audio/urdu28.mp3,Urdu,urdu,,karachi,,pakistan,46.0,female,22.0,usa,23.0,naturalistic,39.34
+audio/urdu29.mp3,Urdu,urdu,,rawalpindi,,pakistan,55.0,female,12.0,"canada, usa",23.0,academic,40.23
+audio/arabic92.mp3,Arabic,arabic,,baghdad,,iraq,36.0,male,10.0,usa,2.0,academic,44.36
+audio/arabic109.mp3,Arabic,arabic,najdi,riyadh,,saudi arabia,19.0,female,10.0,,0.0,academic,29.75
+audio/arabic16.mp3,Arabic,arabic,,meknes,,morocco,22.0,male,16.0,,0.0,academic,20.3
+audio/arabic56.mp3,Arabic,arabic,,ain defla,,algeria,43.0,male,12.0,usa,3.0,academic,26.54
+audio/arabic148.mp3,Arabic,arabic,hijazi,taif,,saudi arabia,18.0,female,12.0,,0.0,academic,24.82
+audio/arabic2.mp3,Arabic,arabic,,damascus,,syria,18.0,male,2.5,usa,3.0,naturalistic,28.11
+audio/arabic192.mp3,Arabic,arabic,najdi,riyadh,,saudi arabia,19.0,female,7.0,usa,4.0,academic,27.09
+audio/arabic53.mp3,Arabic,arabic,,rabat,,morocco,36.0,male,17.0,usa,12.0,academic,31.92
+audio/arabic150.mp3,Arabic,arabic,najdi,riyadh,,saudi arabia,25.0,female,12.0,usa,2.0,academic,25.05
+audio/arabic184.mp3,Arabic,arabic,najdi,riyadh,,saudi arabia,21.0,male,12.0,usa,7.0,academic,28.79
+audio/arabic103.mp3,Arabic,arabic,,baghdad,,iraq,29.0,male,10.0,usa,3.0,academic,23.9
+audio/arabic101.mp3,Arabic,arabic,,doha,,qatar,21.0,male,10.0,usa,2.0,academic,37.83
+audio/arabic89.mp3,Arabic,arabic,,baghdad,,iraq,35.0,female,19.0,usa,16.0,academic,28.4
+audio/arabic137.mp3,Arabic,arabic,,al-ayn,,united arab emirates,20.0,male,7.0,usa,0.7,academic,56.27
+audio/arabic122.mp3,Arabic,arabic,,sabt alalaya,,saudi arabia,31.0,male,28.0,usa,6.0,academic,35.08
+audio/arabic81.mp3,Arabic,arabic,najdi,riyadh,,saudi arabia,22.0,male,17.0,usa,3.6,naturalistic,28.89
+audio/arabic128.mp3,Arabic,arabic,,riyadh,,saudi arabia,40.0,male,13.0,usa,1.3,academic,35.92
+audio/arabic117.mp3,Arabic,arabic,,al ras,,saudi arabia,40.0,male,37.0,usa,3.0,academic,32.65
+audio/arabic45.mp3,Arabic,arabic,,fort collins,colorado,usa,32.0,female,12.0,usa,0.5,naturalistic,41.2
+audio/arabic57.mp3,Arabic,arabic,,beirut,,lebanon,28.0,female,17.0,usa,11.0,academic,24.92
+audio/arabic25.mp3,Arabic,arabic,,ramun,,israel (occupied territory),38.0,male,5.0,usa,33.0,naturalistic,32.6
+audio/arabic133.mp3,Arabic,arabic,,abha,,saudi arabia,24.0,female,12.0,,0.0,academic,46.39
+audio/arabic43.mp3,Arabic,arabic,,beirut,,lebanon,29.0,female,8.0,,0.0,academic,31.29
+audio/arabic95.mp3,Arabic,arabic,,kuwait city,,kuwait,31.0,female,10.0,usa,1.0,academic,46.6
+audio/arabic112.mp3,Arabic,arabic,najdi,riyadh,,saudi arabia,19.0,female,3.0,usa,2.5,academic,19.7
+audio/arabic200.mp3,Arabic,arabic,,jerusalem,,israel,48.0,female,12.0,usa,24.0,academic,31.14
+audio/arabic199.mp3,Arabic,arabic,,kenitra,,morocco,26.0,female,14.0,usa,0.3,academic,21.27
+audio/arabic77.mp3,Arabic,arabic,,ad dammam,,saudi arabia,18.0,female,4.0,usa,1.0,naturalistic,23.85
+audio/arabic183.mp3,Arabic,arabic,najdi,riyadh,,saudi arabia,27.0,female,17.0,usa,6.0,academic,27.12
+audio/arabic9.mp3,Arabic,arabic,,jerusalem,,israel,28.0,female,4.0,usa,12.0,academic,34.74
+audio/arabic83.mp3,Arabic,arabic,najdi,riyadh,,saudi arabia,22.0,male,21.0,usa,1.0,academic,30.85
+audio/arabic85.mp3,Arabic,arabic,,ad dammam,,saudi arabia,24.0,female,14.0,usa,0.4,academic,25.65
+audio/arabic129.mp3,Arabic,arabic,,ramallah,,palestine,48.0,male,11.0,usa,20.0,academic,40.58
+audio/arabic3.mp3,Arabic,arabic,,doha,,qatar,24.0,male,9.0,usa,1.0,academic,48.25
+audio/arabic47.mp3,Arabic,arabic,hijazi,jiddah,,saudi arabia,39.0,male,16.0,usa,0.75,academic,64.24
+audio/arabic186.mp3,Arabic,arabic,najdi,riyadh,,saudi arabia,24.0,female,19.0,usa,6.0,academic,31.9
+audio/arabic124.mp3,Arabic,arabic,,geulmim,,morocco,42.0,male,17.0,usa,18.0,academic,39.16
+audio/arabic32.mp3,Arabic,arabic,,baghdad,,iraq,42.0,male,12.0,usa,16.0,academic,27.77
+audio/arabic116.mp3,Arabic,arabic,,al ras,,saudi arabia,30.0,female,13.0,usa,4.0,academic,45.06
+audio/arabic31.mp3,Arabic,arabic,,baghdad,,iraq,47.0,female,12.0,usa,0.3,academic,49.06
+audio/mandarin92.mp3,Mandarin Chinese,mandarin,chinese,huai'an,jiangsu,china,23.0,female,10.0,,0.0,academic,33.02
+audio/mandarin42.mp3,Mandarin Chinese,mandarin,chinese,yanbian,jilin,china,47.0,female,16.0,,0.0,academic,55.64
+audio/mandarin15.mp3,Mandarin Chinese,mandarin,chinese,tainan,,taiwan,28.0,female,11.0,"new zealand, usa, uk",4.0,academic,27.64
+audio/mandarin108.mp3,Mandarin Chinese,mandarin,chinese,nanning,guangxi,china,26.0,female,14.0,australia,5.0,academic,28.63
+audio/mandarin103.mp3,Mandarin Chinese,mandarin,chinese,le shan,sichuan,china,27.0,female,12.0,usa,1.0,academic,35.79
+audio/mandarin86.mp3,Mandarin Chinese,mandarin,chinese,shenyang,liaoning,china,22.0,female,7.0,usa,0.1,academic,31.48
+audio/mandarin100.mp3,Mandarin Chinese,mandarin,chinese,wuhan,hubei,china,25.0,female,13.0,,0.0,academic,30.34
+audio/mandarin59.mp3,Mandarin Chinese,mandarin,chinese,kunming,yunnan,china,20.0,female,6.0,usa,0.4,academic,40.8
+audio/mandarin30.mp3,Mandarin Chinese,mandarin,chinese,taipei,,taiwan,27.0,male,13.0,usa,1.0,academic,38.11
+audio/mandarin143.mp3,Mandarin Chinese,mandarin,chinese,fuyang,anhui,china,25.0,female,10.0,usa,0.2,academic,37.28
+audio/mandarin39.mp3,Mandarin Chinese,mandarin,chinese,tie ling,liaoning,china,24.0,female,12.0,,0.0,academic,34.74
+audio/mandarin111.mp3,Mandarin Chinese,mandarin,chinese,beijing,,china,23.0,female,6.0,australia,0.2,academic,30.15
+audio/mandarin54.mp3,Mandarin Chinese,mandarin,chinese,chengdu,sichuan,china,25.0,female,10.0,usa,5.0,academic,22.36
+audio/mandarin120.mp3,Mandarin Chinese,mandarin,chinese,chengde,hebei,china,24.0,male,10.0,usa,0.1,academic,34.43
+audio/mandarin157.mp3,Mandarin Chinese,mandarin,chinese,zibo,shandong,china,58.0,female,11.0,usa,33.0,academic,28.61
+audio/mandarin57.mp3,Mandarin Chinese,mandarin,chinese,shanghai,,china,20.0,male,12.0,uk,0.2,academic,23.43
+audio/mandarin73.mp3,Mandarin Chinese,mandarin,chinese,chengdu,sichuan,china,27.0,female,10.0,usa,10.0,academic,34.77
+audio/mandarin130.mp3,Mandarin Chinese,mandarin,chinese,weifang,shandong,china,22.0,female,7.0,usa,6.0,academic,26.93
+audio/mandarin155.mp3,Mandarin Chinese,mandarin,chinese,baoding,hebei,china,51.0,female,9.0,usa,23.0,academic,27.35
+audio/mandarin134.mp3,Mandarin Chinese,mandarin,chinese,luoyang,henan,china,27.0,male,9.0,usa,10.0,academic,33.07
+audio/mandarin62.mp3,Mandarin Chinese,mandarin,chinese,shanghai,,china,24.0,male,7.0,usa,5.5,academic,23.12
+audio/mandarin18.mp3,Mandarin Chinese,mandarin,chinese,taoyuan,,taiwan,29.0,female,13.0,,0.0,academic,32.76
+audio/mandarin41.mp3,Mandarin Chinese,mandarin,chinese,songyuan,jilin,china,34.0,female,13.0,,0.0,academic,35.08
+audio/mandarin6.mp3,Mandarin Chinese,mandarin,chinese,le shan,sichuan,china,28.0,female,12.0,usa,5.0,academic,31.79
+audio/mandarin87.mp3,Mandarin Chinese,mandarin,chinese,lanzhou,gansu,china,22.0,female,7.0,usa,1.0,academic,25.97
+audio/mandarin46.mp3,Mandarin Chinese,mandarin,chinese,jilin city,jilin,china,43.0,female,9.0,,0.0,academic,42.66
+audio/mandarin45.mp3,Mandarin Chinese,mandarin,chinese,beijing,,china,42.0,female,12.0,"usa, australia",0.1,academic,46.34
+audio/mandarin101.mp3,Mandarin Chinese,mandarin,chinese,jiujiang,jiangxi,china,23.0,female,10.0,,0.0,academic,33.22
+audio/mandarin148.mp3,Mandarin Chinese,mandarin,chinese,nanyang,henan,china,19.0,female,6.0,usa,0.1,academic,41.4
+audio/mandarin131.mp3,Mandarin Chinese,mandarin,chinese,shenzhen,guangdong,china,20.0,male,6.0,usa,0.8,academic,24.95
+audio/mandarin22.mp3,Mandarin Chinese,mandarin,chinese,haikou,hainan,china,39.0,female,11.0,usa,3.0,academic,27.06
+audio/mandarin121.mp3,Mandarin Chinese,mandarin,chinese,huangshan,anhui,china,30.0,female,13.0,usa,5.0,academic,24.95
+audio/mandarin52.mp3,Mandarin Chinese,mandarin,chinese,shaoxing,zhejiang,china,26.0,female,6.0,usa,1.0,academic,32.26
+audio/mandarin147.mp3,Mandarin Chinese,mandarin,chinese,nanyang,henan,china,19.0,female,9.0,usa,0.1,academic,32.99
+audio/mandarin7.mp3,Mandarin Chinese,mandarin,chinese,berkeley,california,usa,22.0,male,5.0,usa,22.0,naturalistic,20.35
+audio/mandarin94.mp3,Mandarin Chinese,mandarin,chinese,baotou,inner mongolia,china,23.0,male,8.0,usa,0.3,academic,25.3
+audio/mandarin93.mp3,Mandarin Chinese,mandarin,chinese,xi'an,shanxi,china,22.0,female,6.0,usa,0.3,academic,29.93
+audio/mandarin88.mp3,Mandarin Chinese,mandarin,chinese,anqing,anhui,china,23.0,male,8.0,,0.0,academic,31.74
+audio/mandarin66.mp3,Mandarin Chinese,mandarin,chinese,shanghai,,china,22.0,female,19.0,usa,3.0,academic,22.78
+audio/mandarin53.mp3,Mandarin Chinese,mandarin,chinese,ningbo,zhejiang,china,38.0,female,13.0,usa,15.0,academic,30.17
+audio/punjabi2.mp3,Punjabi,punjabi,panjabi,hoshiarpur,,india,26.0,male,10.0,usa,0.6,academic,25.39
+audio/punjabi3.mp3,Punjabi,punjabi,panjabi,moga,punjab,india,19.0,male,6.0,usa,2.0,naturalistic,24.95
+audio/punjabi4.mp3,Punjabi,punjabi,panjabi,moga,,india,33.0,female,3.0,australia,3.0,academic,27.56
+audio/punjabi5.mp3,Punjabi,punjabi,panjabi,ropar,punjab,india,49.0,male,5.0,usa,31.0,academic,47.28
+audio/punjabi6.mp3,Punjabi,punjabi,panjabi,lahore,,pakistan,25.0,male,5.0,usa,2.0,academic,28.34
+audio/punjabi7.mp3,Punjabi,punjabi,panjabi,lahore,,pakistan,22.0,male,5.0,usa,0.2,academic,19.64
+audio/punjabi8.mp3,Punjabi,punjabi,panjabi,jilandhar,punjab,india,44.0,male,13.0,usa,20.0,academic,57.97
+audio/punjabi9.mp3,Punjabi,punjabi,panjabi,kot kapura,,india,19.0,male,11.0,usa,4.0,academic,32.91
+audio/punjabi10.mp3,Punjabi,punjabi,panjabi,ludhiana,,india,22.0,male,11.0,usa,4.0,academic,29.2
+audio/punjabi11.mp3,Punjabi,punjabi,panjabi,ahmedabad,gujarat,india,24.0,male,3.0,usa,0.3,academic,25.34
+audio/punjabi12.mp3,Punjabi,punjabi,panjabi,sialkot,punjab,pakistan,52.0,female,12.0,usa,9.0,academic,30.59
+audio/polish2.mp3,Polish,polish,,mielec,,poland,26.0,female,25.0,usa,1.0,academic,39.86
+audio/polish3.mp3,Polish,polish,,nowy sacz,,poland,31.0,female,12.0,usa,10.0,academic,26.98
+audio/polish4.mp3,Polish,polish,,krakow,,poland,47.0,female,15.0,usa,14.0,academic,28.55
+audio/polish5.mp3,Polish,polish,,ozarow maz,,poland,22.0,male,9.0,,0.0,academic,23.28
+audio/polish6.mp3,Polish,polish,,torun,,poland,26.0,female,8.0,usa,2.0,academic,22.94
+audio/polish7.mp3,Polish,polish,,przemet,,poland,20.0,male,6.0,,0.0,academic,20.82
+audio/polish8.mp3,Polish,polish,,otwock,,poland,20.0,male,11.0,,0.0,academic,20.43
+audio/polish9.mp3,Polish,polish,,ostroleka,,poland,23.0,female,15.0,usa,1.0,academic,26.91
+audio/polish10.mp3,Polish,polish,,wolanow,,poland,30.0,female,15.0,usa,6.0,academic,28.11
+audio/polish11.mp3,Polish,polish,,warsaw,,poland,56.0,female,10.0,usa,5.0,academic,22.73
+audio/polish12.mp3,Polish,polish,,warsaw,,poland,40.0,male,20.0,usa,6.0,naturalistic,30.88
+audio/polish13.mp3,Polish,polish,,gryfino,western pomerania,poland,22.0,male,14.0,"canada, usa",1.3,naturalistic,20.92
+audio/polish14.mp3,Polish,polish,,warsaw,,poland,97.0,male,35.0,usa,57.0,naturalistic,36.57
+audio/polish15.mp3,Polish,polish,,ketrzyn,,poland,25.0,female,9.0,,0.0,academic,28.97
+audio/polish16.mp3,Polish,polish,,koszalin,,poland,19.0,male,8.0,,0.0,academic,21.11
+audio/polish17.mp3,Polish,polish,,krakow,,poland,33.0,female,13.0,usa,9.0,academic,25.91
+audio/polish18.mp3,Polish,polish,,bialystok,,poland,18.0,male,5.0,,0.0,academic,21.97
+audio/polish19.mp3,Polish,polish,,belchatow,,poland,24.0,male,7.0,uk,0.2,academic,23.59
+audio/polish20.mp3,Polish,polish,,gdansk,,poland,53.0,female,4.0,"canada, usa",35.0,academic,23.9
+audio/polish21.mp3,Polish,polish,,kolobrzeg,,poland,30.0,male,10.0,uk,10.0,academic,21.26
+audio/polish22.mp3,Polish,polish,,koszalin,,poland,19.0,male,11.0,,0.0,academic,31.43
+audio/polish23.mp3,Polish,polish,,lobez,,poland,21.0,male,8.0,,0.0,academic,25.56
+audio/polish24.mp3,Polish,polish,,koszalin,,poland,20.0,female,10.0,,0.0,academic,22.94
+audio/polish25.mp3,Polish,polish,,koszalin,,poland,20.0,male,11.0,,0.0,academic,20.85
+audio/polish26.mp3,Polish,polish,,bytow,,poland,19.0,male,16.0,uk,0.2,academic,25.34
+audio/polish27.mp3,Polish,polish,,koszalin,,poland,19.0,male,6.0,,0.0,academic,22.7
+audio/polish28.mp3,Polish,polish,,koszalin,,poland,20.0,female,10.0,,0.0,academic,19.23
+audio/polish29.mp3,Polish,polish,,sianow,,poland,20.0,male,11.0,,0.0,academic,28.73
+audio/polish30.mp3,Polish,polish,,koszalin,,poland,21.0,female,9.0,,0.0,academic,22.94
+audio/polish31.mp3,Polish,polish,,trzebnica,,poland,34.0,female,16.0,usa,11.0,academic,25.36
+audio/polish32.mp3,Polish,polish,,torun,,poland,42.0,male,14.0,usa,2.0,naturalistic,20.38
+audio/polish33.mp3,Polish,polish,,nowa ruda,,poland,21.0,male,7.0,,0.0,academic,23.25
+audio/polish34.mp3,Polish,polish,,wroclaw,,poland,48.0,female,12.0,usa,23.0,academic,29.54
+audio/polish35.mp3,Polish,polish,,warsaw,,poland,21.0,male,6.0,,0.0,academic,23.43
+audio/polish36.mp3,Polish,polish,,bialogard,,poland,19.0,female,14.0,,0.0,academic,21.81
+audio/polish37.mp3,Polish,polish,,warsaw,,poland,26.0,male,4.0,"uk, australia",2.0,academic,25.7
+audio/polish38.mp3,Polish,polish,,gdansk,,poland,22.0,female,5.0,,0.0,academic,25.65
+audio/polish39.mp3,Polish,polish,,wolin,,poland,54.0,male,15.0,uk,1.0,academic,28.58
+audio/cantonese1.mp3,Cantonese,cantonese,chinese,hong kong,,china,22.0,female,12.0,usa,1.0,academic,34.12
+audio/cantonese2.mp3,Cantonese,cantonese,chinese,hong kong,,china,20.0,male,13.0,usa,0.3,academic,42.34
+audio/cantonese3.mp3,Cantonese,cantonese,chinese,hong kong,,china,22.0,male,6.0,uk,0.1,academic,22.23
+audio/cantonese4.mp3,Cantonese,cantonese,chinese,fuzhou,fujian,china,29.0,female,13.0,usa,4.0,academic,35.27
+audio/cantonese5.mp3,Cantonese,cantonese,chinese,hong kong,,china,18.0,male,14.0,new zealand,0.7,academic,34.48
+audio/cantonese6.mp3,Cantonese,cantonese,chinese,hong kong,,china,25.0,male,5.0,,0.0,academic,30.2
+audio/cantonese7.mp3,Cantonese,cantonese,chinese,hong kong,,china,31.0,male,4.0,canada,16.0,academic,26.72
+audio/cantonese8.mp3,Cantonese,cantonese,chinese,hong kong,,china,23.0,female,2.0,canada,15.0,academic,19.25
+audio/cantonese9.mp3,Cantonese,cantonese,chinese,hong kong,,china,22.0,male,7.0,uk,5.0,academic,27.98
+audio/cantonese10.mp3,Cantonese,cantonese,chinese,xiamen,fujian,china,25.0,female,3.0,canada,0.5,academic,22.52
+audio/cantonese11.mp3,Cantonese,cantonese,chinese,hong kong,,china,22.0,female,3.0,,0.0,academic,23.51
+audio/cantonese12.mp3,Cantonese,cantonese,chinese,macau,,china,20.0,female,4.0,canada,2.3,academic,24.45
+audio/cantonese13.mp3,Cantonese,cantonese,chinese,hong kong,,china,21.0,female,3.0,,0.0,academic,28.21
+audio/cantonese14.mp3,Cantonese,cantonese,chinese,hong kong,,china,19.0,female,3.0,uk,0.5,academic,20.45
+audio/cantonese15.mp3,Cantonese,cantonese,chinese,qingyuan,guangdong,china,31.0,female,12.0,usa,5.5,academic,23.09
+audio/cantonese16.mp3,Cantonese,cantonese,chinese,hong kong,,china,29.0,female,3.0,"usa, australia",4.0,academic,21.58
+audio/cantonese17.mp3,Cantonese,cantonese,chinese,hong kong,,china,26.0,female,3.0,"uk, usa",15.0,academic,24.95
+audio/cantonese18.mp3,Cantonese,cantonese,chinese,hong kong,,china,19.0,male,3.0,,0.0,academic,22.94
+audio/cantonese19.mp3,Cantonese,cantonese,chinese,hong kong,,china,28.0,female,7.0,usa,0.1,academic,34.32
+audio/cantonese20.mp3,Cantonese,cantonese,chinese,hong kong,,china,18.0,male,3.0,,0.0,academic,33.96
+audio/cantonese21.mp3,Cantonese,cantonese,chinese,hong kong,,china,18.0,female,4.0,,0.0,naturalistic,26.33
+audio/cantonese22.mp3,Cantonese,cantonese,chinese,hong kong,,china,30.0,female,3.0,,0.0,academic,23.67
+audio/cantonese23.mp3,Cantonese,cantonese,chinese,hong kong,,china,33.0,male,6.0,,0.0,academic,27.25
+audio/cantonese24.mp3,Cantonese,cantonese,chinese,hong kong,,china,23.0,female,3.0,usa,4.0,academic,21.16
+audio/cantonese25.mp3,Cantonese,cantonese,chinese,hong kong,,china,23.0,male,3.0,,0.0,academic,34.09
+audio/cantonese27.mp3,Cantonese,cantonese,chinese,ho chi minh city,,vietnam,20.0,male,15.0,usa,5.0,academic,28.08
+audio/cantonese28.mp3,Cantonese,cantonese,chinese,guangzhou,,china,25.0,female,7.0,usa,4.0,academic,36.94
+audio/cantonese29.mp3,Cantonese,cantonese,chinese,hong kong,,china,20.0,male,6.0,usa,16.0,academic,40.49
+audio/cantonese30.mp3,Cantonese,cantonese,chinese,guangzhou,,china,25.0,female,6.0,australia,1.5,academic,32.34
+audio/cantonese31.mp3,Cantonese,cantonese,chinese,guangzhou,guangdong,china,21.0,male,6.0,usa,1.0,academic,39.76
+audio/cantonese32.mp3,Cantonese,cantonese,chinese,fuzhou,fujian,china,26.0,female,7.0,usa,2.0,academic,37.56
+audio/cantonese33.mp3,Cantonese,cantonese,chinese,hong kong,,china,25.0,female,7.0,usa,2.0,academic,32.47
+audio/cantonese34.mp3,Cantonese,cantonese,chinese,hong kong,,china,19.0,male,6.0,usa,2.0,academic,22.67
+audio/cantonese35.mp3,Cantonese,cantonese,chinese,foshan,guangdong,china,21.0,male,9.0,usa,4.0,academic,25.94
+audio/cantonese36.mp3,Cantonese,cantonese,chinese,shunde,guangdong,china,27.0,female,6.0,usa,0.5,academic,27.92
+audio/tagalog1.mp3,Tagalog,tagalog,,manila,,philippines,18.0,male,10.0,usa,0.5,academic,23.25
+audio/tagalog2.mp3,Tagalog,tagalog,,urdaneta,luzon,philippines,21.0,female,7.0,usa,4.0,academic,29.15
+audio/tagalog3.mp3,Tagalog,tagalog,,honiara,guadalcanal,solomon islands,19.0,female,1.0,usa,3.0,naturalistic,27.41
+audio/tagalog4.mp3,Tagalog,tagalog,,san fernando,la union,philippines,48.0,female,7.0,usa,20.0,academic,28.68
+audio/tagalog5.mp3,Tagalog,tagalog,,tarlac city,,philippines,42.0,female,5.0,"philippines, usa, australia",42.0,naturalistic,28.55
+audio/tagalog6.mp3,Tagalog,tagalog,,quezon city,,philippines,20.0,male,4.0,philippines,20.0,academic,21.21
+audio/filipino1.mp3,Tagalog,filipino,,quezon city,,philippines,23.0,male,4.0,usa,2.0,naturalistic,19.38
+audio/tagalog7.mp3,Tagalog,tagalog,,manila,,philippines,60.0,male,6.0,australia,22.0,academic,27.38
+audio/filipino2.mp3,Tagalog,filipino,,pasay,,philippines,21.0,female,3.0,usa,0.5,naturalistic,24.72
+audio/tagalog8.mp3,Tagalog,tagalog,,cabanatuan city,,philippines,62.0,female,7.0,usa,27.0,academic,27.04
+audio/tagalog9.mp3,Tagalog,tagalog,,manila,,philippines,48.0,male,7.0,"philippines, usa",48.0,academic,23.77
+audio/tagalog10.mp3,Tagalog,tagalog,,manila,,philippines,39.0,female,6.0,usa,21.0,academic,23.56
+audio/tagalog11.mp3,Tagalog,tagalog,,manila,,philippines,59.0,female,11.0,usa,1.0,academic,28.06
+audio/tagalog12.mp3,Tagalog,tagalog,,legaspi,,philippines,33.0,female,5.0,usa,20.0,academic,33.25
+audio/tagalog13.mp3,Tagalog,tagalog,,manila,,philippines,76.0,female,7.0,usa,40.0,academic,47.78
+audio/tagalog14.mp3,Tagalog,tagalog,,legaspi,,philippines,47.0,female,17.0,usa,25.0,academic,33.41
+audio/tagalog15.mp3,Tagalog,tagalog,,manila,,philippines,35.0,female,1.0,usa,25.0,naturalistic,34.74
+audio/tagalog16.mp3,Tagalog,tagalog,,san pedro laguna,,philippines,20.0,male,4.5,usa,7.5,naturalistic,27.64
+audio/tagalog17.mp3,Tagalog,tagalog,,alexandria,virginia,usa,21.0,male,6.0,usa,20.0,naturalistic,24.89
+audio/tagalog18.mp3,Tagalog,tagalog,,manila,,philippines,77.0,female,8.0,usa,69.0,academic,30.67
+audio/tagalog19.mp3,Tagalog,tagalog,,cabusao,,philippines,63.0,female,5.0,usa,36.0,academic,40.1
+audio/tagalog20.mp3,Tagalog,tagalog,,san fernando,pampanga,philippines,58.0,female,6.0,usa,45.0,academic,31.53
+audio/tagalog21.mp3,Tagalog,tagalog,,manila,,philippines,40.0,female,7.0,,0.0,academic,38.22
+audio/tagalog22.mp3,Tagalog,tagalog,,quezon city,,philippines,21.0,female,3.0,philippines,21.0,naturalistic,24.48
+audio/tagalog23.mp3,Tagalog,tagalog,,sibutu,,philippines,36.0,female,7.0,malaysia,2.0,academic,33.78
+audio/tagalog24.mp3,Tagalog,tagalog,,batangos,,philippines,51.0,male,7.0,usa,4.0,academic,33.46
+audio/tagalog25.mp3,Tagalog,tagalog,,cavite city,,philippines,21.0,male,6.0,usa,5.3,naturalistic,23.62
+audio/tagalog26.mp3,Tagalog,tagalog,,cotabalo,,philippines,53.0,male,7.0,usa,27.0,academic,29.62
+audio/tagalog27.mp3,Tagalog,tagalog,,pasig,,philippiness,28.0,female,3.0,usa,25.0,naturalistic,33.78
+audio/spanish74.mp3,Spanish,spanish,,zaragoza,,spain,44.0,male,14.0,,0.0,academic,21.84
+audio/spanish190.mp3,Spanish,spanish,,bogota,,colombia,41.0,male,6.0,usa,7.0,academic,25.65
+audio/spanish222.mp3,Spanish,spanish,,villalba,,puerto rico,45.0,female,2.0,usa,43.0,naturalistic,27.31
+audio/spanish134.mp3,Spanish,spanish,,la union,,el salvador,41.0,female,13.0,usa,28.7,academic,33.62
+audio/spanish79.mp3,Spanish,spanish,,lamas,,peru,70.0,female,22.0,usa,41.0,academic,27.27
+audio/spanish85.mp3,Spanish,spanish,,buenos aires,,argentina,44.0,female,6.0,,0.0,academic,30.77
+audio/spanish16.mp3,Spanish,spanish,,buenos aires,,argentina,44.0,male,25.0,usa,19.0,naturalistic,22.36
+audio/spanish17.mp3,Spanish,spanish,,puebla,,mexico,22.0,female,9.0,usa,10.0,academic,27.32
+audio/spanish120.mp3,Spanish,spanish,,bogota,,colombia,25.0,female,2.0,usa,16.0,academic,32.73
+audio/spanish236.mp3,Spanish,spanish,,guatemala city,,guatemala,57.0,female,9.0,usa,28.0,academic,48.65
+audio/spanish59.mp3,Spanish,spanish,,mayaguez,,puerto rico,31.0,female,5.0,usa,26.0,naturalistic,21.89
+audio/spanish91.mp3,Spanish,spanish,,caracas,,venezuela,20.0,female,7.0,usa,10.0,naturalistic,20.77
+audio/spanish37.mp3,Spanish,spanish,,tegucigalpa,,honduras,50.0,female,17.0,usa,13.0,academic,30.54
+audio/spanish221.mp3,Spanish,spanish,,bogota,,colombia,32.0,female,6.0,usa,24.5,academic,37.22
+audio/spanish49.mp3,Spanish,spanish,,tandil,,argentina,31.0,male,6.0,,0.0,academic,21.5
+audio/spanish227.mp3,Spanish,spanish,,durango,durango,mexico,49.0,female,13.0,,0.0,academic,32.29
+audio/spanish129.mp3,Spanish,spanish,,havana,,cuba,47.0,female,30.0,usa,17.0,naturalistic,31.24
+audio/spanish177.mp3,Spanish,spanish,,sonsonate,,el salvador,48.0,female,17.0,usa,26.0,naturalistic,58.23
+audio/spanish55.mp3,Spanish,spanish,,tandil,,argentina,36.0,male,9.0,usa,3.2,academic,22.15
+audio/spanish125.mp3,Spanish,spanish,,lima,,peru,23.0,male,9.0,usa,14.0,naturalistic,18.89
+audio/spanish22.mp3,Spanish,spanish,,madrid,,spain,32.0,female,11.0,usa,0.8,academic,26.46
+audio/spanish170.mp3,Spanish,spanish,,cochabamba,,bolivia,25.0,male,2.0,usa,23.0,naturalistic,19.64
+audio/spanish209.mp3,Spanish,spanish,,lima,,peru,35.0,female,12.0,usa,16.0,naturalistic,36.07
+audio/spanish193.mp3,Spanish,spanish,,david,,panama,75.0,female,5.0,usa,54.0,academic,31.35
+audio/spanish219.mp3,Spanish,spanish,,santa ana,,el salvador,44.0,female,25.0,usa,26.0,naturalistic,34.2
+audio/spanish141.mp3,Spanish,spanish,,la union,,el salvador,24.0,male,12.0,usa,12.0,academic,30.8
+audio/spanish194.mp3,Spanish,spanish,,cochabamba,,bolivia,27.0,male,18.0,usa,9.0,naturalistic,45.27
+audio/spanish188.mp3,Spanish,spanish,,panama city,,panama,54.0,female,28.0,usa,26.0,naturalistic,33.93
+audio/spanish103.mp3,Spanish,spanish,,san miguel,,el salvador,46.0,male,15.0,usa,25.0,naturalistic,38.74
+audio/spanish205.mp3,Spanish,spanish,,cerete,,colombia,29.0,male,7.0,canada,0.3,academic,22.02
+audio/spanish8.mp3,Spanish,spanish,,san salvador,,el salvador,21.0,male,12.0,usa,0.5,academic,30.15
+audio/spanish123.mp3,Spanish,spanish,,ilbague,,colombia,57.0,female,14.0,usa,17.0,academic,30.67
+audio/spanish132.mp3,Spanish,spanish,,rio piedras,,puerto rico,50.0,female,15.0,usa,30.0,academic,24.01
+audio/spanish154.mp3,Spanish,spanish,,montevideo,,uruguay,30.0,male,4.0,usa,1.5,academic,22.41
+audio/spanish68.mp3,Spanish,spanish,,san fernando,,chile,27.0,male,14.0,australia,0.8,academic,22.52
+audio/spanish40.mp3,Spanish,spanish,,cartago,,costa rica,20.0,male,6.0,,0.0,academic,18.99
+audio/spanish199.mp3,Spanish,spanish,,san juan,,puerto rico,18.0,male,2.0,usa,0.3,academic,31.66
+audio/spanish25.mp3,Spanish,spanish,,san jose,,costa rica,26.0,male,21.0,usa,5.0,academic,24.76
+audio/spanish183.mp3,Spanish,spanish,,bogota,,colombia,27.0,female,16.0,usa,11.0,academic,30.8
+audio/spanish44.mp3,Spanish,spanish,,la romana,,dominican republic,37.0,female,4.0,usa,11.5,academic,29.39
+audio/tamil1.mp3,Tamil,tamil,,colombo,,sri lanka,39.0,male,7.0,usa,13.0,academic,35.29
+audio/tamil2.mp3,Tamil,tamil,,madras,tamil nadu,india,35.0,female,4.0,usa,5.0,naturalistic,21.81
+audio/tamil3.mp3,Tamil,tamil,,chennai,,india,26.0,male,10.0,uk,3.0,naturalistic,19.04
+audio/tamil4.mp3,Tamil,tamil,,colombo,,sri lanka,58.0,female,3.0,usa,23.7,academic,25.99
+audio/tamil5.mp3,Tamil,tamil,,coimbatore,tamil nadu,india,36.0,female,5.0,usa,12.0,academic,26.02
+audio/tamil6.mp3,Tamil,tamil,,bangalore,karnataka,india,47.0,female,6.0,usa,19.0,academic,24.53
+audio/tamil7.mp3,Tamil,tamil,,dombivli,maharashtra,india,26.0,female,3.0,usa,2.3,academic,25.76
+audio/tamil8.mp3,Tamil,tamil,,chennai,tamil nadu,india,25.0,female,5.0,usa,1.0,academic,27.4
+audio/tamil12.mp3,Tamil,tamil,,chennai,tamil nadu,india,23.0,female,3.0,usa,0.1,academic,23.01
+audio/tamil13.mp3,Tamil,tamil,,coimbatore,tamil nadu,india,28.0,female,3.0,usa,2.0,academic,23.8
+audio/vietnamese1.mp3,Vietnamese,vietnamese,,can tho,,vietnam,29.0,male,12.0,usa,0.5,academic,41.77
+audio/vietnamese2.mp3,Vietnamese,vietnamese,,ho chi minh city,,vietnam,29.0,male,25.0,usa,2.0,academic,35.16
+audio/vietnamese3.mp3,Vietnamese,vietnamese,,vinh long,,vietnam,28.0,female,9.0,usa,0.8,academic,33.04
+audio/vietnamese4.mp3,Vietnamese,vietnamese,,hanoi,,vietnam,25.0,female,15.0,usa,1.0,academic,24.22
+audio/vietnamese5.mp3,Vietnamese,vietnamese,,cam ranh,,vietnam,34.0,male,31.0,usa,2.0,academic,29.83
+audio/vietnamese6.mp3,Vietnamese,vietnamese,,ho chi minh city,,vietnam,41.0,male,12.0,usa,2.0,academic,39.73
+audio/vietnamese7.mp3,Vietnamese,vietnamese,,hue,,vietnam,29.0,female,18.0,usa,10.0,academic,33.93
+audio/vietnamese8.mp3,Vietnamese,vietnamese,,ninh binh,,vietnam,69.0,male,12.0,usa,30.0,academic,30.51
+audio/vietnamese9.mp3,Vietnamese,vietnamese,,ho chi minh city,,vietnam,20.0,male,14.0,usa,4.0,academic,26.85
+audio/vietnamese10.mp3,Vietnamese,vietnamese,,quang nam,,vietnam,57.0,female,18.0,usa,16.0,academic,47.26
+audio/vietnamese11.mp3,Vietnamese,vietnamese,,quang nam,,vietnam,67.0,male,15.0,usa,16.0,academic,36.52
+audio/vietnamese12.mp3,Vietnamese,vietnamese,,can tho,,vietnam,24.0,female,9.0,usa,15.0,academic,25.03
+audio/vietnamese13.mp3,Vietnamese,vietnamese,,hanoi,,vietnam,23.0,male,6.0,,0.0,academic,23.82
+audio/vietnamese14.mp3,Vietnamese,vietnamese,,ho chi minh city,,vietnam,51.0,male,20.0,usa,31.0,academic,35.03
+audio/vietnamese15.mp3,Vietnamese,vietnamese,,ho chi minh city,,vietnam,29.0,male,15.0,usa,7.0,academic,41.48
+audio/vietnamese16.mp3,Vietnamese,vietnamese,,long xuyen,,vietnam,52.0,male,17.0,usa,32.0,academic,36.55
+audio/vietnamese17.mp3,Vietnamese,vietnamese,,ho chi minh city,,vietnam,33.0,female,11.0,usa,12.0,academic,31.43
+audio/vietnamese18.mp3,Vietnamese,vietnamese,,saigon,,vietnam,19.0,female,11.0,usa,10.0,naturalistic,20.95
+audio/vietnamese19.mp3,Vietnamese,vietnamese,,ho chi minh city,,vietnam,18.0,female,4.0,usa,1.5,academic,29.0
+audio/vietnamese20.mp3,Vietnamese,vietnamese,,haiphong,,vietnam,46.0,female,25.0,usa,16.0,academic,51.96
+audio/vietnamese21.mp3,Vietnamese,vietnamese,,hanoi,,vietnam,21.0,male,16.0,usa,7.0,academic,27.74
+audio/vietnamese22.mp3,Vietnamese,vietnamese,,bien hoa,,vietnam,23.0,male,8.0,usa,8.5,academic,26.31
+audio/vietnamese23.mp3,Vietnamese,vietnamese,,hanoi,,vietnam,21.0,female,6.0,uk,3.0,naturalistic,23.62
+audio/vietnamese24.mp3,Vietnamese,vietnamese,,hanoi,,vietnam,21.0,female,10.0,usa,7.0,academic,29.07
+audio/vietnamese25.mp3,Vietnamese,vietnamese,,ho chi minh city,,vietnam,23.0,male,9.0,usa,13.0,naturalistic,28.42
+audio/vietnamese26.mp3,Vietnamese,vietnamese,,hanoi,,vietnam,19.0,male,8.0,usa,0.8,academic,25.39
+audio/vietnamese27.mp3,Vietnamese,vietnamese,,ho chi minh city,,vietnam,59.0,female,27.0,usa,34.0,academic,46.52
+audio/vietnamese28.mp3,Vietnamese,vietnamese,,can tho,,vietnam,19.0,female,8.0,usa,5.0,academic,28.45
+audio/vietnamese29.mp3,Vietnamese,vietnamese,,can tho,,vietnam,23.0,male,9.0,usa,2.0,academic,30.54
+audio/vietnamese30.mp3,Vietnamese,vietnamese,,rach gia,kien giang,vietnam,60.0,female,29.0,usa,32.0,academic,38.53
+audio/vietnamese31.mp3,Vietnamese,vietnamese,,long an,,vietnam,35.0,female,25.0,usa,10.0,academic,32.16
+audio/vietnamese32.mp3,Vietnamese,vietnamese,,hue,,vietnam,53.0,female,21.0,usa,21.0,naturalistic,28.97
+audio/vietnamese33.mp3,Vietnamese,vietnamese,,ho chi minh city,,vietnam,25.0,male,10.0,usa,2.0,academic,37.2
+audio/vietnamese34.mp3,Vietnamese,vietnamese,,ho chi minh city,,vietnam,22.0,male,6.0,usa,4.0,academic,33.57
+audio/vietnamese35.mp3,Vietnamese,vietnamese,,can tho,,vietnamese,43.0,female,18.0,usa,25.0,naturalistic,53.76
+audio/vietnamese37.mp3,Vietnamese,vietnamese,,ho chi minh city,,vietnam,19.0,male,11.0,usa,9.0,academic,24.48
+audio/vietnamese38.mp3,Vietnamese,vietnamese,,ho chi minh city,,vietnam,31.0,male,7.0,usa,24.0,naturalistic,25.87
+audio/vietnamese39.mp3,Vietnamese,vietnamese,,,an giang,vietnam,18.0,male,10.0,usa,8.4,academic,35.5
+audio/vietnamese40.mp3,Vietnamese,vietnamese,,ho chi minh city,,vietnam,26.0,male,19.0,usa,7.0,academic,38.96
+audio/hindi1.mp3,Hindi,hindi,hindi-urdu,nagpur,maharashtra,india,27.0,male,2.0,"uk,usa",3.5,academic,26.33
+audio/hindi2.mp3,Hindi,hindi,hindi-urdu,hyderabad,,india,31.0,male,3.0,"usa, canada",8.0,academic,24.89
+audio/hindi3.mp3,Hindi,hindi,hindi-urdu,jalandhar,,india,42.0,male,5.0,usa,25.0,academic,26.25
+audio/hindi4.mp3,Hindi,hindi,hindi-urdu,bhilwara,rajisthan,india,28.0,female,14.0,usa,2.0,academic,32.78
+audio/hindi5.mp3,Hindi,hindi,hindi-urdu,hubballi,karnataka,india,64.0,female,10.0,usa,40.0,academic,29.7
+audio/hindi6.mp3,Hindi,hindi,hindi-urdu,new delhi,,india,27.0,female,4.0,usa,1.0,academic,22.88
+audio/hindi7.mp3,Hindi,hindi,hindi-urdu,allahabad,utter pardesh,india,60.0,female,5.0,usa,30.0,academic,30.48
+audio/hindi8.mp3,Hindi,hindi,hindi-urdu,imphal,,india,19.0,male,8.0,usa,0.75,academic,20.3
+audio/hindi9.mp3,Hindi,hindi,hindi-urdu,durgapur,west bengal,india,31.0,male,4.0,usa,8.0,academic,20.14
+audio/hindi10.mp3,Hindi,hindi,hindi-urdu,new delhi,,india,19.0,female,10.5,usa,8.0,naturalistic,21.94
+audio/hindi11.mp3,Hindi,hindi,hindi-urdu,chandigarh,,india,20.0,male,4.0,usa,7.0,academic,27.4
+audio/hindi12.mp3,Hindi,hindi,hindi-urdu,allahabad,,india,25.0,female,4.0,usa,4.0,academic,29.6
+audio/hindi13.mp3,Hindi,hindi,hindi-urdu,jaipur,,india,43.0,female,13.0,usa,0.1,academic,35.81
+audio/hindi14.mp3,Hindi,hindi,hindi-urdu,new delhi,,india,53.0,male,12.0,usa,25.0,academic,28.6
+audio/hindi15.mp3,Hindi,hindi,hindi-urdu,new delhi,,india,23.0,female,1.0,usa,1.0,naturalistic,22.86
+audio/hindi16.mp3,Hindi,hindi,hindi-urdu,new delhi,,india,25.0,male,5.0,usa,4.0,academic,27.38
+audio/hindi17.mp3,Hindi,hindi,hindi-urdu,new delhi,,india,47.0,female,3.0,usa,24.0,academic,27.87
+audio/hindi18.mp3,Hindi,hindi,hindi-urdu,new delhi,,india,21.0,female,5.0,usa,0.4,academic,22.78
+audio/hindi19.mp3,Hindi,hindi,hindi-urdu,irving,texas,usa,19.0,male,0.0,usa,19.0,naturalistic,28.11
+audio/hindi20.mp3,Hindi,hindi,hindi-urdu,hazaribagh,jharkhand,india,27.0,male,4.0,usa,0.1,academic,21.29
+audio/hindi21.mp3,Hindi,hindi,hindi-urdu,faridabad,haryana,india,26.0,male,4.0,usa,1.0,academic,32.29
+audio/hindi22.mp3,Hindi,hindi,hindi-urdu,meerut,uttar pradesh,india,28.0,male,5.0,usa,1.0,academic,26.7
+audio/hindi23.mp3,Hindi,hindi,hindi-urdu,raj nagar,rajasthan,india,25.0,male,3.0,usa,0.3,academic,21.5
+audio/hindi24.mp3,Hindi,hindi,hindi-urdu,jamshedpur,jharkhand,india,23.0,female,2.0,usa,0.5,naturalistic,21.29
+audio/hindi25.mp3,Hindi,hindi,hindi-urdu,pune,maharashtra,india,24.0,male,6.0,usa,1.0,academic,24.32
+audio/hindi26.mp3,Hindi,hindi,hindi-urdu,kolkata,west bengal,india,25.0,male,6.0,usa,0.6,academic,19.38
+audio/hindi27.mp3,Hindi,hindi,hindi-urdu,surat,gujarat,india,22.0,male,5.0,usa,0.3,academic,23.14
+audio/hindi28.mp3,Hindi,hindi,hindi-urdu,patna,,india,21.0,male,5.0,,0.0,academic,24.76
+audio/hindi29.mp3,Hindi,hindi,hindi-urdu,chennai,tamil nadu,india,24.0,male,3.0,usa,0.5,academic,22.8
+audio/hindi30.mp3,Hindi,hindi,hindi-urdu,ludhiana,,india,37.0,female,5.0,usa,2.5,academic,24.35
+audio/hindi31.mp3,Hindi,hindi,hindi-urdu,rajkot,gujarat,india,36.0,female,5.0,usa,13.0,academic,33.52
+audio/hindi32.mp3,Hindi,hindi,hindi-urdu,new delhi,,india,27.0,female,9.0,usa,1.0,academic,26.41
+audio/hindi33.mp3,Hindi,hindi,,hyderabad,,india,44.0,female,6.0,"uk, canada, usa",30.0,naturalistic,27.06
+audio/hindi34.mp3,Hindi,hindi,,pune,,india,29.0,male,5.0,,0.0,academic,28.71
+audio/portuguese44.mp3,Portuguese,portuguese,,rio de janeiro,,brazil,38.0,female,24.0,usa,14.0,naturalistic,23.28
+audio/portuguese36.mp3,Portuguese,portuguese,,uberlandia,,brazil,39.0,female,15.0,usa,12.0,academic,31.35
+audio/portuguese22.mp3,Portuguese,portuguese,,luanda,,angola,43.0,female,17.0,usa,15.0,naturalistic,38.97
+audio/portuguese38.mp3,Portuguese,portuguese,,rio de janeiro,,brazil,25.0,male,15.0,,0.0,naturalistic,24.29
+audio/portuguese15.mp3,Portuguese,portuguese,,sao paulo,,brazil,54.0,male,9.0,usa,1.5,academic,24.82
+audio/portuguese17.mp3,Portuguese,portuguese,,salinas,,brazil,18.0,male,15.0,usa,3.0,naturalistic,19.8
+audio/portuguese31.mp3,Portuguese,portuguese,,belo horizonte,,brazil,29.0,male,16.0,uk,0.5,academic,21.97
+audio/portuguese24.mp3,Portuguese,portuguese,,santos,,brazil,22.0,female,11.0,,0.0,academic,20.85
+audio/portuguese49.mp3,Portuguese,portuguese,,santa maria,rio grande do sul,brazil,25.0,female,13.0,uk,0.1,academic,23.2
+audio/portuguese19.mp3,Portuguese,portuguese,,florianopolis,,brazil,32.0,male,4.0,"brazil, canada, usa",32.0,naturalistic,25.18
+audio/portuguese48.mp3,Portuguese,portuguese,,sao paulo,,brazil,31.0,male,26.0,usa,3.0,naturalistic,25.0
+audio/portuguese56.mp3,Portuguese,portuguese,,sao jose do rio preto,,brazil,23.0,female,12.0,usa,9.0,naturalistic,30.82
+audio/portuguese12.mp3,Portuguese,portuguese,,lisbon,,portugal,36.0,male,12.0,,0.0,academic,22.62
+audio/portuguese8.mp3,Portuguese,portuguese,,fortaleza,,brazil,26.0,male,7.0,uk,8.5,academic,25.42
+audio/portuguese65.mp3,Portuguese,portuguese,,almada,,portugal,26.0,female,5.0,,0.0,naturalistic,23.33
+audio/portuguese11.mp3,Portuguese,portuguese,,sao paulo,,brazil,40.0,female,7.0,,0.0,academic,26.15
+audio/portuguese55.mp3,Portuguese,portuguese,,sao paulo,,brazil,25.0,female,15.0,usa,4.5,academic,24.5
+audio/portuguese60.mp3,Portuguese,portuguese,,sao paulo,,brazil,22.0,female,12.0,usa,10.0,academic,21.05
+audio/portuguese46.mp3,Portuguese,portuguese,,cascais,,portugal,65.0,male,11.0,canada,2.0,academic,32.68
+audio/portuguese35.mp3,Portuguese,portuguese,,sao paulo,,brazil,22.0,female,9.0,usa,0.3,academic,21.71
+audio/portuguese58.mp3,Portuguese,portuguese,,sao paulo,,brazil,21.0,male,5.0,usa,3.0,academic,25.0
+audio/portuguese23.mp3,Portuguese,portuguese,,curitiba,,brazil,29.0,female,10.0,south africa,1.0,academic,22.44
+audio/portuguese37.mp3,Portuguese,portuguese,,sao paulo,,brazil,43.0,female,26.0,usa,16.0,naturalistic,23.95
+audio/portuguese54.mp3,Portuguese,portuguese,,sao paulo,,brazil,19.0,male,12.0,usa,1.0,academic,24.53
+audio/portuguese20.mp3,Portuguese,portuguese,,campinas,,brazil,21.0,male,10.0,,0.0,academic,22.07
+audio/portuguese42.mp3,Portuguese,portuguese,,luanda,,angola,24.0,male,21.0,usa,3.0,academic,28.29
+audio/portuguese25.mp3,Portuguese,portuguese,,rio de janeiro,,brazil,20.0,female,18.0,usa,1.0,academic,35.76
+audio/portuguese41.mp3,Portuguese,portuguese,,mexico city,,mexico,22.0,male,10.0,usa,7.0,naturalistic,21.45
+audio/portuguese64.mp3,Portuguese,portuguese,,luanda,,angola,19.0,female,10.0,usa,4.0,naturalistic,26.28
+audio/portuguese69.mp3,Portuguese,portuguese,,rio claro,sao paulo,brazil,50.0,female,42.0,usa,7.0,naturalistic,37.91
+audio/portuguese43.mp3,Portuguese,portuguese,,coronel fabriciano,minas gerais,brazil,32.0,female,8.0,usa,7.0,academic,27.64
+audio/portuguese3.mp3,Portuguese,portuguese,,blumenau,,brazil,18.0,female,15.0,usa,1.2,academic,49.06
+audio/portuguese40.mp3,Portuguese,portuguese,,london,england,uk,23.0,male,0.0,uk,4.0,naturalistic,21.66
+audio/portuguese1.mp3,Portuguese,portuguese,,bahia,,brazil,37.0,female,16.0,usa,1.0,academic,53.39
+audio/portuguese66.mp3,Portuguese,portuguese,,rio de janeiro,,brazil,24.0,female,8.0,,0.0,academic,22.18
+audio/portuguese45.mp3,Portuguese,portuguese,,salvador,,brazil,19.0,female,7.0,usa,12.5,academic,19.28
+audio/portuguese32.mp3,Portuguese,portuguese,,volta redonda,,brazil,29.0,male,12.0,"australia, usa",5.0,naturalistic,24.56
+audio/portuguese47.mp3,Portuguese,portuguese,,rosario do sul,,brazil,22.0,female,12.0,usa,4.3,academic,27.22
+audio/portuguese61.mp3,Portuguese,portuguese,,piraciciaba,,brazil,29.0,female,12.0,usa,6.0,academic,18.57
+audio/portuguese16.mp3,Portuguese,portuguese,,porto alegre,,brazil,25.0,male,15.0,scotland,2.5,academic,23.62
+audio/gujarati1.mp3,Gujarati,gujarati,,ahmedabad,,india,20.0,male,15.0,usa,0.5,academic,37.3
+audio/gujarati2.mp3,Gujarati,gujarati,,bombay,,india,22.0,male,8.0,usa,0.3,academic,30.64
+audio/gujarati3.mp3,Gujarati,gujarati,,limerick,,ireland,28.0,female,2.0,"india,usa,ireland",3.0,naturalistic,21.39
+audio/gujarati4.mp3,Gujarati,gujarati,,ahmedabad,,india,53.0,female,16.0,usa,22.0,academic,46.65
+audio/gujarati5.mp3,Gujarati,gujarati,,bombay,,india,28.0,female,3.0,usa,4.0,academic,22.0
+audio/gujarati6.mp3,Gujarati,gujarati,,kutch,gujarat,india,29.0,male,5.0,"india,usa",23.0,naturalistic,32.29
+audio/gujarati7.mp3,Gujarati,gujarati,,hyderabad,,india,40.0,female,4.0,usa,16.0,academic,28.06
+audio/gujarati8.mp3,Gujarati,gujarati,,ahmedabad,,india,27.0,female,7.0,usa,20.0,academic,25.5
+audio/gujarati9.mp3,Gujarati,gujarati,,surat,,india,19.0,male,9.0,usa,1.5,academic,25.55
+audio/gujarati10.mp3,Gujarati,gujarati,,bombay,,india,24.0,male,7.0,usa,5.5,naturalistic,28.32
+audio/gujarati11.mp3,Gujarati,gujarati,,jamnagar,gujarat,india,25.0,male,7.0,usa,0.2,academic,23.09
+audio/gujarati12.mp3,Gujarati,gujarati,,rajkot,gujarat,india,23.0,female,5.0,usa,0.2,academic,26.93
+audio/gujarati13.mp3,Gujarati,gujarati,,bombay,maharashtra,india,25.0,female,5.0,usa,2.0,academic,21.81
+audio/gujarati14.mp3,Gujarati,gujarati,,bombay,,india,23.0,male,3.0,usa,1.0,naturalistic,23.33
+audio/gujarati15.mp3,Gujarati,gujarati,,rajkot,,india,20.0,female,3.0,usa,2.0,academic,22.05
+audio/gujarati16.mp3,Gujarati,gujarati,,bombay,,india,20.0,female,3.0,singapore,20.0,academic,23.09
+audio/gujarati17.mp3,Gujarati,gujarati,,bombay,,india,50.0,female,16.0,usa,30.0,academic,23.67
+audio/bengali2.mp3,Bengali,bengali,,lusaka,,zambia,25.0,female,2.0,usa,21.0,naturalistic,19.38
+audio/bengali3.mp3,Bengali,bengali,,dhaka,,bangladesh,19.0,female,5.0,usa,6.0,academic,27.66
+audio/bengali4.mp3,Bengali,bengali,,chittagong,,bangladesh,24.0,male,6.0,usa,5.0,academic,30.09
+audio/bengali9.mp3,Bengali,bengali,,kolkata,,india,61.0,female,12.0,usa,0.5,academic,31.84
+audio/bengali5.mp3,Bengali,bengali,,dhaka,,bangladesh,40.0,female,5.0,usa,15.0,academic,35.16
+audio/bengali6.mp3,Bengali,bengali,,jamshedpur,jharkhand,india,29.0,male,4.0,uk,2.0,naturalistic,20.58
+audio/bengali8.mp3,Bengali,bengali,,noakhali,,bangladesh,54.0,male,5.0,usa,9.0,academic,29.83
+audio/bengali7.mp3,Bengali,bengali,,mymensingh,,bangladesh,49.0,male,6.0,usa,5.5,academic,36.7
+audio/bengali10.mp3,Bengali,bengali,,dhaka,,bangladesh,18.0,female,3.0,usa,6.0,academic,21.29
+audio/bengali11.mp3,Bengali,bengali,,durgapur,west bengal,india,34.0,male,3.5,usa,8.0,academic,24.92
+audio/bengali12.mp3,Bengali,bengali,,sylhet,,bangladesh,25.0,female,4.0,usa,3.0,academic,31.63
+audio/bengali13.mp3,Bengali,bengali,,dhaka,,bangladesh,33.0,female,10.0,usa,7.0,academic,27.14
+audio/bengali14.mp3,Bengali,bengali,,kolkata,,india,26.0,male,4.0,,0.0,,23.29
+audio/bengali15.mp3,Bengali,bengali,,dhaka,,bangladesh,46.0,female,8.0,usa,14.0,academic,48.56
+audio/bengali16.mp3,Bengali,bengali,bangla,dhaka,,bangladesh,24.0,female,6.0,usa,1.0,academic,31.43
+audio/bengali17.mp3,Bengali,bengali,,sylhet,,bangladesh,19.0,female,6.0,usa,13.0,academic,22.82
+audio/bengali18.mp3,Bengali,bengali,,dhaka,,bangladesh,20.0,female,17.0,usa,5.0,academic,30.41
+audio/bengali19.mp3,Bengali,bengali,,hyderabad,telangana,india,25.0,female,3.0,usa,0.5,academic,22.44
+audio/bengali20.mp3,Bengali,bengali,bangla,chittagong,,bangladesh,23.0,male,5.0,usa,3.5,academic,31.09
+audio/bengali23.mp3,Bengali,bengali,,warrenton,virginia,usa,22.0,female,5.0,usa,22.0,naturalistic,21.82
+audio/bengali24.mp3,Bengali,bengali,,noakhali,,bangladesh,59.0,male,7.0,usa,37.0,academic,51.47
+audio/english101.mp3,English,english,,toronto,ontario,canada,18.0,female,0.0,canada,18.0,naturalistic,20.04
+audio/english28.mp3,English,english,,toronto,ontario,canada,54.0,male,0.0,canada,54.0,naturalistic,26.41
+audio/english29.mp3,English,english,,lindsay,ontario,canada,54.0,female,0.0,canada,54.0,naturalistic,32.6
+audio/english30.mp3,English,english,,st. mary's,ontario,canada,30.0,female,0.0,canada,30.0,naturalistic,24.66
+audio/english43.mp3,English,english,,vancouver,british columbia,canada,47.0,male,0.0,canada,47.0,naturalistic,21.37
+audio/english52.mp3,English,english,,calgary,alberta,canada,20.0,male,0.0,"canada, usa",20.0,naturalistic,25.18
+audio/english61.mp3,English,english,,toronto,ontario,canada,19.0,male,0.0,canada,19.0,naturalistic,19.17
+audio/english64.mp3,English,english,,montreal,quebec,canada,25.0,female,0.0,canada,25.0,naturalistic,24.06
+audio/english105.mp3,English,english,,windsor,ontario,canada,57.0,male,0.0,canada,57.0,naturalistic,23.14
+audio/english119.mp3,English,english,,saskatoon,saskatchewan,canada,32.0,female,0.0,canada,32.0,naturalistic,22.1
+audio/english120.mp3,English,english,,saskatoon,saskatchewan,canada,65.0,male,0.0,canada,65.0,naturalistic,25.47
+audio/english132.mp3,English,english,,toronto,ontario,canada,18.0,female,0.0,canada,18.0,naturalistic,21.97
+audio/english136.mp3,English,english,,calgary,alberta,canada,25.0,male,0.0,canada,25.0,naturalistic,21.13
+audio/english144.mp3,English,english,,barneys river,nova scotia,canada,24.0,male,0.0,canada,24.0,naturalistic,21.32
+audio/english154.mp3,English,english,,glace bay,nova scotia,canada,28.0,male,0.0,canada,28.0,naturalistic,20.95
+audio/english159.mp3,English,english,,ottawa,ontario,canada,18.0,male,0.0,canada,18.0,naturalistic,22.13
+audio/english210.mp3,English,english,,trenton,nova scotia,canada,23.0,female,0.0,canada,23.0,naturalistic,22.05
+audio/english233.mp3,English,english,,edmonton,alberta,canada,26.0,female,0.0,canada,26.0,naturalistic,19.12
+audio/english238.mp3,English,english,,vancouver,british  columbia,canada,21.0,female,0.0,canada,21.0,naturalistic,18.65
+audio/english240.mp3,English,english,,guelph,ontario,canada,26.0,male,0.0,canada,26.0,naturalistic,18.7
+audio/english243.mp3,English,english,,fredericton,new brunswick,canada,27.0,male,0.0,canada,27.0,naturalistic,22.52
+audio/english247.mp3,English,english,,prince rupert,british columbia,canada,33.0,male,0.0,canada,25.0,naturalistic,20.19
+audio/english295.mp3,English,english,,airdrie,alberta,canada,25.0,male,0.0,canada,25.0,naturalistic,22.67
+audio/english296.mp3,English,english,,edmonton,alberta,canada,18.0,female,0.0,canada,18.0,naturalistic,20.77
+audio/english299.mp3,English,english,,windsor,ontario,canada,59.0,male,0.0,usa,59.0,naturalistic,28.37
+audio/english301.mp3,English,english,,toronto,ontario,canada,41.0,male,0.0,canada,41.0,naturalistic,20.32
+audio/english312.mp3,English,english,,edmonton,alberta,canada,40.0,female,0.0,canada,40.0,naturalistic,19.72
+audio/english318.mp3,English,english,,sarnia,ontario,canada,46.0,male,0.0,canada,46.0,naturalistic,25.6
+audio/english322.mp3,English,english,,yorkton,saskatchewan,canada,29.0,male,0.0,canada,29.0,naturalistic,19.15
+audio/english323.mp3,English,english,,regina,saskatchewan,canada,31.0,female,0.0,canada,31.0,naturalistic,18.23
+audio/english324.mp3,English,english,,st. marys,ontario,canada,28.0,male,0.0,canada,28.0,naturalistic,17.74
+audio/english353.mp3,English,english,,saskatoon,saskatchewan,canada,18.0,male,0.0,canada,18.0,naturalistic,20.35
+audio/english356.mp3,English,english,,morden,manitoba,canada,23.0,female,0.0,canada,23.0,naturalistic,20.35
+audio/english358.mp3,English,english,,fredericton,new brunswick,canada,19.0,male,0.0,canada,19.0,naturalistic,22.49
+audio/english359.mp3,English,english,,sackville,new brunswick,canada,32.0,male,0.0,"canada, usa",32.0,naturalistic,22.52
+audio/english407.mp3,English,english,,windsor,ontario,canada,47.0,male,0.0,canada,47.0,naturalistic,25.7
+audio/english439.mp3,English,english,,richmond,british columbia,canada,18.0,female,0.0,canada,18.0,naturalistic,22.54
+audio/english464.mp3,English,english,,ottawa,ontario,canada,27.0,male,0.0,canada,24.0,naturalistic,20.79
+audio/english471.mp3,English,english,,calgary,alberta,canada,26.0,female,0.0,canada,24.5,naturalistic,24.95
+audio/english478.mp3,English,english,,sydney,nova scotia,canada,19.0,male,0.0,canada,19.0,naturalistic,18.94
+audio/english498.mp3,English,english,,prince george,british columbia,canada,27.0,male,0.0,canada,27.0,naturalistic,27.85
+audio/english542.mp3,English,english,,toronto,ontario,canada,60.0,male,0.0,"canada, usa",55.0,naturalistic,18.57
+audio/english543.mp3,English,english,,vancouver,british columbia,canada,39.0,female,0.0,"canada, usa, uk, cayman islands",36.0,naturalistic,23.46
+audio/english574.mp3,English,english,,toronto,ontario,canada,26.0,female,0.0,canada,23.0,naturalistic,22.31
+audio/english581.mp3,English,english,,guelph,ontario,canada,62.0,female,0.0,"canada, uk",62.0,naturalistic,26.41

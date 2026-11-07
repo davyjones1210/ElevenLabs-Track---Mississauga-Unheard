@@ -1,0 +1,16 @@
+language,census_home_column,fleurs_config,speech_accent_archive_native_language,minds14_locale,speech_massive_locale,iso639_1
+English,,en_us,english,en-US,,en
+Urdu,home_urdu,ur_pk,urdu,,,ur
+Arabic,home_arabic,ar_eg,arabic,,ar-SA,ar
+Mandarin Chinese,home_mandarin,cmn_hans_cn,mandarin,zh-CN,,zh
+Punjabi,home_punjabi,pa_in,punjabi,,,pa
+Polish,home_polish,pl_pl,polish,pl-PL,pl-PL,pl
+Cantonese,home_cantonese,yue_hant_hk,cantonese,,,yue
+Tagalog,home_tagalog,fil_ph,tagalog,,,tl
+Spanish,home_spanish,es_419,spanish,es-ES,es-ES,es
+Tamil,home_tamil,ta_in,tamil,,,ta
+Vietnamese,home_vietnamese,vi_vn,vietnamese,,vi-VN,vi
+Hindi,home_hindi,hi_in,hindi,,,hi
+Portuguese,home_portuguese,pt_br,portuguese,pt-PT,pt-PT,pt
+Gujarati,home_gujarati,gu_in,gujarati,,,gu
+Bengali,home_bengali,,bengali,,,bn

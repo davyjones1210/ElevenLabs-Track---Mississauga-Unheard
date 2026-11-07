@@ -1,0 +1,701 @@
+geo_level,geo,population_language_base,knows_neither_english_nor_french,pct_knows_neither_english_nor_french,recent_immigrants_2016_2021,median_total_income_2020,census_home_column,home_speakers,pct_of_geo,share_of_city_speakers,language,fleurs_config,speech_accent_archive_native_language,minds14_locale,speech_massive_locale,iso639_1
+ward,1,42850,865,2.02,1390,44800,home_urdu,110,0.26,0.49,Urdu,ur_pk,urdu,,,ur
+ward,2,46420,715,1.54,1640,50400,home_urdu,500,1.08,2.22,Urdu,ur_pk,urdu,,,ur
+ward,3,56160,2345,4.18,3205,39600,home_urdu,1185,2.11,5.26,Urdu,ur_pk,urdu,,,ur
+ward,4,74220,2990,4.03,8535,41200,home_urdu,1945,2.62,8.63,Urdu,ur_pk,urdu,,,ur
+ward,5,77755,3675,4.73,6140,29800,home_urdu,2310,2.97,10.25,Urdu,ur_pk,urdu,,,ur
+ward,6,75535,3250,4.3,4520,34400,home_urdu,3590,4.75,15.93,Urdu,ur_pk,urdu,,,ur
+ward,7,79825,3465,4.34,8850,39600,home_urdu,1875,2.35,8.32,Urdu,ur_pk,urdu,,,ur
+ward,8,69530,2010,2.89,4900,45200,home_urdu,2250,3.24,9.98,Urdu,ur_pk,urdu,,,ur
+ward,9,57045,1310,2.3,3730,48400,home_urdu,1690,2.96,7.5,Urdu,ur_pk,urdu,,,ur
+ward,10,73830,1890,2.56,5880,45600,home_urdu,4520,6.12,20.06,Urdu,ur_pk,urdu,,,ur
+ward,11,59655,1790,3.0,3715,40800,home_urdu,2560,4.29,11.36,Urdu,ur_pk,urdu,,,ur
+ward,1,42850,865,2.02,1390,44800,home_arabic,220,0.51,1.07,Arabic,ar_eg,arabic,,ar-SA,ar
+ward,2,46420,715,1.54,1640,50400,home_arabic,595,1.28,2.89,Arabic,ar_eg,arabic,,ar-SA,ar
+ward,3,56160,2345,4.18,3205,39600,home_arabic,825,1.47,4.01,Arabic,ar_eg,arabic,,ar-SA,ar
+ward,4,74220,2990,4.03,8535,41200,home_arabic,3105,4.18,15.09,Arabic,ar_eg,arabic,,ar-SA,ar
+ward,5,77755,3675,4.73,6140,29800,home_arabic,1100,1.41,5.35,Arabic,ar_eg,arabic,,ar-SA,ar
+ward,6,75535,3250,4.3,4520,34400,home_arabic,2280,3.02,11.08,Arabic,ar_eg,arabic,,ar-SA,ar
+ward,7,79825,3465,4.34,8850,39600,home_arabic,3770,4.72,18.33,Arabic,ar_eg,arabic,,ar-SA,ar
+ward,8,69530,2010,2.89,4900,45200,home_arabic,2155,3.1,10.48,Arabic,ar_eg,arabic,,ar-SA,ar
+ward,9,57045,1310,2.3,3730,48400,home_arabic,1440,2.52,7.0,Arabic,ar_eg,arabic,,ar-SA,ar
+ward,10,73830,1890,2.56,5880,45600,home_arabic,4240,5.74,20.61,Arabic,ar_eg,arabic,,ar-SA,ar
+ward,11,59655,1790,3.0,3715,40800,home_arabic,840,1.41,4.08,Arabic,ar_eg,arabic,,ar-SA,ar
+ward,1,42850,865,2.02,1390,44800,home_mandarin,465,1.09,2.62,Mandarin Chinese,cmn_hans_cn,mandarin,zh-CN,,zh
+ward,2,46420,715,1.54,1640,50400,home_mandarin,960,2.07,5.41,Mandarin Chinese,cmn_hans_cn,mandarin,zh-CN,,zh
+ward,3,56160,2345,4.18,3205,39600,home_mandarin,900,1.6,5.08,Mandarin Chinese,cmn_hans_cn,mandarin,zh-CN,,zh
+ward,4,74220,2990,4.03,8535,41200,home_mandarin,1955,2.63,11.03,Mandarin Chinese,cmn_hans_cn,mandarin,zh-CN,,zh
+ward,5,77755,3675,4.73,6140,29800,home_mandarin,1460,1.88,8.23,Mandarin Chinese,cmn_hans_cn,mandarin,zh-CN,,zh
+ward,6,75535,3250,4.3,4520,34400,home_mandarin,3140,4.16,17.71,Mandarin Chinese,cmn_hans_cn,mandarin,zh-CN,,zh
+ward,7,79825,3465,4.34,8850,39600,home_mandarin,1730,2.17,9.76,Mandarin Chinese,cmn_hans_cn,mandarin,zh-CN,,zh
+ward,8,69530,2010,2.89,4900,45200,home_mandarin,2460,3.54,13.87,Mandarin Chinese,cmn_hans_cn,mandarin,zh-CN,,zh
+ward,9,57045,1310,2.3,3730,48400,home_mandarin,1810,3.17,10.21,Mandarin Chinese,cmn_hans_cn,mandarin,zh-CN,,zh
+ward,10,73830,1890,2.56,5880,45600,home_mandarin,1755,2.38,9.9,Mandarin Chinese,cmn_hans_cn,mandarin,zh-CN,,zh
+ward,11,59655,1790,3.0,3715,40800,home_mandarin,1095,1.84,6.18,Mandarin Chinese,cmn_hans_cn,mandarin,zh-CN,,zh
+ward,1,42850,865,2.02,1390,44800,home_punjabi,130,0.3,0.87,Punjabi,pa_in,punjabi,,,pa
+ward,2,46420,715,1.54,1640,50400,home_punjabi,210,0.45,1.4,Punjabi,pa_in,punjabi,,,pa
+ward,3,56160,2345,4.18,3205,39600,home_punjabi,260,0.46,1.73,Punjabi,pa_in,punjabi,,,pa
+ward,4,74220,2990,4.03,8535,41200,home_punjabi,700,0.94,4.66,Punjabi,pa_in,punjabi,,,pa
+ward,5,77755,3675,4.73,6140,29800,home_punjabi,8095,10.41,53.88,Punjabi,pa_in,punjabi,,,pa
+ward,6,75535,3250,4.3,4520,34400,home_punjabi,1690,2.24,11.25,Punjabi,pa_in,punjabi,,,pa
+ward,7,79825,3465,4.34,8850,39600,home_punjabi,600,0.75,3.99,Punjabi,pa_in,punjabi,,,pa
+ward,8,69530,2010,2.89,4900,45200,home_punjabi,540,0.78,3.59,Punjabi,pa_in,punjabi,,,pa
+ward,9,57045,1310,2.3,3730,48400,home_punjabi,185,0.32,1.23,Punjabi,pa_in,punjabi,,,pa
+ward,10,73830,1890,2.56,5880,45600,home_punjabi,710,0.96,4.73,Punjabi,pa_in,punjabi,,,pa
+ward,11,59655,1790,3.0,3715,40800,home_punjabi,1905,3.19,12.68,Punjabi,pa_in,punjabi,,,pa
+ward,1,42850,865,2.02,1390,44800,home_polish,1010,2.36,8.04,Polish,pl_pl,polish,pl-PL,pl-PL,pl
+ward,2,46420,715,1.54,1640,50400,home_polish,965,2.08,7.68,Polish,pl_pl,polish,pl-PL,pl-PL,pl
+ward,3,56160,2345,4.18,3205,39600,home_polish,2090,3.72,16.63,Polish,pl_pl,polish,pl-PL,pl-PL,pl
+ward,4,74220,2990,4.03,8535,41200,home_polish,1595,2.15,12.69,Polish,pl_pl,polish,pl-PL,pl-PL,pl
+ward,5,77755,3675,4.73,6140,29800,home_polish,685,0.88,5.45,Polish,pl_pl,polish,pl-PL,pl-PL,pl
+ward,6,75535,3250,4.3,4520,34400,home_polish,1030,1.36,8.2,Polish,pl_pl,polish,pl-PL,pl-PL,pl
+ward,7,79825,3465,4.34,8850,39600,home_polish,2360,2.96,18.78,Polish,pl_pl,polish,pl-PL,pl-PL,pl
+ward,8,69530,2010,2.89,4900,45200,home_polish,945,1.36,7.52,Polish,pl_pl,polish,pl-PL,pl-PL,pl
+ward,9,57045,1310,2.3,3730,48400,home_polish,655,1.15,5.21,Polish,pl_pl,polish,pl-PL,pl-PL,pl
+ward,10,73830,1890,2.56,5880,45600,home_polish,730,0.99,5.81,Polish,pl_pl,polish,pl-PL,pl-PL,pl
+ward,11,59655,1790,3.0,3715,40800,home_polish,500,0.84,3.98,Polish,pl_pl,polish,pl-PL,pl-PL,pl
+ward,1,42850,865,2.02,1390,44800,home_cantonese,120,0.28,1.11,Cantonese,yue_hant_hk,cantonese,,,yue
+ward,2,46420,715,1.54,1640,50400,home_cantonese,240,0.52,2.23,Cantonese,yue_hant_hk,cantonese,,,yue
+ward,3,56160,2345,4.18,3205,39600,home_cantonese,455,0.81,4.23,Cantonese,yue_hant_hk,cantonese,,,yue
+ward,4,74220,2990,4.03,8535,41200,home_cantonese,1125,1.52,10.45,Cantonese,yue_hant_hk,cantonese,,,yue
+ward,5,77755,3675,4.73,6140,29800,home_cantonese,1270,1.63,11.8,Cantonese,yue_hant_hk,cantonese,,,yue
+ward,6,75535,3250,4.3,4520,34400,home_cantonese,2520,3.34,23.41,Cantonese,yue_hant_hk,cantonese,,,yue
+ward,7,79825,3465,4.34,8850,39600,home_cantonese,1080,1.35,10.03,Cantonese,yue_hant_hk,cantonese,,,yue
+ward,8,69530,2010,2.89,4900,45200,home_cantonese,1105,1.59,10.26,Cantonese,yue_hant_hk,cantonese,,,yue
+ward,9,57045,1310,2.3,3730,48400,home_cantonese,735,1.29,6.83,Cantonese,yue_hant_hk,cantonese,,,yue
+ward,10,73830,1890,2.56,5880,45600,home_cantonese,1020,1.38,9.48,Cantonese,yue_hant_hk,cantonese,,,yue
+ward,11,59655,1790,3.0,3715,40800,home_cantonese,1095,1.84,10.17,Cantonese,yue_hant_hk,cantonese,,,yue
+ward,1,42850,865,2.02,1390,44800,home_tagalog,185,0.43,1.73,Tagalog,fil_ph,tagalog,,,tl
+ward,2,46420,715,1.54,1640,50400,home_tagalog,570,1.23,5.33,Tagalog,fil_ph,tagalog,,,tl
+ward,3,56160,2345,4.18,3205,39600,home_tagalog,785,1.4,7.34,Tagalog,fil_ph,tagalog,,,tl
+ward,4,74220,2990,4.03,8535,41200,home_tagalog,1385,1.87,12.95,Tagalog,fil_ph,tagalog,,,tl
+ward,5,77755,3675,4.73,6140,29800,home_tagalog,930,1.2,8.7,Tagalog,fil_ph,tagalog,,,tl
+ward,6,75535,3250,4.3,4520,34400,home_tagalog,1625,2.15,15.19,Tagalog,fil_ph,tagalog,,,tl
+ward,7,79825,3465,4.34,8850,39600,home_tagalog,2010,2.52,18.79,Tagalog,fil_ph,tagalog,,,tl
+ward,8,69530,2010,2.89,4900,45200,home_tagalog,790,1.14,7.39,Tagalog,fil_ph,tagalog,,,tl
+ward,9,57045,1310,2.3,3730,48400,home_tagalog,640,1.12,5.98,Tagalog,fil_ph,tagalog,,,tl
+ward,10,73830,1890,2.56,5880,45600,home_tagalog,1100,1.49,10.29,Tagalog,fil_ph,tagalog,,,tl
+ward,11,59655,1790,3.0,3715,40800,home_tagalog,675,1.13,6.31,Tagalog,fil_ph,tagalog,,,tl
+ward,1,42850,865,2.02,1390,44800,home_spanish,505,1.18,5.4,Spanish,es_419,spanish,es-ES,es-ES,es
+ward,2,46420,715,1.54,1640,50400,home_spanish,400,0.86,4.27,Spanish,es_419,spanish,es-ES,es-ES,es
+ward,3,56160,2345,4.18,3205,39600,home_spanish,825,1.47,8.81,Spanish,es_419,spanish,es-ES,es-ES,es
+ward,4,74220,2990,4.03,8535,41200,home_spanish,1635,2.2,17.47,Spanish,es_419,spanish,es-ES,es-ES,es
+ward,5,77755,3675,4.73,6140,29800,home_spanish,990,1.27,10.58,Spanish,es_419,spanish,es-ES,es-ES,es
+ward,6,75535,3250,4.3,4520,34400,home_spanish,770,1.02,8.23,Spanish,es_419,spanish,es-ES,es-ES,es
+ward,7,79825,3465,4.34,8850,39600,home_spanish,1125,1.41,12.02,Spanish,es_419,spanish,es-ES,es-ES,es
+ward,8,69530,2010,2.89,4900,45200,home_spanish,680,0.98,7.26,Spanish,es_419,spanish,es-ES,es-ES,es
+ward,9,57045,1310,2.3,3730,48400,home_spanish,870,1.53,9.29,Spanish,es_419,spanish,es-ES,es-ES,es
+ward,10,73830,1890,2.56,5880,45600,home_spanish,690,0.93,7.37,Spanish,es_419,spanish,es-ES,es-ES,es
+ward,11,59655,1790,3.0,3715,40800,home_spanish,870,1.46,9.29,Spanish,es_419,spanish,es-ES,es-ES,es
+ward,1,42850,865,2.02,1390,44800,home_tamil,95,0.22,1.28,Tamil,ta_in,tamil,,,ta
+ward,2,46420,715,1.54,1640,50400,home_tamil,30,0.06,0.4,Tamil,ta_in,tamil,,,ta
+ward,3,56160,2345,4.18,3205,39600,home_tamil,520,0.93,7.01,Tamil,ta_in,tamil,,,ta
+ward,4,74220,2990,4.03,8535,41200,home_tamil,1005,1.35,13.54,Tamil,ta_in,tamil,,,ta
+ward,5,77755,3675,4.73,6140,29800,home_tamil,930,1.2,12.53,Tamil,ta_in,tamil,,,ta
+ward,6,75535,3250,4.3,4520,34400,home_tamil,1100,1.46,14.82,Tamil,ta_in,tamil,,,ta
+ward,7,79825,3465,4.34,8850,39600,home_tamil,1135,1.42,15.3,Tamil,ta_in,tamil,,,ta
+ward,8,69530,2010,2.89,4900,45200,home_tamil,345,0.5,4.65,Tamil,ta_in,tamil,,,ta
+ward,9,57045,1310,2.3,3730,48400,home_tamil,515,0.9,6.94,Tamil,ta_in,tamil,,,ta
+ward,10,73830,1890,2.56,5880,45600,home_tamil,765,1.04,10.31,Tamil,ta_in,tamil,,,ta
+ward,11,59655,1790,3.0,3715,40800,home_tamil,980,1.64,13.21,Tamil,ta_in,tamil,,,ta
+ward,1,42850,865,2.02,1390,44800,home_vietnamese,195,0.46,2.67,Vietnamese,vi_vn,vietnamese,,vi-VN,vi
+ward,2,46420,715,1.54,1640,50400,home_vietnamese,90,0.19,1.23,Vietnamese,vi_vn,vietnamese,,vi-VN,vi
+ward,3,56160,2345,4.18,3205,39600,home_vietnamese,1135,2.02,15.52,Vietnamese,vi_vn,vietnamese,,vi-VN,vi
+ward,4,74220,2990,4.03,8535,41200,home_vietnamese,995,1.34,13.6,Vietnamese,vi_vn,vietnamese,,vi-VN,vi
+ward,5,77755,3675,4.73,6140,29800,home_vietnamese,1150,1.48,15.72,Vietnamese,vi_vn,vietnamese,,vi-VN,vi
+ward,6,75535,3250,4.3,4520,34400,home_vietnamese,1340,1.77,18.32,Vietnamese,vi_vn,vietnamese,,vi-VN,vi
+ward,7,79825,3465,4.34,8850,39600,home_vietnamese,905,1.13,12.37,Vietnamese,vi_vn,vietnamese,,vi-VN,vi
+ward,8,69530,2010,2.89,4900,45200,home_vietnamese,240,0.35,3.28,Vietnamese,vi_vn,vietnamese,,vi-VN,vi
+ward,9,57045,1310,2.3,3730,48400,home_vietnamese,220,0.39,3.01,Vietnamese,vi_vn,vietnamese,,vi-VN,vi
+ward,10,73830,1890,2.56,5880,45600,home_vietnamese,335,0.45,4.58,Vietnamese,vi_vn,vietnamese,,vi-VN,vi
+ward,11,59655,1790,3.0,3715,40800,home_vietnamese,710,1.19,9.71,Vietnamese,vi_vn,vietnamese,,vi-VN,vi
+ward,1,42850,865,2.02,1390,44800,home_hindi,115,0.27,1.73,Hindi,hi_in,hindi,,,hi
+ward,2,46420,715,1.54,1640,50400,home_hindi,200,0.43,3.01,Hindi,hi_in,hindi,,,hi
+ward,3,56160,2345,4.18,3205,39600,home_hindi,180,0.32,2.71,Hindi,hi_in,hindi,,,hi
+ward,4,74220,2990,4.03,8535,41200,home_hindi,1030,1.39,15.51,Hindi,hi_in,hindi,,,hi
+ward,5,77755,3675,4.73,6140,29800,home_hindi,1315,1.69,19.8,Hindi,hi_in,hindi,,,hi
+ward,6,75535,3250,4.3,4520,34400,home_hindi,650,0.86,9.79,Hindi,hi_in,hindi,,,hi
+ward,7,79825,3465,4.34,8850,39600,home_hindi,930,1.17,14.01,Hindi,hi_in,hindi,,,hi
+ward,8,69530,2010,2.89,4900,45200,home_hindi,425,0.61,6.4,Hindi,hi_in,hindi,,,hi
+ward,9,57045,1310,2.3,3730,48400,home_hindi,350,0.61,5.27,Hindi,hi_in,hindi,,,hi
+ward,10,73830,1890,2.56,5880,45600,home_hindi,600,0.81,9.04,Hindi,hi_in,hindi,,,hi
+ward,11,59655,1790,3.0,3715,40800,home_hindi,845,1.42,12.73,Hindi,hi_in,hindi,,,hi
+ward,1,42850,865,2.02,1390,44800,home_portuguese,530,1.24,8.83,Portuguese,pt_br,portuguese,pt-PT,pt-PT,pt
+ward,2,46420,715,1.54,1640,50400,home_portuguese,260,0.56,4.33,Portuguese,pt_br,portuguese,pt-PT,pt-PT,pt
+ward,3,56160,2345,4.18,3205,39600,home_portuguese,685,1.22,11.42,Portuguese,pt_br,portuguese,pt-PT,pt-PT,pt
+ward,4,74220,2990,4.03,8535,41200,home_portuguese,815,1.1,13.58,Portuguese,pt_br,portuguese,pt-PT,pt-PT,pt
+ward,5,77755,3675,4.73,6140,29800,home_portuguese,435,0.56,7.25,Portuguese,pt_br,portuguese,pt-PT,pt-PT,pt
+ward,6,75535,3250,4.3,4520,34400,home_portuguese,665,0.88,11.08,Portuguese,pt_br,portuguese,pt-PT,pt-PT,pt
+ward,7,79825,3465,4.34,8850,39600,home_portuguese,1120,1.4,18.67,Portuguese,pt_br,portuguese,pt-PT,pt-PT,pt
+ward,8,69530,2010,2.89,4900,45200,home_portuguese,265,0.38,4.42,Portuguese,pt_br,portuguese,pt-PT,pt-PT,pt
+ward,9,57045,1310,2.3,3730,48400,home_portuguese,235,0.41,3.92,Portuguese,pt_br,portuguese,pt-PT,pt-PT,pt
+ward,10,73830,1890,2.56,5880,45600,home_portuguese,415,0.56,6.92,Portuguese,pt_br,portuguese,pt-PT,pt-PT,pt
+ward,11,59655,1790,3.0,3715,40800,home_portuguese,575,0.96,9.58,Portuguese,pt_br,portuguese,pt-PT,pt-PT,pt
+ward,1,42850,865,2.02,1390,44800,home_gujarati,15,0.04,0.35,Gujarati,gu_in,gujarati,,,gu
+ward,2,46420,715,1.54,1640,50400,home_gujarati,45,0.1,1.04,Gujarati,gu_in,gujarati,,,gu
+ward,3,56160,2345,4.18,3205,39600,home_gujarati,175,0.31,4.03,Gujarati,gu_in,gujarati,,,gu
+ward,4,74220,2990,4.03,8535,41200,home_gujarati,510,0.69,11.74,Gujarati,gu_in,gujarati,,,gu
+ward,5,77755,3675,4.73,6140,29800,home_gujarati,1115,1.43,25.66,Gujarati,gu_in,gujarati,,,gu
+ward,6,75535,3250,4.3,4520,34400,home_gujarati,645,0.85,14.84,Gujarati,gu_in,gujarati,,,gu
+ward,7,79825,3465,4.34,8850,39600,home_gujarati,520,0.65,11.97,Gujarati,gu_in,gujarati,,,gu
+ward,8,69530,2010,2.89,4900,45200,home_gujarati,230,0.33,5.29,Gujarati,gu_in,gujarati,,,gu
+ward,9,57045,1310,2.3,3730,48400,home_gujarati,195,0.34,4.49,Gujarati,gu_in,gujarati,,,gu
+ward,10,73830,1890,2.56,5880,45600,home_gujarati,330,0.45,7.59,Gujarati,gu_in,gujarati,,,gu
+ward,11,59655,1790,3.0,3715,40800,home_gujarati,565,0.95,13.0,Gujarati,gu_in,gujarati,,,gu
+ward,1,42850,865,2.02,1390,44800,home_bengali,50,0.12,1.99,Bengali,,bengali,,,bn
+ward,2,46420,715,1.54,1640,50400,home_bengali,65,0.14,2.58,Bengali,,bengali,,,bn
+ward,3,56160,2345,4.18,3205,39600,home_bengali,210,0.37,8.35,Bengali,,bengali,,,bn
+ward,4,74220,2990,4.03,8535,41200,home_bengali,445,0.6,17.69,Bengali,,bengali,,,bn
+ward,5,77755,3675,4.73,6140,29800,home_bengali,335,0.43,13.32,Bengali,,bengali,,,bn
+ward,6,75535,3250,4.3,4520,34400,home_bengali,245,0.32,9.74,Bengali,,bengali,,,bn
+ward,7,79825,3465,4.34,8850,39600,home_bengali,495,0.62,19.68,Bengali,,bengali,,,bn
+ward,8,69530,2010,2.89,4900,45200,home_bengali,240,0.35,9.54,Bengali,,bengali,,,bn
+ward,9,57045,1310,2.3,3730,48400,home_bengali,160,0.28,6.36,Bengali,,bengali,,,bn
+ward,10,73830,1890,2.56,5880,45600,home_bengali,215,0.29,8.55,Bengali,,bengali,,,bn
+ward,11,59655,1790,3.0,3715,40800,home_bengali,55,0.09,2.19,Bengali,,bengali,,,bn
+neighbourhood,Applewood,35490,1485,4.18,2345,38800,home_urdu,920,2.59,4.08,Urdu,ur_pk,urdu,,,ur
+neighbourhood,Central Erin Mills MN,6040,280,4.64,1160,50000,home_urdu,165,2.73,0.73,Urdu,ur_pk,urdu,,,ur
+neighbourhood,Central Erin Mills,30250,1140,3.77,2250,48800,home_urdu,1060,3.5,4.7,Urdu,ur_pk,urdu,,,ur
+neighbourhood,Churchill Meadows,48745,1390,2.85,4580,46800,home_urdu,3755,7.7,16.66,Urdu,ur_pk,urdu,,,ur
+neighbourhood,Clarkson - Lorne Park,36350,565,1.55,1215,50400,home_urdu,385,1.06,1.71,Urdu,ur_pk,urdu,,,ur
+neighbourhood,Clarkson Village CN,2350,30,1.28,125,57600,home_urdu,0,0.0,0.0,Urdu,ur_pk,urdu,,,ur
+neighbourhood,Cooksville (East),8405,180,2.14,330,35200,home_urdu,40,0.48,0.18,Urdu,ur_pk,urdu,,,ur
+neighbourhood,Cooksville (West),14665,790,5.39,940,33600,home_urdu,185,1.26,0.82,Urdu,ur_pk,urdu,,,ur
+neighbourhood,Creditview,10070,525,5.21,530,37200,home_urdu,140,1.39,0.62,Urdu,ur_pk,urdu,,,ur
+neighbourhood,DT Cooksville,9575,515,5.38,1660,36000,home_urdu,485,5.07,2.15,Urdu,ur_pk,urdu,,,ur
+neighbourhood,DT Core,34425,1160,3.37,6650,48000,home_urdu,815,2.37,3.62,Urdu,ur_pk,urdu,,,ur
+neighbourhood,DT Fairview,16570,715,4.32,2370,41600,home_urdu,490,2.96,2.17,Urdu,ur_pk,urdu,,,ur
+neighbourhood,DT Hospital,12305,635,5.16,1940,36000,home_urdu,435,3.54,1.93,Urdu,ur_pk,urdu,,,ur
+neighbourhood,Dixie EA,945,60,6.35,15,29000,home_urdu,0,0.0,0.0,Urdu,ur_pk,urdu,,,ur
+neighbourhood,East Credit,63320,2500,3.95,3575,35200,home_urdu,3395,5.36,15.07,Urdu,ur_pk,urdu,,,ur
+neighbourhood,Erin Mills,38320,775,2.02,1580,46400,home_urdu,710,1.85,3.15,Urdu,ur_pk,urdu,,,ur
+neighbourhood,Erindale,22025,895,4.06,1450,36000,home_urdu,695,3.16,3.08,Urdu,ur_pk,urdu,,,ur
+neighbourhood,Fairview,7215,385,5.34,285,31600,home_urdu,175,2.43,0.78,Urdu,ur_pk,urdu,,,ur
+neighbourhood,Hurontario,49755,2285,4.59,2965,37600,home_urdu,1570,3.16,6.97,Urdu,ur_pk,urdu,,,ur
+neighbourhood,Lakeview,21960,465,2.12,685,44400,home_urdu,65,0.3,0.29,Urdu,ur_pk,urdu,,,ur
+neighbourhood,Lisgar,31565,700,2.22,2050,43200,home_urdu,1245,3.94,5.52,Urdu,ur_pk,urdu,,,ur
+neighbourhood,Malton CN,2670,60,2.25,280,28400,home_urdu,80,3.0,0.36,Urdu,ur_pk,urdu,,,ur
+neighbourhood,Malton,35250,1805,5.12,3005,26000,home_urdu,1000,2.84,4.44,Urdu,ur_pk,urdu,,,ur
+neighbourhood,Meadowvale CN,2855,60,2.1,465,51600,home_urdu,90,3.15,0.4,Urdu,ur_pk,urdu,,,ur
+neighbourhood,Meadowvale,35910,590,1.64,1825,48400,home_urdu,985,2.74,4.37,Urdu,ur_pk,urdu,,,ur
+neighbourhood,Meadowvale Village,31240,935,2.99,2070,37200,home_urdu,1585,5.07,7.03,Urdu,ur_pk,urdu,,,ur
+neighbourhood,Mineola,9845,185,1.88,315,47600,home_urdu,0,0.0,0.0,Urdu,ur_pk,urdu,,,ur
+neighbourhood,Mississauga Valleys,12595,500,3.97,925,39200,home_urdu,250,1.98,1.11,Urdu,ur_pk,urdu,,,ur
+neighbourhood,Port Credit CN,4945,120,2.43,210,45200,home_urdu,40,0.81,0.18,Urdu,ur_pk,urdu,,,ur
+neighbourhood,Port Credit (East),2420,30,1.24,30,45200,home_urdu,0,0.0,0.0,Urdu,ur_pk,urdu,,,ur
+neighbourhood,Port Credit (West),3300,60,1.82,150,41600,home_urdu,0,0.0,0.0,Urdu,ur_pk,urdu,,,ur
+neighbourhood,Rathwood,24865,940,3.78,1060,43200,home_urdu,215,0.86,0.95,Urdu,ur_pk,urdu,,,ur
+neighbourhood,Rathwood-Applewood CN,3350,180,5.37,235,39200,home_urdu,120,3.58,0.53,Urdu,ur_pk,urdu,,,ur
+neighbourhood,Sheridan CN,3265,135,4.13,480,36800,home_urdu,465,14.24,2.06,Urdu,ur_pk,urdu,,,ur
+neighbourhood,Sheridan,12210,285,2.33,400,43200,home_urdu,220,1.8,0.98,Urdu,ur_pk,urdu,,,ur
+neighbourhood,South Common CN,4880,230,4.71,415,34400,home_urdu,145,2.97,0.64,Urdu,ur_pk,urdu,,,ur
+neighbourhood,Streetsville CN,1320,55,4.17,75,31600,home_urdu,25,1.89,0.11,Urdu,ur_pk,urdu,,,ur
+neighbourhood,Streetsville,10610,225,2.12,585,50400,home_urdu,140,1.32,0.62,Urdu,ur_pk,urdu,,,ur
+neighbourhood,Uptown MN,10660,435,4.08,1255,48400,home_urdu,445,4.17,1.97,Urdu,ur_pk,urdu,,,ur
+neighbourhood,Applewood,35490,1485,4.18,2345,38800,home_arabic,650,1.83,3.16,Arabic,ar_eg,arabic,,ar-SA,ar
+neighbourhood,Central Erin Mills MN,6040,280,4.64,1160,50000,home_arabic,365,6.04,1.77,Arabic,ar_eg,arabic,,ar-SA,ar
+neighbourhood,Central Erin Mills,30250,1140,3.77,2250,48800,home_arabic,1060,3.5,5.15,Arabic,ar_eg,arabic,,ar-SA,ar
+neighbourhood,Churchill Meadows,48745,1390,2.85,4580,46800,home_arabic,3930,8.06,19.11,Arabic,ar_eg,arabic,,ar-SA,ar
+neighbourhood,Clarkson - Lorne Park,36350,565,1.55,1215,50400,home_arabic,420,1.16,2.04,Arabic,ar_eg,arabic,,ar-SA,ar
+neighbourhood,Clarkson Village CN,2350,30,1.28,125,57600,home_arabic,50,2.13,0.24,Arabic,ar_eg,arabic,,ar-SA,ar
+neighbourhood,Cooksville (East),8405,180,2.14,330,35200,home_arabic,95,1.13,0.46,Arabic,ar_eg,arabic,,ar-SA,ar
+neighbourhood,Cooksville (West),14665,790,5.39,940,33600,home_arabic,470,3.2,2.28,Arabic,ar_eg,arabic,,ar-SA,ar
+neighbourhood,Creditview,10070,525,5.21,530,37200,home_arabic,335,3.33,1.63,Arabic,ar_eg,arabic,,ar-SA,ar
+neighbourhood,DT Cooksville,9575,515,5.38,1660,36000,home_arabic,565,5.9,2.75,Arabic,ar_eg,arabic,,ar-SA,ar
+neighbourhood,DT Core,34425,1160,3.37,6650,48000,home_arabic,2260,6.56,10.99,Arabic,ar_eg,arabic,,ar-SA,ar
+neighbourhood,DT Fairview,16570,715,4.32,2370,41600,home_arabic,1050,6.34,5.1,Arabic,ar_eg,arabic,,ar-SA,ar
+neighbourhood,DT Hospital,12305,635,5.16,1940,36000,home_arabic,800,6.5,3.89,Arabic,ar_eg,arabic,,ar-SA,ar
+neighbourhood,Dixie EA,945,60,6.35,15,29000,home_arabic,0,0.0,0.0,Arabic,ar_eg,arabic,,ar-SA,ar
+neighbourhood,East Credit,63320,2500,3.95,3575,35200,home_arabic,2025,3.2,9.84,Arabic,ar_eg,arabic,,ar-SA,ar
+neighbourhood,Erin Mills,38320,775,2.02,1580,46400,home_arabic,740,1.93,3.6,Arabic,ar_eg,arabic,,ar-SA,ar
+neighbourhood,Erindale,22025,895,4.06,1450,36000,home_arabic,360,1.63,1.75,Arabic,ar_eg,arabic,,ar-SA,ar
+neighbourhood,Fairview,7215,385,5.34,285,31600,home_arabic,125,1.73,0.61,Arabic,ar_eg,arabic,,ar-SA,ar
+neighbourhood,Hurontario,49755,2285,4.59,2965,37600,home_arabic,1185,2.38,5.76,Arabic,ar_eg,arabic,,ar-SA,ar
+neighbourhood,Lakeview,21960,465,2.12,685,44400,home_arabic,115,0.52,0.56,Arabic,ar_eg,arabic,,ar-SA,ar
+neighbourhood,Lisgar,31565,700,2.22,2050,43200,home_arabic,810,2.57,3.94,Arabic,ar_eg,arabic,,ar-SA,ar
+neighbourhood,Malton CN,2670,60,2.25,280,28400,home_arabic,40,1.5,0.19,Arabic,ar_eg,arabic,,ar-SA,ar
+neighbourhood,Malton,35250,1805,5.12,3005,26000,home_arabic,45,0.13,0.22,Arabic,ar_eg,arabic,,ar-SA,ar
+neighbourhood,Meadowvale CN,2855,60,2.1,465,51600,home_arabic,70,2.45,0.34,Arabic,ar_eg,arabic,,ar-SA,ar
+neighbourhood,Meadowvale,35910,590,1.64,1825,48400,home_arabic,700,1.95,3.4,Arabic,ar_eg,arabic,,ar-SA,ar
+neighbourhood,Meadowvale Village,31240,935,2.99,2070,37200,home_arabic,285,0.91,1.39,Arabic,ar_eg,arabic,,ar-SA,ar
+neighbourhood,Mineola,9845,185,1.88,315,47600,home_arabic,55,0.56,0.27,Arabic,ar_eg,arabic,,ar-SA,ar
+neighbourhood,Mississauga Valleys,12595,500,3.97,925,39200,home_arabic,330,2.62,1.6,Arabic,ar_eg,arabic,,ar-SA,ar
+neighbourhood,Port Credit CN,4945,120,2.43,210,45200,home_arabic,45,0.91,0.22,Arabic,ar_eg,arabic,,ar-SA,ar
+neighbourhood,Port Credit (East),2420,30,1.24,30,45200,home_arabic,0,0.0,0.0,Arabic,ar_eg,arabic,,ar-SA,ar
+neighbourhood,Port Credit (West),3300,60,1.82,150,41600,home_arabic,0,0.0,0.0,Arabic,ar_eg,arabic,,ar-SA,ar
+neighbourhood,Rathwood,24865,940,3.78,1060,43200,home_arabic,280,1.13,1.36,Arabic,ar_eg,arabic,,ar-SA,ar
+neighbourhood,Rathwood-Applewood CN,3350,180,5.37,235,39200,home_arabic,65,1.94,0.32,Arabic,ar_eg,arabic,,ar-SA,ar
+neighbourhood,Sheridan CN,3265,135,4.13,480,36800,home_arabic,165,5.05,0.8,Arabic,ar_eg,arabic,,ar-SA,ar
+neighbourhood,Sheridan,12210,285,2.33,400,43200,home_arabic,210,1.72,1.02,Arabic,ar_eg,arabic,,ar-SA,ar
+neighbourhood,South Common CN,4880,230,4.71,415,34400,home_arabic,155,3.18,0.75,Arabic,ar_eg,arabic,,ar-SA,ar
+neighbourhood,Streetsville CN,1320,55,4.17,75,31600,home_arabic,30,2.27,0.15,Arabic,ar_eg,arabic,,ar-SA,ar
+neighbourhood,Streetsville,10610,225,2.12,585,50400,home_arabic,135,1.27,0.66,Arabic,ar_eg,arabic,,ar-SA,ar
+neighbourhood,Uptown MN,10660,435,4.08,1255,48400,home_arabic,550,5.16,2.67,Arabic,ar_eg,arabic,,ar-SA,ar
+neighbourhood,Applewood,35490,1485,4.18,2345,38800,home_mandarin,565,1.59,3.19,Mandarin Chinese,cmn_hans_cn,mandarin,zh-CN,,zh
+neighbourhood,Central Erin Mills MN,6040,280,4.64,1160,50000,home_mandarin,215,3.56,1.21,Mandarin Chinese,cmn_hans_cn,mandarin,zh-CN,,zh
+neighbourhood,Central Erin Mills,30250,1140,3.77,2250,48800,home_mandarin,2480,8.2,13.99,Mandarin Chinese,cmn_hans_cn,mandarin,zh-CN,,zh
+neighbourhood,Churchill Meadows,48745,1390,2.85,4580,46800,home_mandarin,1455,2.98,8.21,Mandarin Chinese,cmn_hans_cn,mandarin,zh-CN,,zh
+neighbourhood,Clarkson - Lorne Park,36350,565,1.55,1215,50400,home_mandarin,810,2.23,4.57,Mandarin Chinese,cmn_hans_cn,mandarin,zh-CN,,zh
+neighbourhood,Clarkson Village CN,2350,30,1.28,125,57600,home_mandarin,25,1.06,0.14,Mandarin Chinese,cmn_hans_cn,mandarin,zh-CN,,zh
+neighbourhood,Cooksville (East),8405,180,2.14,330,35200,home_mandarin,100,1.19,0.56,Mandarin Chinese,cmn_hans_cn,mandarin,zh-CN,,zh
+neighbourhood,Cooksville (West),14665,790,5.39,940,33600,home_mandarin,325,2.22,1.83,Mandarin Chinese,cmn_hans_cn,mandarin,zh-CN,,zh
+neighbourhood,Creditview,10070,525,5.21,530,37200,home_mandarin,680,6.75,3.84,Mandarin Chinese,cmn_hans_cn,mandarin,zh-CN,,zh
+neighbourhood,DT Cooksville,9575,515,5.38,1660,36000,home_mandarin,65,0.68,0.37,Mandarin Chinese,cmn_hans_cn,mandarin,zh-CN,,zh
+neighbourhood,DT Core,34425,1160,3.37,6650,48000,home_mandarin,1185,3.44,6.68,Mandarin Chinese,cmn_hans_cn,mandarin,zh-CN,,zh
+neighbourhood,DT Fairview,16570,715,4.32,2370,41600,home_mandarin,210,1.27,1.18,Mandarin Chinese,cmn_hans_cn,mandarin,zh-CN,,zh
+neighbourhood,DT Hospital,12305,635,5.16,1940,36000,home_mandarin,25,0.2,0.14,Mandarin Chinese,cmn_hans_cn,mandarin,zh-CN,,zh
+neighbourhood,Dixie EA,945,60,6.35,15,29000,home_mandarin,0,0.0,0.0,Mandarin Chinese,cmn_hans_cn,mandarin,zh-CN,,zh
+neighbourhood,East Credit,63320,2500,3.95,3575,35200,home_mandarin,2090,3.3,11.79,Mandarin Chinese,cmn_hans_cn,mandarin,zh-CN,,zh
+neighbourhood,Erin Mills,38320,775,2.02,1580,46400,home_mandarin,1075,2.81,6.06,Mandarin Chinese,cmn_hans_cn,mandarin,zh-CN,,zh
+neighbourhood,Erindale,22025,895,4.06,1450,36000,home_mandarin,1105,5.02,6.23,Mandarin Chinese,cmn_hans_cn,mandarin,zh-CN,,zh
+neighbourhood,Fairview,7215,385,5.34,285,31600,home_mandarin,315,4.37,1.78,Mandarin Chinese,cmn_hans_cn,mandarin,zh-CN,,zh
+neighbourhood,Hurontario,49755,2285,4.59,2965,37600,home_mandarin,1880,3.78,10.6,Mandarin Chinese,cmn_hans_cn,mandarin,zh-CN,,zh
+neighbourhood,Lakeview,21960,465,2.12,685,44400,home_mandarin,195,0.89,1.1,Mandarin Chinese,cmn_hans_cn,mandarin,zh-CN,,zh
+neighbourhood,Lisgar,31565,700,2.22,2050,43200,home_mandarin,520,1.65,2.93,Mandarin Chinese,cmn_hans_cn,mandarin,zh-CN,,zh
+neighbourhood,Malton CN,2670,60,2.25,280,28400,home_mandarin,0,0.0,0.0,Mandarin Chinese,cmn_hans_cn,mandarin,zh-CN,,zh
+neighbourhood,Malton,35250,1805,5.12,3005,26000,home_mandarin,0,0.0,0.0,Mandarin Chinese,cmn_hans_cn,mandarin,zh-CN,,zh
+neighbourhood,Meadowvale CN,2855,60,2.1,465,51600,home_mandarin,10,0.35,0.06,Mandarin Chinese,cmn_hans_cn,mandarin,zh-CN,,zh
+neighbourhood,Meadowvale,35910,590,1.64,1825,48400,home_mandarin,360,1.0,2.03,Mandarin Chinese,cmn_hans_cn,mandarin,zh-CN,,zh
+neighbourhood,Meadowvale Village,31240,935,2.99,2070,37200,home_mandarin,180,0.58,1.02,Mandarin Chinese,cmn_hans_cn,mandarin,zh-CN,,zh
+neighbourhood,Mineola,9845,185,1.88,315,47600,home_mandarin,170,1.73,0.96,Mandarin Chinese,cmn_hans_cn,mandarin,zh-CN,,zh
+neighbourhood,Mississauga Valleys,12595,500,3.97,925,39200,home_mandarin,145,1.15,0.82,Mandarin Chinese,cmn_hans_cn,mandarin,zh-CN,,zh
+neighbourhood,Port Credit CN,4945,120,2.43,210,45200,home_mandarin,40,0.81,0.23,Mandarin Chinese,cmn_hans_cn,mandarin,zh-CN,,zh
+neighbourhood,Port Credit (East),2420,30,1.24,30,45200,home_mandarin,35,1.45,0.2,Mandarin Chinese,cmn_hans_cn,mandarin,zh-CN,,zh
+neighbourhood,Port Credit (West),3300,60,1.82,150,41600,home_mandarin,25,0.76,0.14,Mandarin Chinese,cmn_hans_cn,mandarin,zh-CN,,zh
+neighbourhood,Rathwood,24865,940,3.78,1060,43200,home_mandarin,465,1.87,2.62,Mandarin Chinese,cmn_hans_cn,mandarin,zh-CN,,zh
+neighbourhood,Rathwood-Applewood CN,3350,180,5.37,235,39200,home_mandarin,20,0.6,0.11,Mandarin Chinese,cmn_hans_cn,mandarin,zh-CN,,zh
+neighbourhood,Sheridan CN,3265,135,4.13,480,36800,home_mandarin,0,0.0,0.0,Mandarin Chinese,cmn_hans_cn,mandarin,zh-CN,,zh
+neighbourhood,Sheridan,12210,285,2.33,400,43200,home_mandarin,415,3.4,2.34,Mandarin Chinese,cmn_hans_cn,mandarin,zh-CN,,zh
+neighbourhood,South Common CN,4880,230,4.71,415,34400,home_mandarin,85,1.74,0.48,Mandarin Chinese,cmn_hans_cn,mandarin,zh-CN,,zh
+neighbourhood,Streetsville CN,1320,55,4.17,75,31600,home_mandarin,0,0.0,0.0,Mandarin Chinese,cmn_hans_cn,mandarin,zh-CN,,zh
+neighbourhood,Streetsville,10610,225,2.12,585,50400,home_mandarin,210,1.98,1.18,Mandarin Chinese,cmn_hans_cn,mandarin,zh-CN,,zh
+neighbourhood,Uptown MN,10660,435,4.08,1255,48400,home_mandarin,250,2.35,1.41,Mandarin Chinese,cmn_hans_cn,mandarin,zh-CN,,zh
+neighbourhood,Applewood,35490,1485,4.18,2345,38800,home_punjabi,130,0.37,0.87,Punjabi,pa_in,punjabi,,,pa
+neighbourhood,Central Erin Mills MN,6040,280,4.64,1160,50000,home_punjabi,35,0.58,0.23,Punjabi,pa_in,punjabi,,,pa
+neighbourhood,Central Erin Mills,30250,1140,3.77,2250,48800,home_punjabi,325,1.07,2.16,Punjabi,pa_in,punjabi,,,pa
+neighbourhood,Churchill Meadows,48745,1390,2.85,4580,46800,home_punjabi,385,0.79,2.56,Punjabi,pa_in,punjabi,,,pa
+neighbourhood,Clarkson - Lorne Park,36350,565,1.55,1215,50400,home_punjabi,195,0.54,1.3,Punjabi,pa_in,punjabi,,,pa
+neighbourhood,Clarkson Village CN,2350,30,1.28,125,57600,home_punjabi,0,0.0,0.0,Punjabi,pa_in,punjabi,,,pa
+neighbourhood,Cooksville (East),8405,180,2.14,330,35200,home_punjabi,0,0.0,0.0,Punjabi,pa_in,punjabi,,,pa
+neighbourhood,Cooksville (West),14665,790,5.39,940,33600,home_punjabi,135,0.92,0.9,Punjabi,pa_in,punjabi,,,pa
+neighbourhood,Creditview,10070,525,5.21,530,37200,home_punjabi,145,1.44,0.97,Punjabi,pa_in,punjabi,,,pa
+neighbourhood,DT Cooksville,9575,515,5.38,1660,36000,home_punjabi,80,0.84,0.53,Punjabi,pa_in,punjabi,,,pa
+neighbourhood,DT Core,34425,1160,3.37,6650,48000,home_punjabi,280,0.81,1.86,Punjabi,pa_in,punjabi,,,pa
+neighbourhood,DT Fairview,16570,715,4.32,2370,41600,home_punjabi,70,0.42,0.47,Punjabi,pa_in,punjabi,,,pa
+neighbourhood,DT Hospital,12305,635,5.16,1940,36000,home_punjabi,45,0.37,0.3,Punjabi,pa_in,punjabi,,,pa
+neighbourhood,Dixie EA,945,60,6.35,15,29000,home_punjabi,0,0.0,0.0,Punjabi,pa_in,punjabi,,,pa
+neighbourhood,East Credit,63320,2500,3.95,3575,35200,home_punjabi,1735,2.74,11.55,Punjabi,pa_in,punjabi,,,pa
+neighbourhood,Erin Mills,38320,775,2.02,1580,46400,home_punjabi,350,0.91,2.33,Punjabi,pa_in,punjabi,,,pa
+neighbourhood,Erindale,22025,895,4.06,1450,36000,home_punjabi,260,1.18,1.73,Punjabi,pa_in,punjabi,,,pa
+neighbourhood,Fairview,7215,385,5.34,285,31600,home_punjabi,200,2.77,1.33,Punjabi,pa_in,punjabi,,,pa
+neighbourhood,Hurontario,49755,2285,4.59,2965,37600,home_punjabi,1065,2.14,7.09,Punjabi,pa_in,punjabi,,,pa
+neighbourhood,Lakeview,21960,465,2.12,685,44400,home_punjabi,45,0.2,0.3,Punjabi,pa_in,punjabi,,,pa
+neighbourhood,Lisgar,31565,700,2.22,2050,43200,home_punjabi,450,1.43,3.0,Punjabi,pa_in,punjabi,,,pa
+neighbourhood,Malton CN,2670,60,2.25,280,28400,home_punjabi,60,2.25,0.4,Punjabi,pa_in,punjabi,,,pa
+neighbourhood,Malton,35250,1805,5.12,3005,26000,home_punjabi,7145,20.27,47.55,Punjabi,pa_in,punjabi,,,pa
+neighbourhood,Meadowvale CN,2855,60,2.1,465,51600,home_punjabi,0,0.0,0.0,Punjabi,pa_in,punjabi,,,pa
+neighbourhood,Meadowvale,35910,590,1.64,1825,48400,home_punjabi,65,0.18,0.43,Punjabi,pa_in,punjabi,,,pa
+neighbourhood,Meadowvale Village,31240,935,2.99,2070,37200,home_punjabi,1315,4.21,8.75,Punjabi,pa_in,punjabi,,,pa
+neighbourhood,Mineola,9845,185,1.88,315,47600,home_punjabi,70,0.71,0.47,Punjabi,pa_in,punjabi,,,pa
+neighbourhood,Mississauga Valleys,12595,500,3.97,925,39200,home_punjabi,60,0.48,0.4,Punjabi,pa_in,punjabi,,,pa
+neighbourhood,Port Credit CN,4945,120,2.43,210,45200,home_punjabi,0,0.0,0.0,Punjabi,pa_in,punjabi,,,pa
+neighbourhood,Port Credit (East),2420,30,1.24,30,45200,home_punjabi,0,0.0,0.0,Punjabi,pa_in,punjabi,,,pa
+neighbourhood,Port Credit (West),3300,60,1.82,150,41600,home_punjabi,0,0.0,0.0,Punjabi,pa_in,punjabi,,,pa
+neighbourhood,Rathwood,24865,940,3.78,1060,43200,home_punjabi,190,0.76,1.26,Punjabi,pa_in,punjabi,,,pa
+neighbourhood,Rathwood-Applewood CN,3350,180,5.37,235,39200,home_punjabi,0,0.0,0.0,Punjabi,pa_in,punjabi,,,pa
+neighbourhood,Sheridan CN,3265,135,4.13,480,36800,home_punjabi,0,0.0,0.0,Punjabi,pa_in,punjabi,,,pa
+neighbourhood,Sheridan,12210,285,2.33,400,43200,home_punjabi,30,0.25,0.2,Punjabi,pa_in,punjabi,,,pa
+neighbourhood,South Common CN,4880,230,4.71,415,34400,home_punjabi,10,0.2,0.07,Punjabi,pa_in,punjabi,,,pa
+neighbourhood,Streetsville CN,1320,55,4.17,75,31600,home_punjabi,0,0.0,0.0,Punjabi,pa_in,punjabi,,,pa
+neighbourhood,Streetsville,10610,225,2.12,585,50400,home_punjabi,60,0.57,0.4,Punjabi,pa_in,punjabi,,,pa
+neighbourhood,Uptown MN,10660,435,4.08,1255,48400,home_punjabi,90,0.84,0.6,Punjabi,pa_in,punjabi,,,pa
+neighbourhood,Applewood,35490,1485,4.18,2345,38800,home_polish,1295,3.65,10.31,Polish,pl_pl,polish,pl-PL,pl-PL,pl
+neighbourhood,Central Erin Mills MN,6040,280,4.64,1160,50000,home_polish,65,1.08,0.52,Polish,pl_pl,polish,pl-PL,pl-PL,pl
+neighbourhood,Central Erin Mills,30250,1140,3.77,2250,48800,home_polish,165,0.55,1.31,Polish,pl_pl,polish,pl-PL,pl-PL,pl
+neighbourhood,Churchill Meadows,48745,1390,2.85,4580,46800,home_polish,400,0.82,3.18,Polish,pl_pl,polish,pl-PL,pl-PL,pl
+neighbourhood,Clarkson - Lorne Park,36350,565,1.55,1215,50400,home_polish,735,2.02,5.85,Polish,pl_pl,polish,pl-PL,pl-PL,pl
+neighbourhood,Clarkson Village CN,2350,30,1.28,125,57600,home_polish,25,1.06,0.2,Polish,pl_pl,polish,pl-PL,pl-PL,pl
+neighbourhood,Cooksville (East),8405,180,2.14,330,35200,home_polish,265,3.15,2.11,Polish,pl_pl,polish,pl-PL,pl-PL,pl
+neighbourhood,Cooksville (West),14665,790,5.39,940,33600,home_polish,745,5.08,5.93,Polish,pl_pl,polish,pl-PL,pl-PL,pl
+neighbourhood,Creditview,10070,525,5.21,530,37200,home_polish,140,1.39,1.11,Polish,pl_pl,polish,pl-PL,pl-PL,pl
+neighbourhood,DT Cooksville,9575,515,5.38,1660,36000,home_polish,425,4.44,3.38,Polish,pl_pl,polish,pl-PL,pl-PL,pl
+neighbourhood,DT Core,34425,1160,3.37,6650,48000,home_polish,215,0.62,1.71,Polish,pl_pl,polish,pl-PL,pl-PL,pl
+neighbourhood,DT Fairview,16570,715,4.32,2370,41600,home_polish,205,1.24,1.63,Polish,pl_pl,polish,pl-PL,pl-PL,pl
+neighbourhood,DT Hospital,12305,635,5.16,1940,36000,home_polish,310,2.52,2.47,Polish,pl_pl,polish,pl-PL,pl-PL,pl
+neighbourhood,Dixie EA,945,60,6.35,15,29000,home_polish,30,3.17,0.24,Polish,pl_pl,polish,pl-PL,pl-PL,pl
+neighbourhood,East Credit,63320,2500,3.95,3575,35200,home_polish,630,0.99,5.01,Polish,pl_pl,polish,pl-PL,pl-PL,pl
+neighbourhood,Erin Mills,38320,775,2.02,1580,46400,home_polish,670,1.75,5.33,Polish,pl_pl,polish,pl-PL,pl-PL,pl
+neighbourhood,Erindale,22025,895,4.06,1450,36000,home_polish,635,2.88,5.05,Polish,pl_pl,polish,pl-PL,pl-PL,pl
+neighbourhood,Fairview,7215,385,5.34,285,31600,home_polish,250,3.47,1.99,Polish,pl_pl,polish,pl-PL,pl-PL,pl
+neighbourhood,Hurontario,49755,2285,4.59,2965,37600,home_polish,875,1.76,6.96,Polish,pl_pl,polish,pl-PL,pl-PL,pl
+neighbourhood,Lakeview,21960,465,2.12,685,44400,home_polish,515,2.35,4.1,Polish,pl_pl,polish,pl-PL,pl-PL,pl
+neighbourhood,Lisgar,31565,700,2.22,2050,43200,home_polish,365,1.16,2.9,Polish,pl_pl,polish,pl-PL,pl-PL,pl
+neighbourhood,Malton CN,2670,60,2.25,280,28400,home_polish,45,1.69,0.36,Polish,pl_pl,polish,pl-PL,pl-PL,pl
+neighbourhood,Malton,35250,1805,5.12,3005,26000,home_polish,30,0.09,0.24,Polish,pl_pl,polish,pl-PL,pl-PL,pl
+neighbourhood,Meadowvale CN,2855,60,2.1,465,51600,home_polish,25,0.88,0.2,Polish,pl_pl,polish,pl-PL,pl-PL,pl
+neighbourhood,Meadowvale,35910,590,1.64,1825,48400,home_polish,545,1.52,4.34,Polish,pl_pl,polish,pl-PL,pl-PL,pl
+neighbourhood,Meadowvale Village,31240,935,2.99,2070,37200,home_polish,210,0.67,1.67,Polish,pl_pl,polish,pl-PL,pl-PL,pl
+neighbourhood,Mineola,9845,185,1.88,315,47600,home_polish,310,3.15,2.47,Polish,pl_pl,polish,pl-PL,pl-PL,pl
+neighbourhood,Mississauga Valleys,12595,500,3.97,925,39200,home_polish,635,5.04,5.05,Polish,pl_pl,polish,pl-PL,pl-PL,pl
+neighbourhood,Port Credit CN,4945,120,2.43,210,45200,home_polish,85,1.72,0.68,Polish,pl_pl,polish,pl-PL,pl-PL,pl
+neighbourhood,Port Credit (East),2420,30,1.24,30,45200,home_polish,0,0.0,0.0,Polish,pl_pl,polish,pl-PL,pl-PL,pl
+neighbourhood,Port Credit (West),3300,60,1.82,150,41600,home_polish,100,3.03,0.8,Polish,pl_pl,polish,pl-PL,pl-PL,pl
+neighbourhood,Rathwood,24865,940,3.78,1060,43200,home_polish,935,3.76,7.44,Polish,pl_pl,polish,pl-PL,pl-PL,pl
+neighbourhood,Rathwood-Applewood CN,3350,180,5.37,235,39200,home_polish,150,4.48,1.19,Polish,pl_pl,polish,pl-PL,pl-PL,pl
+neighbourhood,Sheridan CN,3265,135,4.13,480,36800,home_polish,15,0.46,0.12,Polish,pl_pl,polish,pl-PL,pl-PL,pl
+neighbourhood,Sheridan,12210,285,2.33,400,43200,home_polish,225,1.84,1.79,Polish,pl_pl,polish,pl-PL,pl-PL,pl
+neighbourhood,South Common CN,4880,230,4.71,415,34400,home_polish,75,1.54,0.6,Polish,pl_pl,polish,pl-PL,pl-PL,pl
+neighbourhood,Streetsville CN,1320,55,4.17,75,31600,home_polish,25,1.89,0.2,Polish,pl_pl,polish,pl-PL,pl-PL,pl
+neighbourhood,Streetsville,10610,225,2.12,585,50400,home_polish,105,0.99,0.84,Polish,pl_pl,polish,pl-PL,pl-PL,pl
+neighbourhood,Uptown MN,10660,435,4.08,1255,48400,home_polish,90,0.84,0.72,Polish,pl_pl,polish,pl-PL,pl-PL,pl
+neighbourhood,Applewood,35490,1485,4.18,2345,38800,home_cantonese,200,0.56,1.86,Cantonese,yue_hant_hk,cantonese,,,yue
+neighbourhood,Central Erin Mills MN,6040,280,4.64,1160,50000,home_cantonese,110,1.82,1.02,Cantonese,yue_hant_hk,cantonese,,,yue
+neighbourhood,Central Erin Mills,30250,1140,3.77,2250,48800,home_cantonese,1095,3.62,10.17,Cantonese,yue_hant_hk,cantonese,,,yue
+neighbourhood,Churchill Meadows,48745,1390,2.85,4580,46800,home_cantonese,905,1.86,8.41,Cantonese,yue_hant_hk,cantonese,,,yue
+neighbourhood,Clarkson - Lorne Park,36350,565,1.55,1215,50400,home_cantonese,160,0.44,1.49,Cantonese,yue_hant_hk,cantonese,,,yue
+neighbourhood,Clarkson Village CN,2350,30,1.28,125,57600,home_cantonese,0,0.0,0.0,Cantonese,yue_hant_hk,cantonese,,,yue
+neighbourhood,Cooksville (East),8405,180,2.14,330,35200,home_cantonese,0,0.0,0.0,Cantonese,yue_hant_hk,cantonese,,,yue
+neighbourhood,Cooksville (West),14665,790,5.39,940,33600,home_cantonese,165,1.13,1.53,Cantonese,yue_hant_hk,cantonese,,,yue
+neighbourhood,Creditview,10070,525,5.21,530,37200,home_cantonese,405,4.02,3.76,Cantonese,yue_hant_hk,cantonese,,,yue
+neighbourhood,DT Cooksville,9575,515,5.38,1660,36000,home_cantonese,105,1.1,0.98,Cantonese,yue_hant_hk,cantonese,,,yue
+neighbourhood,DT Core,34425,1160,3.37,6650,48000,home_cantonese,630,1.83,5.85,Cantonese,yue_hant_hk,cantonese,,,yue
+neighbourhood,DT Fairview,16570,715,4.32,2370,41600,home_cantonese,130,0.78,1.21,Cantonese,yue_hant_hk,cantonese,,,yue
+neighbourhood,DT Hospital,12305,635,5.16,1940,36000,home_cantonese,35,0.28,0.33,Cantonese,yue_hant_hk,cantonese,,,yue
+neighbourhood,Dixie EA,945,60,6.35,15,29000,home_cantonese,10,1.06,0.09,Cantonese,yue_hant_hk,cantonese,,,yue
+neighbourhood,East Credit,63320,2500,3.95,3575,35200,home_cantonese,2225,3.51,20.67,Cantonese,yue_hant_hk,cantonese,,,yue
+neighbourhood,Erin Mills,38320,775,2.02,1580,46400,home_cantonese,525,1.37,4.88,Cantonese,yue_hant_hk,cantonese,,,yue
+neighbourhood,Erindale,22025,895,4.06,1450,36000,home_cantonese,290,1.32,2.69,Cantonese,yue_hant_hk,cantonese,,,yue
+neighbourhood,Fairview,7215,385,5.34,285,31600,home_cantonese,305,4.23,2.83,Cantonese,yue_hant_hk,cantonese,,,yue
+neighbourhood,Hurontario,49755,2285,4.59,2965,37600,home_cantonese,1520,3.05,14.12,Cantonese,yue_hant_hk,cantonese,,,yue
+neighbourhood,Lakeview,21960,465,2.12,685,44400,home_cantonese,55,0.25,0.51,Cantonese,yue_hant_hk,cantonese,,,yue
+neighbourhood,Lisgar,31565,700,2.22,2050,43200,home_cantonese,305,0.97,2.83,Cantonese,yue_hant_hk,cantonese,,,yue
+neighbourhood,Malton CN,2670,60,2.25,280,28400,home_cantonese,0,0.0,0.0,Cantonese,yue_hant_hk,cantonese,,,yue
+neighbourhood,Malton,35250,1805,5.12,3005,26000,home_cantonese,55,0.16,0.51,Cantonese,yue_hant_hk,cantonese,,,yue
+neighbourhood,Meadowvale CN,2855,60,2.1,465,51600,home_cantonese,0,0.0,0.0,Cantonese,yue_hant_hk,cantonese,,,yue
+neighbourhood,Meadowvale,35910,590,1.64,1825,48400,home_cantonese,135,0.38,1.25,Cantonese,yue_hant_hk,cantonese,,,yue
+neighbourhood,Meadowvale Village,31240,935,2.99,2070,37200,home_cantonese,505,1.62,4.69,Cantonese,yue_hant_hk,cantonese,,,yue
+neighbourhood,Mineola,9845,185,1.88,315,47600,home_cantonese,25,0.25,0.23,Cantonese,yue_hant_hk,cantonese,,,yue
+neighbourhood,Mississauga Valleys,12595,500,3.97,925,39200,home_cantonese,70,0.56,0.65,Cantonese,yue_hant_hk,cantonese,,,yue
+neighbourhood,Port Credit CN,4945,120,2.43,210,45200,home_cantonese,15,0.3,0.14,Cantonese,yue_hant_hk,cantonese,,,yue
+neighbourhood,Port Credit (East),2420,30,1.24,30,45200,home_cantonese,15,0.62,0.14,Cantonese,yue_hant_hk,cantonese,,,yue
+neighbourhood,Port Credit (West),3300,60,1.82,150,41600,home_cantonese,0,0.0,0.0,Cantonese,yue_hant_hk,cantonese,,,yue
+neighbourhood,Rathwood,24865,940,3.78,1060,43200,home_cantonese,225,0.9,2.09,Cantonese,yue_hant_hk,cantonese,,,yue
+neighbourhood,Rathwood-Applewood CN,3350,180,5.37,235,39200,home_cantonese,15,0.45,0.14,Cantonese,yue_hant_hk,cantonese,,,yue
+neighbourhood,Sheridan CN,3265,135,4.13,480,36800,home_cantonese,0,0.0,0.0,Cantonese,yue_hant_hk,cantonese,,,yue
+neighbourhood,Sheridan,12210,285,2.33,400,43200,home_cantonese,175,1.43,1.63,Cantonese,yue_hant_hk,cantonese,,,yue
+neighbourhood,South Common CN,4880,230,4.71,415,34400,home_cantonese,50,1.02,0.46,Cantonese,yue_hant_hk,cantonese,,,yue
+neighbourhood,Streetsville CN,1320,55,4.17,75,31600,home_cantonese,15,1.14,0.14,Cantonese,yue_hant_hk,cantonese,,,yue
+neighbourhood,Streetsville,10610,225,2.12,585,50400,home_cantonese,95,0.9,0.88,Cantonese,yue_hant_hk,cantonese,,,yue
+neighbourhood,Uptown MN,10660,435,4.08,1255,48400,home_cantonese,195,1.83,1.81,Cantonese,yue_hant_hk,cantonese,,,yue
+neighbourhood,Applewood,35490,1485,4.18,2345,38800,home_tagalog,625,1.76,5.84,Tagalog,fil_ph,tagalog,,,tl
+neighbourhood,Central Erin Mills MN,6040,280,4.64,1160,50000,home_tagalog,75,1.24,0.7,Tagalog,fil_ph,tagalog,,,tl
+neighbourhood,Central Erin Mills,30250,1140,3.77,2250,48800,home_tagalog,160,0.53,1.5,Tagalog,fil_ph,tagalog,,,tl
+neighbourhood,Churchill Meadows,48745,1390,2.85,4580,46800,home_tagalog,770,1.58,7.2,Tagalog,fil_ph,tagalog,,,tl
+neighbourhood,Clarkson - Lorne Park,36350,565,1.55,1215,50400,home_tagalog,405,1.11,3.79,Tagalog,fil_ph,tagalog,,,tl
+neighbourhood,Clarkson Village CN,2350,30,1.28,125,57600,home_tagalog,0,0.0,0.0,Tagalog,fil_ph,tagalog,,,tl
+neighbourhood,Cooksville (East),8405,180,2.14,330,35200,home_tagalog,75,0.89,0.7,Tagalog,fil_ph,tagalog,,,tl
+neighbourhood,Cooksville (West),14665,790,5.39,940,33600,home_tagalog,280,1.91,2.62,Tagalog,fil_ph,tagalog,,,tl
+neighbourhood,Creditview,10070,525,5.21,530,37200,home_tagalog,240,2.38,2.24,Tagalog,fil_ph,tagalog,,,tl
+neighbourhood,DT Cooksville,9575,515,5.38,1660,36000,home_tagalog,235,2.45,2.2,Tagalog,fil_ph,tagalog,,,tl
+neighbourhood,DT Core,34425,1160,3.37,6650,48000,home_tagalog,405,1.18,3.79,Tagalog,fil_ph,tagalog,,,tl
+neighbourhood,DT Fairview,16570,715,4.32,2370,41600,home_tagalog,490,2.96,4.58,Tagalog,fil_ph,tagalog,,,tl
+neighbourhood,DT Hospital,12305,635,5.16,1940,36000,home_tagalog,655,5.32,6.12,Tagalog,fil_ph,tagalog,,,tl
+neighbourhood,Dixie EA,945,60,6.35,15,29000,home_tagalog,0,0.0,0.0,Tagalog,fil_ph,tagalog,,,tl
+neighbourhood,East Credit,63320,2500,3.95,3575,35200,home_tagalog,1220,1.93,11.41,Tagalog,fil_ph,tagalog,,,tl
+neighbourhood,Erin Mills,38320,775,2.02,1580,46400,home_tagalog,280,0.73,2.62,Tagalog,fil_ph,tagalog,,,tl
+neighbourhood,Erindale,22025,895,4.06,1450,36000,home_tagalog,425,1.93,3.97,Tagalog,fil_ph,tagalog,,,tl
+neighbourhood,Fairview,7215,385,5.34,285,31600,home_tagalog,275,3.81,2.57,Tagalog,fil_ph,tagalog,,,tl
+neighbourhood,Hurontario,49755,2285,4.59,2965,37600,home_tagalog,910,1.83,8.51,Tagalog,fil_ph,tagalog,,,tl
+neighbourhood,Lakeview,21960,465,2.12,685,44400,home_tagalog,120,0.55,1.12,Tagalog,fil_ph,tagalog,,,tl
+neighbourhood,Lisgar,31565,700,2.22,2050,43200,home_tagalog,490,1.55,4.58,Tagalog,fil_ph,tagalog,,,tl
+neighbourhood,Malton CN,2670,60,2.25,280,28400,home_tagalog,100,3.75,0.94,Tagalog,fil_ph,tagalog,,,tl
+neighbourhood,Malton,35250,1805,5.12,3005,26000,home_tagalog,155,0.44,1.45,Tagalog,fil_ph,tagalog,,,tl
+neighbourhood,Meadowvale CN,2855,60,2.1,465,51600,home_tagalog,45,1.58,0.42,Tagalog,fil_ph,tagalog,,,tl
+neighbourhood,Meadowvale,35910,590,1.64,1825,48400,home_tagalog,485,1.35,4.53,Tagalog,fil_ph,tagalog,,,tl
+neighbourhood,Meadowvale Village,31240,935,2.99,2070,37200,home_tagalog,420,1.34,3.93,Tagalog,fil_ph,tagalog,,,tl
+neighbourhood,Mineola,9845,185,1.88,315,47600,home_tagalog,0,0.0,0.0,Tagalog,fil_ph,tagalog,,,tl
+neighbourhood,Mississauga Valleys,12595,500,3.97,925,39200,home_tagalog,285,2.26,2.66,Tagalog,fil_ph,tagalog,,,tl
+neighbourhood,Port Credit CN,4945,120,2.43,210,45200,home_tagalog,35,0.71,0.33,Tagalog,fil_ph,tagalog,,,tl
+neighbourhood,Port Credit (East),2420,30,1.24,30,45200,home_tagalog,15,0.62,0.14,Tagalog,fil_ph,tagalog,,,tl
+neighbourhood,Port Credit (West),3300,60,1.82,150,41600,home_tagalog,15,0.45,0.14,Tagalog,fil_ph,tagalog,,,tl
+neighbourhood,Rathwood,24865,940,3.78,1060,43200,home_tagalog,310,1.25,2.9,Tagalog,fil_ph,tagalog,,,tl
+neighbourhood,Rathwood-Applewood CN,3350,180,5.37,235,39200,home_tagalog,30,0.9,0.28,Tagalog,fil_ph,tagalog,,,tl
+neighbourhood,Sheridan CN,3265,135,4.13,480,36800,home_tagalog,75,2.3,0.7,Tagalog,fil_ph,tagalog,,,tl
+neighbourhood,Sheridan,12210,285,2.33,400,43200,home_tagalog,165,1.35,1.54,Tagalog,fil_ph,tagalog,,,tl
+neighbourhood,South Common CN,4880,230,4.71,415,34400,home_tagalog,205,4.2,1.92,Tagalog,fil_ph,tagalog,,,tl
+neighbourhood,Streetsville CN,1320,55,4.17,75,31600,home_tagalog,0,0.0,0.0,Tagalog,fil_ph,tagalog,,,tl
+neighbourhood,Streetsville,10610,225,2.12,585,50400,home_tagalog,65,0.61,0.61,Tagalog,fil_ph,tagalog,,,tl
+neighbourhood,Uptown MN,10660,435,4.08,1255,48400,home_tagalog,155,1.45,1.45,Tagalog,fil_ph,tagalog,,,tl
+neighbourhood,Applewood,35490,1485,4.18,2345,38800,home_spanish,455,1.28,4.86,Spanish,es_419,spanish,es-ES,es-ES,es
+neighbourhood,Central Erin Mills MN,6040,280,4.64,1160,50000,home_spanish,70,1.16,0.75,Spanish,es_419,spanish,es-ES,es-ES,es
+neighbourhood,Central Erin Mills,30250,1140,3.77,2250,48800,home_spanish,250,0.83,2.67,Spanish,es_419,spanish,es-ES,es-ES,es
+neighbourhood,Churchill Meadows,48745,1390,2.85,4580,46800,home_spanish,380,0.78,4.06,Spanish,es_419,spanish,es-ES,es-ES,es
+neighbourhood,Clarkson - Lorne Park,36350,565,1.55,1215,50400,home_spanish,330,0.91,3.53,Spanish,es_419,spanish,es-ES,es-ES,es
+neighbourhood,Clarkson Village CN,2350,30,1.28,125,57600,home_spanish,30,1.28,0.32,Spanish,es_419,spanish,es-ES,es-ES,es
+neighbourhood,Cooksville (East),8405,180,2.14,330,35200,home_spanish,25,0.3,0.27,Spanish,es_419,spanish,es-ES,es-ES,es
+neighbourhood,Cooksville (West),14665,790,5.39,940,33600,home_spanish,170,1.16,1.82,Spanish,es_419,spanish,es-ES,es-ES,es
+neighbourhood,Creditview,10070,525,5.21,530,37200,home_spanish,170,1.69,1.82,Spanish,es_419,spanish,es-ES,es-ES,es
+neighbourhood,DT Cooksville,9575,515,5.38,1660,36000,home_spanish,230,2.4,2.46,Spanish,es_419,spanish,es-ES,es-ES,es
+neighbourhood,DT Core,34425,1160,3.37,6650,48000,home_spanish,615,1.79,6.57,Spanish,es_419,spanish,es-ES,es-ES,es
+neighbourhood,DT Fairview,16570,715,4.32,2370,41600,home_spanish,475,2.87,5.07,Spanish,es_419,spanish,es-ES,es-ES,es
+neighbourhood,DT Hospital,12305,635,5.16,1940,36000,home_spanish,170,1.38,1.82,Spanish,es_419,spanish,es-ES,es-ES,es
+neighbourhood,Dixie EA,945,60,6.35,15,29000,home_spanish,35,3.7,0.37,Spanish,es_419,spanish,es-ES,es-ES,es
+neighbourhood,East Credit,63320,2500,3.95,3575,35200,home_spanish,490,0.77,5.24,Spanish,es_419,spanish,es-ES,es-ES,es
+neighbourhood,Erin Mills,38320,775,2.02,1580,46400,home_spanish,425,1.11,4.54,Spanish,es_419,spanish,es-ES,es-ES,es
+neighbourhood,Erindale,22025,895,4.06,1450,36000,home_spanish,340,1.54,3.63,Spanish,es_419,spanish,es-ES,es-ES,es
+neighbourhood,Fairview,7215,385,5.34,285,31600,home_spanish,70,0.97,0.75,Spanish,es_419,spanish,es-ES,es-ES,es
+neighbourhood,Hurontario,49755,2285,4.59,2965,37600,home_spanish,515,1.04,5.5,Spanish,es_419,spanish,es-ES,es-ES,es
+neighbourhood,Lakeview,21960,465,2.12,685,44400,home_spanish,175,0.8,1.87,Spanish,es_419,spanish,es-ES,es-ES,es
+neighbourhood,Lisgar,31565,700,2.22,2050,43200,home_spanish,360,1.14,3.85,Spanish,es_419,spanish,es-ES,es-ES,es
+neighbourhood,Malton CN,2670,60,2.25,280,28400,home_spanish,0,0.0,0.0,Spanish,es_419,spanish,es-ES,es-ES,es
+neighbourhood,Malton,35250,1805,5.12,3005,26000,home_spanish,510,1.45,5.45,Spanish,es_419,spanish,es-ES,es-ES,es
+neighbourhood,Meadowvale CN,2855,60,2.1,465,51600,home_spanish,65,2.28,0.69,Spanish,es_419,spanish,es-ES,es-ES,es
+neighbourhood,Meadowvale,35910,590,1.64,1825,48400,home_spanish,705,1.96,7.53,Spanish,es_419,spanish,es-ES,es-ES,es
+neighbourhood,Meadowvale Village,31240,935,2.99,2070,37200,home_spanish,530,1.7,5.66,Spanish,es_419,spanish,es-ES,es-ES,es
+neighbourhood,Mineola,9845,185,1.88,315,47600,home_spanish,85,0.86,0.91,Spanish,es_419,spanish,es-ES,es-ES,es
+neighbourhood,Mississauga Valleys,12595,500,3.97,925,39200,home_spanish,345,2.74,3.69,Spanish,es_419,spanish,es-ES,es-ES,es
+neighbourhood,Port Credit CN,4945,120,2.43,210,45200,home_spanish,150,3.03,1.6,Spanish,es_419,spanish,es-ES,es-ES,es
+neighbourhood,Port Credit (East),2420,30,1.24,30,45200,home_spanish,25,1.03,0.27,Spanish,es_419,spanish,es-ES,es-ES,es
+neighbourhood,Port Credit (West),3300,60,1.82,150,41600,home_spanish,40,1.21,0.43,Spanish,es_419,spanish,es-ES,es-ES,es
+neighbourhood,Rathwood,24865,940,3.78,1060,43200,home_spanish,525,2.11,5.61,Spanish,es_419,spanish,es-ES,es-ES,es
+neighbourhood,Rathwood-Applewood CN,3350,180,5.37,235,39200,home_spanish,150,4.48,1.6,Spanish,es_419,spanish,es-ES,es-ES,es
+neighbourhood,Sheridan CN,3265,135,4.13,480,36800,home_spanish,40,1.23,0.43,Spanish,es_419,spanish,es-ES,es-ES,es
+neighbourhood,Sheridan,12210,285,2.33,400,43200,home_spanish,50,0.41,0.53,Spanish,es_419,spanish,es-ES,es-ES,es
+neighbourhood,South Common CN,4880,230,4.71,415,34400,home_spanish,35,0.72,0.37,Spanish,es_419,spanish,es-ES,es-ES,es
+neighbourhood,Streetsville CN,1320,55,4.17,75,31600,home_spanish,30,2.27,0.32,Spanish,es_419,spanish,es-ES,es-ES,es
+neighbourhood,Streetsville,10610,225,2.12,585,50400,home_spanish,180,1.7,1.92,Spanish,es_419,spanish,es-ES,es-ES,es
+neighbourhood,Uptown MN,10660,435,4.08,1255,48400,home_spanish,115,1.08,1.23,Spanish,es_419,spanish,es-ES,es-ES,es
+neighbourhood,Applewood,35490,1485,4.18,2345,38800,home_tamil,460,1.3,6.2,Tamil,ta_in,tamil,,,ta
+neighbourhood,Central Erin Mills MN,6040,280,4.64,1160,50000,home_tamil,115,1.9,1.55,Tamil,ta_in,tamil,,,ta
+neighbourhood,Central Erin Mills,30250,1140,3.77,2250,48800,home_tamil,180,0.6,2.43,Tamil,ta_in,tamil,,,ta
+neighbourhood,Churchill Meadows,48745,1390,2.85,4580,46800,home_tamil,635,1.3,8.56,Tamil,ta_in,tamil,,,ta
+neighbourhood,Clarkson - Lorne Park,36350,565,1.55,1215,50400,home_tamil,25,0.07,0.34,Tamil,ta_in,tamil,,,ta
+neighbourhood,Clarkson Village CN,2350,30,1.28,125,57600,home_tamil,0,0.0,0.0,Tamil,ta_in,tamil,,,ta
+neighbourhood,Cooksville (East),8405,180,2.14,330,35200,home_tamil,25,0.3,0.34,Tamil,ta_in,tamil,,,ta
+neighbourhood,Cooksville (West),14665,790,5.39,940,33600,home_tamil,145,0.99,1.95,Tamil,ta_in,tamil,,,ta
+neighbourhood,Creditview,10070,525,5.21,530,37200,home_tamil,55,0.55,0.74,Tamil,ta_in,tamil,,,ta
+neighbourhood,DT Cooksville,9575,515,5.38,1660,36000,home_tamil,355,3.71,4.78,Tamil,ta_in,tamil,,,ta
+neighbourhood,DT Core,34425,1160,3.37,6650,48000,home_tamil,565,1.64,7.61,Tamil,ta_in,tamil,,,ta
+neighbourhood,DT Fairview,16570,715,4.32,2370,41600,home_tamil,265,1.6,3.57,Tamil,ta_in,tamil,,,ta
+neighbourhood,DT Hospital,12305,635,5.16,1940,36000,home_tamil,135,1.1,1.82,Tamil,ta_in,tamil,,,ta
+neighbourhood,Dixie EA,945,60,6.35,15,29000,home_tamil,0,0.0,0.0,Tamil,ta_in,tamil,,,ta
+neighbourhood,East Credit,63320,2500,3.95,3575,35200,home_tamil,1205,1.9,16.24,Tamil,ta_in,tamil,,,ta
+neighbourhood,Erin Mills,38320,775,2.02,1580,46400,home_tamil,70,0.18,0.94,Tamil,ta_in,tamil,,,ta
+neighbourhood,Erindale,22025,895,4.06,1450,36000,home_tamil,45,0.2,0.61,Tamil,ta_in,tamil,,,ta
+neighbourhood,Fairview,7215,385,5.34,285,31600,home_tamil,105,1.46,1.42,Tamil,ta_in,tamil,,,ta
+neighbourhood,Hurontario,49755,2285,4.59,2965,37600,home_tamil,925,1.86,12.47,Tamil,ta_in,tamil,,,ta
+neighbourhood,Lakeview,21960,465,2.12,685,44400,home_tamil,35,0.16,0.47,Tamil,ta_in,tamil,,,ta
+neighbourhood,Lisgar,31565,700,2.22,2050,43200,home_tamil,230,0.73,3.1,Tamil,ta_in,tamil,,,ta
+neighbourhood,Malton CN,2670,60,2.25,280,28400,home_tamil,0,0.0,0.0,Tamil,ta_in,tamil,,,ta
+neighbourhood,Malton,35250,1805,5.12,3005,26000,home_tamil,235,0.67,3.17,Tamil,ta_in,tamil,,,ta
+neighbourhood,Meadowvale CN,2855,60,2.1,465,51600,home_tamil,75,2.63,1.01,Tamil,ta_in,tamil,,,ta
+neighbourhood,Meadowvale,35910,590,1.64,1825,48400,home_tamil,330,0.92,4.45,Tamil,ta_in,tamil,,,ta
+neighbourhood,Meadowvale Village,31240,935,2.99,2070,37200,home_tamil,720,2.3,9.7,Tamil,ta_in,tamil,,,ta
+neighbourhood,Mineola,9845,185,1.88,315,47600,home_tamil,60,0.61,0.81,Tamil,ta_in,tamil,,,ta
+neighbourhood,Mississauga Valleys,12595,500,3.97,925,39200,home_tamil,85,0.67,1.15,Tamil,ta_in,tamil,,,ta
+neighbourhood,Port Credit CN,4945,120,2.43,210,45200,home_tamil,0,0.0,0.0,Tamil,ta_in,tamil,,,ta
+neighbourhood,Port Credit (East),2420,30,1.24,30,45200,home_tamil,0,0.0,0.0,Tamil,ta_in,tamil,,,ta
+neighbourhood,Port Credit (West),3300,60,1.82,150,41600,home_tamil,0,0.0,0.0,Tamil,ta_in,tamil,,,ta
+neighbourhood,Rathwood,24865,940,3.78,1060,43200,home_tamil,155,0.62,2.09,Tamil,ta_in,tamil,,,ta
+neighbourhood,Rathwood-Applewood CN,3350,180,5.37,235,39200,home_tamil,0,0.0,0.0,Tamil,ta_in,tamil,,,ta
+neighbourhood,Sheridan CN,3265,135,4.13,480,36800,home_tamil,15,0.46,0.2,Tamil,ta_in,tamil,,,ta
+neighbourhood,Sheridan,12210,285,2.33,400,43200,home_tamil,15,0.12,0.2,Tamil,ta_in,tamil,,,ta
+neighbourhood,South Common CN,4880,230,4.71,415,34400,home_tamil,15,0.31,0.2,Tamil,ta_in,tamil,,,ta
+neighbourhood,Streetsville CN,1320,55,4.17,75,31600,home_tamil,0,0.0,0.0,Tamil,ta_in,tamil,,,ta
+neighbourhood,Streetsville,10610,225,2.12,585,50400,home_tamil,35,0.33,0.47,Tamil,ta_in,tamil,,,ta
+neighbourhood,Uptown MN,10660,435,4.08,1255,48400,home_tamil,105,0.98,1.42,Tamil,ta_in,tamil,,,ta
+neighbourhood,Applewood,35490,1485,4.18,2345,38800,home_vietnamese,930,2.62,12.71,Vietnamese,vi_vn,vietnamese,,vi-VN,vi
+neighbourhood,Central Erin Mills MN,6040,280,4.64,1160,50000,home_vietnamese,0,0.0,0.0,Vietnamese,vi_vn,vietnamese,,vi-VN,vi
+neighbourhood,Central Erin Mills,30250,1140,3.77,2250,48800,home_vietnamese,100,0.33,1.37,Vietnamese,vi_vn,vietnamese,,vi-VN,vi
+neighbourhood,Churchill Meadows,48745,1390,2.85,4580,46800,home_vietnamese,315,0.65,4.31,Vietnamese,vi_vn,vietnamese,,vi-VN,vi
+neighbourhood,Clarkson - Lorne Park,36350,565,1.55,1215,50400,home_vietnamese,65,0.18,0.89,Vietnamese,vi_vn,vietnamese,,vi-VN,vi
+neighbourhood,Clarkson Village CN,2350,30,1.28,125,57600,home_vietnamese,0,0.0,0.0,Vietnamese,vi_vn,vietnamese,,vi-VN,vi
+neighbourhood,Cooksville (East),8405,180,2.14,330,35200,home_vietnamese,170,2.02,2.32,Vietnamese,vi_vn,vietnamese,,vi-VN,vi
+neighbourhood,Cooksville (West),14665,790,5.39,940,33600,home_vietnamese,105,0.72,1.44,Vietnamese,vi_vn,vietnamese,,vi-VN,vi
+neighbourhood,Creditview,10070,525,5.21,530,37200,home_vietnamese,280,2.78,3.83,Vietnamese,vi_vn,vietnamese,,vi-VN,vi
+neighbourhood,DT Cooksville,9575,515,5.38,1660,36000,home_vietnamese,130,1.36,1.78,Vietnamese,vi_vn,vietnamese,,vi-VN,vi
+neighbourhood,DT Core,34425,1160,3.37,6650,48000,home_vietnamese,130,0.38,1.78,Vietnamese,vi_vn,vietnamese,,vi-VN,vi
+neighbourhood,DT Fairview,16570,715,4.32,2370,41600,home_vietnamese,150,0.91,2.05,Vietnamese,vi_vn,vietnamese,,vi-VN,vi
+neighbourhood,DT Hospital,12305,635,5.16,1940,36000,home_vietnamese,135,1.1,1.85,Vietnamese,vi_vn,vietnamese,,vi-VN,vi
+neighbourhood,Dixie EA,945,60,6.35,15,29000,home_vietnamese,25,2.65,0.34,Vietnamese,vi_vn,vietnamese,,vi-VN,vi
+neighbourhood,East Credit,63320,2500,3.95,3575,35200,home_vietnamese,1110,1.75,15.17,Vietnamese,vi_vn,vietnamese,,vi-VN,vi
+neighbourhood,Erin Mills,38320,775,2.02,1580,46400,home_vietnamese,125,0.33,1.71,Vietnamese,vi_vn,vietnamese,,vi-VN,vi
+neighbourhood,Erindale,22025,895,4.06,1450,36000,home_vietnamese,295,1.34,4.03,Vietnamese,vi_vn,vietnamese,,vi-VN,vi
+neighbourhood,Fairview,7215,385,5.34,285,31600,home_vietnamese,200,2.77,2.73,Vietnamese,vi_vn,vietnamese,,vi-VN,vi
+neighbourhood,Hurontario,49755,2285,4.59,2965,37600,home_vietnamese,1275,2.56,17.43,Vietnamese,vi_vn,vietnamese,,vi-VN,vi
+neighbourhood,Lakeview,21960,465,2.12,685,44400,home_vietnamese,155,0.71,2.12,Vietnamese,vi_vn,vietnamese,,vi-VN,vi
+neighbourhood,Lisgar,31565,700,2.22,2050,43200,home_vietnamese,125,0.4,1.71,Vietnamese,vi_vn,vietnamese,,vi-VN,vi
+neighbourhood,Malton CN,2670,60,2.25,280,28400,home_vietnamese,0,0.0,0.0,Vietnamese,vi_vn,vietnamese,,vi-VN,vi
+neighbourhood,Malton,35250,1805,5.12,3005,26000,home_vietnamese,75,0.21,1.03,Vietnamese,vi_vn,vietnamese,,vi-VN,vi
+neighbourhood,Meadowvale CN,2855,60,2.1,465,51600,home_vietnamese,0,0.0,0.0,Vietnamese,vi_vn,vietnamese,,vi-VN,vi
+neighbourhood,Meadowvale,35910,590,1.64,1825,48400,home_vietnamese,155,0.43,2.12,Vietnamese,vi_vn,vietnamese,,vi-VN,vi
+neighbourhood,Meadowvale Village,31240,935,2.99,2070,37200,home_vietnamese,515,1.65,7.04,Vietnamese,vi_vn,vietnamese,,vi-VN,vi
+neighbourhood,Mineola,9845,185,1.88,315,47600,home_vietnamese,35,0.36,0.48,Vietnamese,vi_vn,vietnamese,,vi-VN,vi
+neighbourhood,Mississauga Valleys,12595,500,3.97,925,39200,home_vietnamese,155,1.23,2.12,Vietnamese,vi_vn,vietnamese,,vi-VN,vi
+neighbourhood,Port Credit CN,4945,120,2.43,210,45200,home_vietnamese,0,0.0,0.0,Vietnamese,vi_vn,vietnamese,,vi-VN,vi
+neighbourhood,Port Credit (East),2420,30,1.24,30,45200,home_vietnamese,0,0.0,0.0,Vietnamese,vi_vn,vietnamese,,vi-VN,vi
+neighbourhood,Port Credit (West),3300,60,1.82,150,41600,home_vietnamese,0,0.0,0.0,Vietnamese,vi_vn,vietnamese,,vi-VN,vi
+neighbourhood,Rathwood,24865,940,3.78,1060,43200,home_vietnamese,310,1.25,4.24,Vietnamese,vi_vn,vietnamese,,vi-VN,vi
+neighbourhood,Rathwood-Applewood CN,3350,180,5.37,235,39200,home_vietnamese,15,0.45,0.21,Vietnamese,vi_vn,vietnamese,,vi-VN,vi
+neighbourhood,Sheridan CN,3265,135,4.13,480,36800,home_vietnamese,0,0.0,0.0,Vietnamese,vi_vn,vietnamese,,vi-VN,vi
+neighbourhood,Sheridan,12210,285,2.33,400,43200,home_vietnamese,40,0.33,0.55,Vietnamese,vi_vn,vietnamese,,vi-VN,vi
+neighbourhood,South Common CN,4880,230,4.71,415,34400,home_vietnamese,0,0.0,0.0,Vietnamese,vi_vn,vietnamese,,vi-VN,vi
+neighbourhood,Streetsville CN,1320,55,4.17,75,31600,home_vietnamese,0,0.0,0.0,Vietnamese,vi_vn,vietnamese,,vi-VN,vi
+neighbourhood,Streetsville,10610,225,2.12,585,50400,home_vietnamese,30,0.28,0.41,Vietnamese,vi_vn,vietnamese,,vi-VN,vi
+neighbourhood,Uptown MN,10660,435,4.08,1255,48400,home_vietnamese,165,1.55,2.26,Vietnamese,vi_vn,vietnamese,,vi-VN,vi
+neighbourhood,Applewood,35490,1485,4.18,2345,38800,home_hindi,115,0.32,1.73,Hindi,hi_in,hindi,,,hi
+neighbourhood,Central Erin Mills MN,6040,280,4.64,1160,50000,home_hindi,80,1.32,1.2,Hindi,hi_in,hindi,,,hi
+neighbourhood,Central Erin Mills,30250,1140,3.77,2250,48800,home_hindi,285,0.94,4.29,Hindi,hi_in,hindi,,,hi
+neighbourhood,Churchill Meadows,48745,1390,2.85,4580,46800,home_hindi,480,0.98,7.23,Hindi,hi_in,hindi,,,hi
+neighbourhood,Clarkson - Lorne Park,36350,565,1.55,1215,50400,home_hindi,180,0.5,2.71,Hindi,hi_in,hindi,,,hi
+neighbourhood,Clarkson Village CN,2350,30,1.28,125,57600,home_hindi,0,0.0,0.0,Hindi,hi_in,hindi,,,hi
+neighbourhood,Cooksville (East),8405,180,2.14,330,35200,home_hindi,40,0.48,0.6,Hindi,hi_in,hindi,,,hi
+neighbourhood,Cooksville (West),14665,790,5.39,940,33600,home_hindi,165,1.13,2.48,Hindi,hi_in,hindi,,,hi
+neighbourhood,Creditview,10070,525,5.21,530,37200,home_hindi,60,0.6,0.9,Hindi,hi_in,hindi,,,hi
+neighbourhood,DT Cooksville,9575,515,5.38,1660,36000,home_hindi,130,1.36,1.96,Hindi,hi_in,hindi,,,hi
+neighbourhood,DT Core,34425,1160,3.37,6650,48000,home_hindi,930,2.7,14.01,Hindi,hi_in,hindi,,,hi
+neighbourhood,DT Fairview,16570,715,4.32,2370,41600,home_hindi,250,1.51,3.77,Hindi,hi_in,hindi,,,hi
+neighbourhood,DT Hospital,12305,635,5.16,1940,36000,home_hindi,45,0.37,0.68,Hindi,hi_in,hindi,,,hi
+neighbourhood,Dixie EA,945,60,6.35,15,29000,home_hindi,0,0.0,0.0,Hindi,hi_in,hindi,,,hi
+neighbourhood,East Credit,63320,2500,3.95,3575,35200,home_hindi,580,0.92,8.73,Hindi,hi_in,hindi,,,hi
+neighbourhood,Erin Mills,38320,775,2.02,1580,46400,home_hindi,215,0.56,3.24,Hindi,hi_in,hindi,,,hi
+neighbourhood,Erindale,22025,895,4.06,1450,36000,home_hindi,110,0.5,1.66,Hindi,hi_in,hindi,,,hi
+neighbourhood,Fairview,7215,385,5.34,285,31600,home_hindi,40,0.55,0.6,Hindi,hi_in,hindi,,,hi
+neighbourhood,Hurontario,49755,2285,4.59,2965,37600,home_hindi,565,1.14,8.51,Hindi,hi_in,hindi,,,hi
+neighbourhood,Lakeview,21960,465,2.12,685,44400,home_hindi,25,0.11,0.38,Hindi,hi_in,hindi,,,hi
+neighbourhood,Lisgar,31565,700,2.22,2050,43200,home_hindi,230,0.73,3.46,Hindi,hi_in,hindi,,,hi
+neighbourhood,Malton CN,2670,60,2.25,280,28400,home_hindi,0,0.0,0.0,Hindi,hi_in,hindi,,,hi
+neighbourhood,Malton,35250,1805,5.12,3005,26000,home_hindi,840,2.38,12.65,Hindi,hi_in,hindi,,,hi
+neighbourhood,Meadowvale CN,2855,60,2.1,465,51600,home_hindi,20,0.7,0.3,Hindi,hi_in,hindi,,,hi
+neighbourhood,Meadowvale,35910,590,1.64,1825,48400,home_hindi,190,0.53,2.86,Hindi,hi_in,hindi,,,hi
+neighbourhood,Meadowvale Village,31240,935,2.99,2070,37200,home_hindi,560,1.79,8.43,Hindi,hi_in,hindi,,,hi
+neighbourhood,Mineola,9845,185,1.88,315,47600,home_hindi,30,0.3,0.45,Hindi,hi_in,hindi,,,hi
+neighbourhood,Mississauga Valleys,12595,500,3.97,925,39200,home_hindi,20,0.16,0.3,Hindi,hi_in,hindi,,,hi
+neighbourhood,Port Credit CN,4945,120,2.43,210,45200,home_hindi,0,0.0,0.0,Hindi,hi_in,hindi,,,hi
+neighbourhood,Port Credit (East),2420,30,1.24,30,45200,home_hindi,0,0.0,0.0,Hindi,hi_in,hindi,,,hi
+neighbourhood,Port Credit (West),3300,60,1.82,150,41600,home_hindi,45,1.36,0.68,Hindi,hi_in,hindi,,,hi
+neighbourhood,Rathwood,24865,940,3.78,1060,43200,home_hindi,75,0.3,1.13,Hindi,hi_in,hindi,,,hi
+neighbourhood,Rathwood-Applewood CN,3350,180,5.37,235,39200,home_hindi,15,0.45,0.23,Hindi,hi_in,hindi,,,hi
+neighbourhood,Sheridan CN,3265,135,4.13,480,36800,home_hindi,0,0.0,0.0,Hindi,hi_in,hindi,,,hi
+neighbourhood,Sheridan,12210,285,2.33,400,43200,home_hindi,30,0.25,0.45,Hindi,hi_in,hindi,,,hi
+neighbourhood,South Common CN,4880,230,4.71,415,34400,home_hindi,10,0.2,0.15,Hindi,hi_in,hindi,,,hi
+neighbourhood,Streetsville CN,1320,55,4.17,75,31600,home_hindi,10,0.76,0.15,Hindi,hi_in,hindi,,,hi
+neighbourhood,Streetsville,10610,225,2.12,585,50400,home_hindi,70,0.66,1.05,Hindi,hi_in,hindi,,,hi
+neighbourhood,Uptown MN,10660,435,4.08,1255,48400,home_hindi,200,1.88,3.01,Hindi,hi_in,hindi,,,hi
+neighbourhood,Applewood,35490,1485,4.18,2345,38800,home_portuguese,445,1.25,7.42,Portuguese,pt_br,portuguese,pt-PT,pt-PT,pt
+neighbourhood,Central Erin Mills MN,6040,280,4.64,1160,50000,home_portuguese,45,0.75,0.75,Portuguese,pt_br,portuguese,pt-PT,pt-PT,pt
+neighbourhood,Central Erin Mills,30250,1140,3.77,2250,48800,home_portuguese,75,0.25,1.25,Portuguese,pt_br,portuguese,pt-PT,pt-PT,pt
+neighbourhood,Churchill Meadows,48745,1390,2.85,4580,46800,home_portuguese,275,0.56,4.58,Portuguese,pt_br,portuguese,pt-PT,pt-PT,pt
+neighbourhood,Clarkson - Lorne Park,36350,565,1.55,1215,50400,home_portuguese,210,0.58,3.5,Portuguese,pt_br,portuguese,pt-PT,pt-PT,pt
+neighbourhood,Clarkson Village CN,2350,30,1.28,125,57600,home_portuguese,10,0.43,0.17,Portuguese,pt_br,portuguese,pt-PT,pt-PT,pt
+neighbourhood,Cooksville (East),8405,180,2.14,330,35200,home_portuguese,155,1.84,2.58,Portuguese,pt_br,portuguese,pt-PT,pt-PT,pt
+neighbourhood,Cooksville (West),14665,790,5.39,940,33600,home_portuguese,445,3.03,7.42,Portuguese,pt_br,portuguese,pt-PT,pt-PT,pt
+neighbourhood,Creditview,10070,525,5.21,530,37200,home_portuguese,95,0.94,1.58,Portuguese,pt_br,portuguese,pt-PT,pt-PT,pt
+neighbourhood,DT Cooksville,9575,515,5.38,1660,36000,home_portuguese,45,0.47,0.75,Portuguese,pt_br,portuguese,pt-PT,pt-PT,pt
+neighbourhood,DT Core,34425,1160,3.37,6650,48000,home_portuguese,270,0.78,4.5,Portuguese,pt_br,portuguese,pt-PT,pt-PT,pt
+neighbourhood,DT Fairview,16570,715,4.32,2370,41600,home_portuguese,125,0.75,2.08,Portuguese,pt_br,portuguese,pt-PT,pt-PT,pt
+neighbourhood,DT Hospital,12305,635,5.16,1940,36000,home_portuguese,75,0.61,1.25,Portuguese,pt_br,portuguese,pt-PT,pt-PT,pt
+neighbourhood,Dixie EA,945,60,6.35,15,29000,home_portuguese,0,0.0,0.0,Portuguese,pt_br,portuguese,pt-PT,pt-PT,pt
+neighbourhood,East Credit,63320,2500,3.95,3575,35200,home_portuguese,460,0.73,7.67,Portuguese,pt_br,portuguese,pt-PT,pt-PT,pt
+neighbourhood,Erin Mills,38320,775,2.02,1580,46400,home_portuguese,155,0.4,2.58,Portuguese,pt_br,portuguese,pt-PT,pt-PT,pt
+neighbourhood,Erindale,22025,895,4.06,1450,36000,home_portuguese,270,1.23,4.5,Portuguese,pt_br,portuguese,pt-PT,pt-PT,pt
+neighbourhood,Fairview,7215,385,5.34,285,31600,home_portuguese,150,2.08,2.5,Portuguese,pt_br,portuguese,pt-PT,pt-PT,pt
+neighbourhood,Hurontario,49755,2285,4.59,2965,37600,home_portuguese,590,1.19,9.83,Portuguese,pt_br,portuguese,pt-PT,pt-PT,pt
+neighbourhood,Lakeview,21960,465,2.12,685,44400,home_portuguese,405,1.84,6.75,Portuguese,pt_br,portuguese,pt-PT,pt-PT,pt
+neighbourhood,Lisgar,31565,700,2.22,2050,43200,home_portuguese,185,0.59,3.08,Portuguese,pt_br,portuguese,pt-PT,pt-PT,pt
+neighbourhood,Malton CN,2670,60,2.25,280,28400,home_portuguese,0,0.0,0.0,Portuguese,pt_br,portuguese,pt-PT,pt-PT,pt
+neighbourhood,Malton,35250,1805,5.12,3005,26000,home_portuguese,90,0.26,1.5,Portuguese,pt_br,portuguese,pt-PT,pt-PT,pt
+neighbourhood,Meadowvale CN,2855,60,2.1,465,51600,home_portuguese,0,0.0,0.0,Portuguese,pt_br,portuguese,pt-PT,pt-PT,pt
+neighbourhood,Meadowvale,35910,590,1.64,1825,48400,home_portuguese,190,0.53,3.17,Portuguese,pt_br,portuguese,pt-PT,pt-PT,pt
+neighbourhood,Meadowvale Village,31240,935,2.99,2070,37200,home_portuguese,275,0.88,4.58,Portuguese,pt_br,portuguese,pt-PT,pt-PT,pt
+neighbourhood,Mineola,9845,185,1.88,315,47600,home_portuguese,95,0.96,1.58,Portuguese,pt_br,portuguese,pt-PT,pt-PT,pt
+neighbourhood,Mississauga Valleys,12595,500,3.97,925,39200,home_portuguese,90,0.71,1.5,Portuguese,pt_br,portuguese,pt-PT,pt-PT,pt
+neighbourhood,Port Credit CN,4945,120,2.43,210,45200,home_portuguese,0,0.0,0.0,Portuguese,pt_br,portuguese,pt-PT,pt-PT,pt
+neighbourhood,Port Credit (East),2420,30,1.24,30,45200,home_portuguese,0,0.0,0.0,Portuguese,pt_br,portuguese,pt-PT,pt-PT,pt
+neighbourhood,Port Credit (West),3300,60,1.82,150,41600,home_portuguese,20,0.61,0.33,Portuguese,pt_br,portuguese,pt-PT,pt-PT,pt
+neighbourhood,Rathwood,24865,940,3.78,1060,43200,home_portuguese,410,1.65,6.83,Portuguese,pt_br,portuguese,pt-PT,pt-PT,pt
+neighbourhood,Rathwood-Applewood CN,3350,180,5.37,235,39200,home_portuguese,15,0.45,0.25,Portuguese,pt_br,portuguese,pt-PT,pt-PT,pt
+neighbourhood,Sheridan CN,3265,135,4.13,480,36800,home_portuguese,0,0.0,0.0,Portuguese,pt_br,portuguese,pt-PT,pt-PT,pt
+neighbourhood,Sheridan,12210,285,2.33,400,43200,home_portuguese,40,0.33,0.67,Portuguese,pt_br,portuguese,pt-PT,pt-PT,pt
+neighbourhood,South Common CN,4880,230,4.71,415,34400,home_portuguese,0,0.0,0.0,Portuguese,pt_br,portuguese,pt-PT,pt-PT,pt
+neighbourhood,Streetsville CN,1320,55,4.17,75,31600,home_portuguese,10,0.76,0.17,Portuguese,pt_br,portuguese,pt-PT,pt-PT,pt
+neighbourhood,Streetsville,10610,225,2.12,585,50400,home_portuguese,210,1.98,3.5,Portuguese,pt_br,portuguese,pt-PT,pt-PT,pt
+neighbourhood,Uptown MN,10660,435,4.08,1255,48400,home_portuguese,70,0.66,1.17,Portuguese,pt_br,portuguese,pt-PT,pt-PT,pt
+neighbourhood,Applewood,35490,1485,4.18,2345,38800,home_gujarati,110,0.31,2.53,Gujarati,gu_in,gujarati,,,gu
+neighbourhood,Central Erin Mills MN,6040,280,4.64,1160,50000,home_gujarati,70,1.16,1.61,Gujarati,gu_in,gujarati,,,gu
+neighbourhood,Central Erin Mills,30250,1140,3.77,2250,48800,home_gujarati,120,0.4,2.76,Gujarati,gu_in,gujarati,,,gu
+neighbourhood,Churchill Meadows,48745,1390,2.85,4580,46800,home_gujarati,295,0.61,6.79,Gujarati,gu_in,gujarati,,,gu
+neighbourhood,Clarkson - Lorne Park,36350,565,1.55,1215,50400,home_gujarati,45,0.12,1.04,Gujarati,gu_in,gujarati,,,gu
+neighbourhood,Clarkson Village CN,2350,30,1.28,125,57600,home_gujarati,0,0.0,0.0,Gujarati,gu_in,gujarati,,,gu
+neighbourhood,Cooksville (East),8405,180,2.14,330,35200,home_gujarati,15,0.18,0.35,Gujarati,gu_in,gujarati,,,gu
+neighbourhood,Cooksville (West),14665,790,5.39,940,33600,home_gujarati,90,0.61,2.07,Gujarati,gu_in,gujarati,,,gu
+neighbourhood,Creditview,10070,525,5.21,530,37200,home_gujarati,0,0.0,0.0,Gujarati,gu_in,gujarati,,,gu
+neighbourhood,DT Cooksville,9575,515,5.38,1660,36000,home_gujarati,85,0.89,1.96,Gujarati,gu_in,gujarati,,,gu
+neighbourhood,DT Core,34425,1160,3.37,6650,48000,home_gujarati,270,0.78,6.21,Gujarati,gu_in,gujarati,,,gu
+neighbourhood,DT Fairview,16570,715,4.32,2370,41600,home_gujarati,180,1.09,4.14,Gujarati,gu_in,gujarati,,,gu
+neighbourhood,DT Hospital,12305,635,5.16,1940,36000,home_gujarati,105,0.85,2.42,Gujarati,gu_in,gujarati,,,gu
+neighbourhood,Dixie EA,945,60,6.35,15,29000,home_gujarati,0,0.0,0.0,Gujarati,gu_in,gujarati,,,gu
+neighbourhood,East Credit,63320,2500,3.95,3575,35200,home_gujarati,655,1.03,15.07,Gujarati,gu_in,gujarati,,,gu
+neighbourhood,Erin Mills,38320,775,2.02,1580,46400,home_gujarati,90,0.23,2.07,Gujarati,gu_in,gujarati,,,gu
+neighbourhood,Erindale,22025,895,4.06,1450,36000,home_gujarati,95,0.43,2.19,Gujarati,gu_in,gujarati,,,gu
+neighbourhood,Fairview,7215,385,5.34,285,31600,home_gujarati,35,0.49,0.81,Gujarati,gu_in,gujarati,,,gu
+neighbourhood,Hurontario,49755,2285,4.59,2965,37600,home_gujarati,350,0.7,8.06,Gujarati,gu_in,gujarati,,,gu
+neighbourhood,Lakeview,21960,465,2.12,685,44400,home_gujarati,0,0.0,0.0,Gujarati,gu_in,gujarati,,,gu
+neighbourhood,Lisgar,31565,700,2.22,2050,43200,home_gujarati,115,0.36,2.65,Gujarati,gu_in,gujarati,,,gu
+neighbourhood,Malton CN,2670,60,2.25,280,28400,home_gujarati,40,1.5,0.92,Gujarati,gu_in,gujarati,,,gu
+neighbourhood,Malton,35250,1805,5.12,3005,26000,home_gujarati,770,2.18,17.72,Gujarati,gu_in,gujarati,,,gu
+neighbourhood,Meadowvale CN,2855,60,2.1,465,51600,home_gujarati,0,0.0,0.0,Gujarati,gu_in,gujarati,,,gu
+neighbourhood,Meadowvale,35910,590,1.64,1825,48400,home_gujarati,135,0.38,3.11,Gujarati,gu_in,gujarati,,,gu
+neighbourhood,Meadowvale Village,31240,935,2.99,2070,37200,home_gujarati,425,1.36,9.78,Gujarati,gu_in,gujarati,,,gu
+neighbourhood,Mineola,9845,185,1.88,315,47600,home_gujarati,0,0.0,0.0,Gujarati,gu_in,gujarati,,,gu
+neighbourhood,Mississauga Valleys,12595,500,3.97,925,39200,home_gujarati,60,0.48,1.38,Gujarati,gu_in,gujarati,,,gu
+neighbourhood,Port Credit CN,4945,120,2.43,210,45200,home_gujarati,0,0.0,0.0,Gujarati,gu_in,gujarati,,,gu
+neighbourhood,Port Credit (East),2420,30,1.24,30,45200,home_gujarati,0,0.0,0.0,Gujarati,gu_in,gujarati,,,gu
+neighbourhood,Port Credit (West),3300,60,1.82,150,41600,home_gujarati,0,0.0,0.0,Gujarati,gu_in,gujarati,,,gu
+neighbourhood,Rathwood,24865,940,3.78,1060,43200,home_gujarati,70,0.28,1.61,Gujarati,gu_in,gujarati,,,gu
+neighbourhood,Rathwood-Applewood CN,3350,180,5.37,235,39200,home_gujarati,15,0.45,0.35,Gujarati,gu_in,gujarati,,,gu
+neighbourhood,Sheridan CN,3265,135,4.13,480,36800,home_gujarati,0,0.0,0.0,Gujarati,gu_in,gujarati,,,gu
+neighbourhood,Sheridan,12210,285,2.33,400,43200,home_gujarati,0,0.0,0.0,Gujarati,gu_in,gujarati,,,gu
+neighbourhood,South Common CN,4880,230,4.71,415,34400,home_gujarati,0,0.0,0.0,Gujarati,gu_in,gujarati,,,gu
+neighbourhood,Streetsville CN,1320,55,4.17,75,31600,home_gujarati,0,0.0,0.0,Gujarati,gu_in,gujarati,,,gu
+neighbourhood,Streetsville,10610,225,2.12,585,50400,home_gujarati,35,0.33,0.81,Gujarati,gu_in,gujarati,,,gu
+neighbourhood,Uptown MN,10660,435,4.08,1255,48400,home_gujarati,70,0.66,1.61,Gujarati,gu_in,gujarati,,,gu
+neighbourhood,Applewood,35490,1485,4.18,2345,38800,home_bengali,155,0.44,6.16,Bengali,,bengali,,,bn
+neighbourhood,Central Erin Mills MN,6040,280,4.64,1160,50000,home_bengali,35,0.58,1.39,Bengali,,bengali,,,bn
+neighbourhood,Central Erin Mills,30250,1140,3.77,2250,48800,home_bengali,50,0.17,1.99,Bengali,,bengali,,,bn
+neighbourhood,Churchill Meadows,48745,1390,2.85,4580,46800,home_bengali,225,0.46,8.95,Bengali,,bengali,,,bn
+neighbourhood,Clarkson - Lorne Park,36350,565,1.55,1215,50400,home_bengali,35,0.1,1.39,Bengali,,bengali,,,bn
+neighbourhood,Clarkson Village CN,2350,30,1.28,125,57600,home_bengali,15,0.64,0.6,Bengali,,bengali,,,bn
+neighbourhood,Cooksville (East),8405,180,2.14,330,35200,home_bengali,50,0.59,1.99,Bengali,,bengali,,,bn
+neighbourhood,Cooksville (West),14665,790,5.39,940,33600,home_bengali,25,0.17,0.99,Bengali,,bengali,,,bn
+neighbourhood,Creditview,10070,525,5.21,530,37200,home_bengali,0,0.0,0.0,Bengali,,bengali,,,bn
+neighbourhood,DT Cooksville,9575,515,5.38,1660,36000,home_bengali,70,0.73,2.78,Bengali,,bengali,,,bn
+neighbourhood,DT Core,34425,1160,3.37,6650,48000,home_bengali,285,0.83,11.33,Bengali,,bengali,,,bn
+neighbourhood,DT Fairview,16570,715,4.32,2370,41600,home_bengali,210,1.27,8.35,Bengali,,bengali,,,bn
+neighbourhood,DT Hospital,12305,635,5.16,1940,36000,home_bengali,110,0.89,4.37,Bengali,,bengali,,,bn
+neighbourhood,Dixie EA,945,60,6.35,15,29000,home_bengali,0,0.0,0.0,Bengali,,bengali,,,bn
+neighbourhood,East Credit,63320,2500,3.95,3575,35200,home_bengali,180,0.28,7.16,Bengali,,bengali,,,bn
+neighbourhood,Erin Mills,38320,775,2.02,1580,46400,home_bengali,105,0.27,4.17,Bengali,,bengali,,,bn
+neighbourhood,Erindale,22025,895,4.06,1450,36000,home_bengali,65,0.3,2.58,Bengali,,bengali,,,bn
+neighbourhood,Fairview,7215,385,5.34,285,31600,home_bengali,30,0.42,1.19,Bengali,,bengali,,,bn
+neighbourhood,Hurontario,49755,2285,4.59,2965,37600,home_bengali,170,0.34,6.76,Bengali,,bengali,,,bn
+neighbourhood,Lakeview,21960,465,2.12,685,44400,home_bengali,45,0.2,1.79,Bengali,,bengali,,,bn
+neighbourhood,Lisgar,31565,700,2.22,2050,43200,home_bengali,95,0.3,3.78,Bengali,,bengali,,,bn
+neighbourhood,Malton CN,2670,60,2.25,280,28400,home_bengali,0,0.0,0.0,Bengali,,bengali,,,bn
+neighbourhood,Malton,35250,1805,5.12,3005,26000,home_bengali,210,0.6,8.35,Bengali,,bengali,,,bn
+neighbourhood,Meadowvale CN,2855,60,2.1,465,51600,home_bengali,0,0.0,0.0,Bengali,,bengali,,,bn
+neighbourhood,Meadowvale,35910,590,1.64,1825,48400,home_bengali,115,0.32,4.57,Bengali,,bengali,,,bn
+neighbourhood,Meadowvale Village,31240,935,2.99,2070,37200,home_bengali,55,0.18,2.19,Bengali,,bengali,,,bn
+neighbourhood,Mineola,9845,185,1.88,315,47600,home_bengali,0,0.0,0.0,Bengali,,bengali,,,bn
+neighbourhood,Mississauga Valleys,12595,500,3.97,925,39200,home_bengali,25,0.2,0.99,Bengali,,bengali,,,bn
+neighbourhood,Port Credit CN,4945,120,2.43,210,45200,home_bengali,0,0.0,0.0,Bengali,,bengali,,,bn
+neighbourhood,Port Credit (East),2420,30,1.24,30,45200,home_bengali,0,0.0,0.0,Bengali,,bengali,,,bn
+neighbourhood,Port Credit (West),3300,60,1.82,150,41600,home_bengali,0,0.0,0.0,Bengali,,bengali,,,bn
+neighbourhood,Rathwood,24865,940,3.78,1060,43200,home_bengali,15,0.06,0.6,Bengali,,bengali,,,bn
+neighbourhood,Rathwood-Applewood CN,3350,180,5.37,235,39200,home_bengali,45,1.34,1.79,Bengali,,bengali,,,bn
+neighbourhood,Sheridan CN,3265,135,4.13,480,36800,home_bengali,0,0.0,0.0,Bengali,,bengali,,,bn
+neighbourhood,Sheridan,12210,285,2.33,400,43200,home_bengali,25,0.2,0.99,Bengali,,bengali,,,bn
+neighbourhood,South Common CN,4880,230,4.71,415,34400,home_bengali,0,0.0,0.0,Bengali,,bengali,,,bn
+neighbourhood,Streetsville CN,1320,55,4.17,75,31600,home_bengali,0,0.0,0.0,Bengali,,bengali,,,bn
+neighbourhood,Streetsville,10610,225,2.12,585,50400,home_bengali,0,0.0,0.0,Bengali,,bengali,,,bn
+neighbourhood,Uptown MN,10660,435,4.08,1255,48400,home_bengali,70,0.66,2.78,Bengali,,bengali,,,bn
