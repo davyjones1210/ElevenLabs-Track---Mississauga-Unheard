@@ -128,3 +128,116 @@ def evaluate_intents(data_root: Path, output_dir: Path) -> list[dict[str, str]]:
             ],
         )
     return evaluations
+
+
+def evaluate_audio_intents(
+    data_root: Path, output_dir: Path
+) -> list[dict[str, str]]:
+    asr_path = output_dir / "asr_benchmark.csv"
+    if not asr_path.is_file():
+        return []
+
+    TfidfVectorizer, LogisticRegression, _, make_pipeline = _sklearn()
+    training = _training_groups(data_root)
+    test_rows = [
+        row
+        for row in read_csv(asr_path)
+        if row.get("dataset") in {"minds14", "massive"} and row.get("transcript", "").strip()
+    ]
+    by_group: dict[tuple[str, str], list[dict[str, str]]] = {}
+    for row in test_rows:
+        by_group.setdefault((row["dataset"], row["language"]), []).append(row)
+
+    predictions: list[dict[str, str]] = []
+    evaluation: list[dict[str, str]] = []
+    for (dataset, language), samples in sorted(by_group.items()):
+        train_rows = [
+            row
+            for row in training[dataset]
+            if row["language"].casefold() == language.casefold()
+            and row["file"] not in {sample["file"] for sample in samples}
+        ]
+        if not train_rows or len({row["label"] for row in train_rows}) < 2:
+            evaluation.append(
+                {
+                    "dataset": dataset,
+                    "language": language,
+                    "label_type": "intent" if dataset == "minds14" else "scenario",
+                    "samples": str(len(samples)),
+                    "correct": "",
+                    "accuracy": "",
+                    "status": "skipped: insufficient labeled training examples",
+                }
+            )
+            continue
+
+        model = make_pipeline(
+            TfidfVectorizer(
+                analyzer="char",
+                ngram_range=(2, 5),
+                min_df=1,
+                max_features=100_000,
+                sublinear_tf=True,
+            ),
+            LogisticRegression(max_iter=1000, class_weight="balanced", random_state=42),
+        )
+        model.fit(
+            [row["text"] for row in train_rows],
+            [row["label"] for row in train_rows],
+        )
+        texts = [row["transcript"] for row in samples]
+        predicted_labels = model.predict(texts)
+        correct = 0
+        for sample, prediction in zip(samples, predicted_labels):
+            is_correct = prediction == sample["reference_label"]
+            correct += is_correct
+            predictions.append(
+                {
+                    "dataset": dataset,
+                    "language": language,
+                    "file": sample["file"],
+                    "true_label": sample["reference_label"],
+                    "predicted_label": prediction,
+                    "correct": str(is_correct).lower(),
+                    "asr_transcript": sample["transcript"],
+                    "reference_transcript": sample["reference"],
+                }
+            )
+        evaluation.append(
+            {
+                "dataset": dataset,
+                "language": language,
+                "label_type": "intent" if dataset == "minds14" else "scenario",
+                "samples": str(len(samples)),
+                "correct": str(correct),
+                "accuracy": f"{correct / len(samples):.6f}",
+                "status": "audio transcript; exploratory sample",
+            }
+        )
+
+    write_csv(output_dir / "audio_intent_evaluation.csv", evaluation)
+    write_csv(output_dir / "audio_intent_predictions.csv", predictions)
+    confusion_counts = Counter(
+        (
+            row["dataset"],
+            row["language"],
+            row["true_label"],
+            row["predicted_label"],
+        )
+        for row in predictions
+    )
+    write_csv(
+        output_dir / "audio_intent_confusions.csv",
+        [
+            {
+                "dataset": dataset,
+                "language": language,
+                "true_label": true_label,
+                "predicted_label": predicted_label,
+                "count": count,
+            }
+            for (dataset, language, true_label, predicted_label), count
+            in sorted(confusion_counts.items())
+        ],
+    )
+    return evaluation

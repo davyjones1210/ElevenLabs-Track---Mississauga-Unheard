@@ -3,9 +3,10 @@ import sys
 from pathlib import Path
 
 from .analysis import run_analysis
-from .benchmark import run_benchmark
+from .benchmark import run_benchmark, run_paired_fleurs_benchmark
 from .data import DATASET_DIRS, resolve_data_root
 from .index import build_unheard_index
+from .intents import evaluate_audio_intents
 from .prototype import synthesize_callback
 
 
@@ -21,6 +22,11 @@ def _common(parser: argparse.ArgumentParser) -> None:
 
 def _benchmark(parser: argparse.ArgumentParser) -> None:
     _common(parser)
+    parser.add_argument(
+        "--paired-fleurs",
+        action="store_true",
+        help="Evaluate one shared FLEURS sentence ID across every language, reusing cached clips.",
+    )
     parser.add_argument(
         "--datasets",
         default="fleurs,accent",
@@ -116,6 +122,17 @@ def main(argv: list[str] | None = None) -> int:
             run_analysis(data_root, output_dir)
             print(f"Offline analysis written to {output_dir}")
         elif args.command == "benchmark":
+            if args.paired_fleurs:
+                results = run_paired_fleurs_benchmark(
+                    data_root,
+                    output_dir,
+                    args.workspace.resolve(),
+                )
+                print(
+                    f"Matched FLEURS results ({len(results)} languages) written to "
+                    f"{output_dir / 'paired_fleurs_summary.csv'}"
+                )
+                return 0
             results = run_benchmark(
                 data_root,
                 output_dir,
@@ -124,8 +141,10 @@ def main(argv: list[str] | None = None) -> int:
                 args.per_group,
                 _parse_languages(args.languages),
             )
+            evaluate_audio_intents(data_root, output_dir)
             print(f"ASR results ({len(results)} clips) written to {output_dir / 'asr_benchmark.csv'}")
         elif args.command == "index":
+            evaluate_audio_intents(data_root, output_dir)
             rows = build_unheard_index(data_root, output_dir)
             print(f"Geography index ({len(rows)} areas) written to {output_dir / 'unheard_index.csv'}")
         elif args.command == "run":
@@ -139,6 +158,7 @@ def main(argv: list[str] | None = None) -> int:
                     args.per_group,
                     _parse_languages(args.languages),
                 )
+            evaluate_audio_intents(data_root, output_dir)
             rows = build_unheard_index(data_root, output_dir)
             print(f"Workflow complete: {output_dir} ({len(rows)} geography rows)")
         return 0

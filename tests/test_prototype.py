@@ -18,10 +18,13 @@ class PrototypeTests(unittest.TestCase):
             client.assert_not_called()
 
     def test_synthesizes_to_requested_file(self):
+        def convert(**kwargs):
+            self.assertEqual(kwargs["voice_id"], "test-voice")
+            self.assertEqual(kwargs["model_id"], "eleven_multilingual_v2")
+            return iter([b"audio-", b"bytes"])
+
         fake_client = SimpleNamespace(
-            text_to_speech=SimpleNamespace(
-                convert=lambda **kwargs: iter([b"audio-", b"bytes"])
-            )
+            text_to_speech=SimpleNamespace(convert=convert)
         )
         with tempfile.TemporaryDirectory() as temporary:
             output = Path(temporary) / "callback.mp3"
@@ -33,20 +36,19 @@ class PrototypeTests(unittest.TestCase):
             self.assertEqual(result, output)
 
     def test_explains_voice_not_found_response(self):
-        fake_client = SimpleNamespace(
-            text_to_speech=SimpleNamespace(
-                convert=lambda **kwargs: (_ for _ in ()).throw(
-                    ApiError(
-                        status_code=404,
-                        body={
-                            "detail": {
-                                "code": "voice_not_found",
-                                "message": "Voice was not found",
-                            }
-                        },
-                    )
-                )
+        def convert(**kwargs):
+            raise ApiError(
+                status_code=404,
+                body={
+                    "detail": {
+                        "code": "voice_not_found",
+                        "message": f"Voice {kwargs['voice_id']} was not found",
+                    }
+                },
             )
+
+        fake_client = SimpleNamespace(
+            text_to_speech=SimpleNamespace(convert=convert)
         )
         with tempfile.TemporaryDirectory() as temporary:
             with patch("mississauga_unheard.prototype._client", return_value=fake_client):

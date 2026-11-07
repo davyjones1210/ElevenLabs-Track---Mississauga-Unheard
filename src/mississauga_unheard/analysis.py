@@ -3,7 +3,7 @@ from collections import Counter, defaultdict
 from pathlib import Path
 
 from .data import read_csv, write_csv
-from .intents import evaluate_intents
+from .intents import evaluate_audio_intents, evaluate_intents
 
 
 def _as_int(value: str) -> int | None:
@@ -124,3 +124,5 @@ def run_analysis(data_root: Path, output_dir: Path) -> None:
     summarize_toronto_311(data_root, output_dir)
     summarize_mississauga_311(data_root, output_dir)
     evaluate_intents(data_root, output_dir)
+    if (output_dir / "asr_benchmark.csv").is_file():
+        evaluate_audio_intents(data_root, output_dir)
