@@ -86,9 +86,9 @@ Provide translated and reviewed text in the target language; this command synthe
 
 ```powershell
 python -m mississauga_unheard prototype --workspace . `
-  --voice-id YOUR_VOICE_ID `
+  --voice-id YOUR_REAL_VOICE_ID `
   --text "Your translated callback message goes here." `
   --output outputs/311_callback.mp3
 ```
 
-The generated MP3 is a demonstration of a callback in the caller's language, not a deployed agent or a validated translation. Use a voice permitted for this purpose and review the message with a fluent speaker before presenting it as service guidance.
+Replace `YOUR_REAL_VOICE_ID` with a voice ID from your ElevenLabs Voices page; the placeholder is not a valid voice ID. A `voice_not_found` response means the ID is invalid or unavailable to the account/API key. The generated MP3 is a demonstration of a callback in the caller's language, not a deployed agent or a validated translation. Use a voice permitted for this purpose and review the message with a fluent speaker before presenting it as service guidance.
