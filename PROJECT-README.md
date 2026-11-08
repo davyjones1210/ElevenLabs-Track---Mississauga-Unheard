@@ -2,6 +2,8 @@
 
 ## Inspiration
 
+**Prepared by Kunal Dekhane**
+
 Mississauga is multilingual, but a voice service can fail residents at two
 different steps: recognizing what they say and routing the request correctly.
 This project explores where speech benchmarks signal potential language-access
@@ -48,6 +50,19 @@ controls the prompt for one clip per language, but it does not control speaker,
 gender, or dialect. The complete language-group measurements are samples, not
 proof that language itself caused an error.
 
+**English-accent reference baseline:** The cache also includes all 45 English
+(Canadian) control recordings in the Speech Accent Archive. Their mean
+per-clip CER is **0.1384%** (17 character edits over 12,285 normalized
+reference characters), the lowest mean CER among the cached language/dataset
+groups with at least 10 clips. This is the best-performing multi-clip group in
+the current benchmark sample—not proof that every English speaker is
+understood or that each English clip beats every clip in another group. Six
+other dataset/language groups have just one clip and a 0% CER. As a cross-check,
+the separate 40-clip FLEURS English group has mean CER 0.8455%; this
+cross-dataset comparison is descriptive, not controlled for speakers,
+recording, or prompt content. Use the English Archive recordings as a
+same-paragraph control when comparing its English-accent groups.
+
 **Who and where:** The 2021 census reports 10,765 Cantonese home-language
 speakers in Mississauga. The largest counts are in Ward 6 (2,520) and East
 Credit (2,225). Other high-CER groups include 22,535 Urdu speakers (Ward 10:
@@ -85,6 +100,11 @@ lids (24,448), property standards violations (17,079), and dead-wildlife
 pickup (15,513); Toronto is only a proxy and its data has no language or
 urgency labels.
 
+The cached ASR results include both source datasets: all 560 FLEURS clips
+(14 language groups) and 419/468 Speech Accent Archive clips (15
+first-language groups, including the 45-clip Canadian-English baseline).
+Five MInDS-14 and five Speech-MASSIVE clips are also cached.
+
 **ElevenLabs demonstration:** A short Cantonese acknowledgment was generated
 with the configured voice: “你好，我哋收到你嘅請求。” (“Hello, we received
 your request.”) Listen to [the Cantonese audio
@@ -104,14 +124,25 @@ baselines, geographic summaries, and a short TTS callback. It does not have a
 connected ElevenLabs Agent, a Mississauga service-catalogue integration, live
 311 telephony, automatic translation, or an end-to-end city-request test.
 
-| Stage | Proposed behavior | Safety and accessibility guardrail |
-|---|---|---|
-| 1. Start and choose language | A caller reaches 311, selects or says a preferred language, and can request a human at any point. | Keep language selection easy to repeat; provide an accessible route for callers who cannot use speech. |
-| 2. Recognize speech | ElevenLabs Scribe converts the request to text in a supported language. | Treat recognition as uncertain; protect transcripts and audio, minimize retention, and disclose recording and processing before collecting them. |
-| 3. Identify the service | An intent component matches the transcript to an approved Mississauga service and gathers only the details needed for that request. | Use the City's maintained service information, not Toronto request counts as a routing catalogue. Do not treat benchmark labels as validated city intents. |
-| 4. Confirm before action | The assistant reads back the interpreted request and proposed destination in the caller's preferred language, then asks the caller to confirm or correct it. | Do not submit or dispatch a request until the caller confirms. Offer repeat, correction, and human fallback when recognition or intent confidence is low. |
-| 5. Respond and route | ElevenLabs text-to-speech can speak an approved response; a confirmed request can be handed to the authorized department or a human representative. | Use reviewed translations and city-approved instructions. Preserve a clear human path and follow official procedures for emergency or out-of-scope requests. |
-| 6. Close the loop | Provide a reference number or next step in speech and another accessible format where possible. | Audit failures and handoffs with privacy controls; never claim resolution until the receiving service confirms it. |
+![Proposed 311 voice-assistant workflow](slides/Proposed_311_Workflow.png)
+
+1. **Resident calls 311:** Speaks Punjabi, Urdu, Arabic, Mandarin, Tamil, or
+   another language.
+2. **Speech recognition — ElevenLabs Scribe:** Converts the resident's speech
+   into text.
+3. **Intent classification:** Identifies a request such as garbage collection,
+   road maintenance, or water issues.
+4. **Multilingual response — ElevenLabs:** Generates an appropriate response
+   in the resident's preferred language.
+5. **Request resolution:** Provides instructions, captures the request, or
+   routes it to the appropriate department.
+
+**Required safeguards for evaluation:** Read back the interpreted request and
+destination and obtain caller confirmation before submission or dispatch.
+Allow corrections and human handoff whenever requested or needed. Disclose
+audio processing, apply City-approved privacy and retention controls, use
+reviewed translations and approved service information, and do not claim a
+request is resolved until the receiving department confirms it.
 
 ElevenLabs Agents could be evaluated later as the conversation-orchestration
 layer, with Scribe for speech recognition and Text-to-Speech for spoken

@@ -1,6 +1,7 @@
 import csv
 from pathlib import Path
 
+from PIL import Image, ImageDraw, ImageFont
 from pptx import Presentation
 from pptx.dml.color import RGBColor
 from pptx.enum.shapes import MSO_SHAPE
@@ -11,6 +12,8 @@ from pptx.util import Inches, Pt
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = Path(__file__).resolve().parent / "Mississauga_Unheard_Findings.pptx"
 WARD_MAP = Path(__file__).resolve().parent / "Mississauga_Unheard_Ward_Map.png"
+WORKFLOW_MAP = Path(__file__).resolve().parent / "Proposed_311_Workflow.png"
+AUTHOR = "Kunal Dekhane"
 
 W, H = 13.333, 7.5
 BG = "0B1220"
@@ -68,6 +71,9 @@ def current_findings():
     accent_summary = [
         row for row in read_output("asr_summary.csv") if row["dataset"] == "accent"
     ]
+    accent_english_baseline = next(
+        row for row in accent_summary if row["language"].casefold() == "english"
+    )
     intent_predictions = read_output("audio_intent_predictions.csv")
     audio_intent = {}
     for dataset in ("minds14", "massive"):
@@ -113,11 +119,84 @@ def current_findings():
         "fleurs": fleurs,
         "accent_inventory": accent_language_inventory,
         "accent_summary": accent_summary,
+        "accent_english_baseline": accent_english_baseline,
         "audio_intent": audio_intent,
         "text_intent": text_intent,
         "wards": wards,
         "neighbourhoods": neighbourhoods,
     }
+
+
+def build_workflow_diagram():
+    width, height = 1800, 660
+    image = Image.new("RGB", (width, height), (8, 16, 30))
+    draw = ImageDraw.Draw(image)
+    font_dir = Path(r"C:\Windows\Fonts")
+
+    def load_font(filename, size):
+        path = font_dir / filename
+        return ImageFont.truetype(str(path), size) if path.exists() else ImageFont.load_default()
+
+    title_font = load_font("segoeuib.ttf", 34)
+    heading_font = load_font("segoeuib.ttf", 23)
+    body_font = load_font("segoeui.ttf", 18)
+    small_font = load_font("segoeui.ttf", 16)
+    stages = [
+        ("1. Resident calls 311", "Speaks Punjabi, Urdu, Arabic,\nMandarin, Tamil, or another\npreferred language.", "41D6C3"),
+        ("2. Speech recognition", "ElevenLabs Scribe converts\nthe resident's speech into\ntext.", "62A7FF"),
+        ("3. Intent classification", "Identifies the service request:\ngarbage, road maintenance,\nwater, or another service.", "FFBE5C"),
+        ("4. Multilingual response", "ElevenLabs generates an\nappropriate response in the\nresident's preferred language.", "62A7FF"),
+        ("5. Request resolution", "Provides instructions, captures\nthe request, or routes it to the\nappropriate department.", "41D6C3"),
+    ]
+    draw.text((48, 28), "PROPOSED MISSISSAUGA 311 VOICE WORKFLOW", font=title_font, fill=(242, 247, 252))
+    card_y, card_h, card_w, gap = 128, 322, 310, 42
+    start_x = 50
+    for index, (heading, body, accent) in enumerate(stages):
+        x = start_x + index * (card_w + gap)
+        fill = (20, 31, 49) if index < 4 else (12, 39, 29)
+        draw.rounded_rectangle(
+            (x, card_y, x + card_w, card_y + card_h),
+            radius=22,
+            fill=fill,
+            outline=(43, 58, 79),
+            width=2,
+        )
+        accent_rgb = tuple(bytes.fromhex(accent))
+        draw.ellipse((x + 24, card_y + 24, x + 70, card_y + 70), fill=accent_rgb)
+        draw.text((x + 39, card_y + 31), str(index + 1), font=body_font, fill=(8, 16, 30))
+        heading_lines = heading.split("\n")
+        for line_index, line in enumerate(heading_lines):
+            draw.text((x + 22, card_y + 93 + line_index * 30), line, font=heading_font, fill=accent_rgb)
+        body_y = card_y + 176
+        for line_index, line in enumerate(body.split("\n")):
+            draw.text((x + 22, body_y + line_index * 31), line, font=body_font, fill=(213, 223, 236))
+        if index < len(stages) - 1:
+            arrow_x = x + card_w + 5
+            arrow_y = card_y + card_h // 2
+            draw.line((arrow_x, arrow_y, arrow_x + gap - 10, arrow_y), fill=(113, 139, 165), width=4)
+            draw.polygon(
+                [
+                    (arrow_x + gap - 10, arrow_y),
+                    (arrow_x + gap - 22, arrow_y - 9),
+                    (arrow_x + gap - 22, arrow_y + 9),
+                ],
+                fill=(113, 139, 165),
+            )
+    draw.rounded_rectangle((50, 490, 1750, 578), radius=16, fill=(24, 38, 58))
+    draw.text(
+        (76, 508),
+        "Before submission: confirm the interpreted request with the caller; allow correction or human handoff.",
+        font=body_font,
+        fill=(255, 190, 92),
+    )
+    draw.text(
+        (76, 546),
+        "Proposed design only — not a connected or deployed 311 assistant.",
+        font=small_font,
+        fill=(160, 178, 198),
+    )
+    image.save(WORKFLOW_MAP)
+    return WORKFLOW_MAP
 
 
 def color(hex_value: str) -> RGBColor:
@@ -219,7 +298,8 @@ def header(slide, kicker, title, subtitle=None):
 
 def footer(slide, page, source):
     add_box(slide, 0.65, 7.08, 12.02, 0.012, GRID, rounded=False)
-    add_text(slide, source, 0.68, 7.14, 11.0, 0.18, 8, MUTED)
+    add_text(slide, source, 0.68, 7.14, 8.2, 0.18, 8, MUTED)
+    add_text(slide, AUTHOR, 9.0, 7.14, 2.85, 0.18, 8, MUTED, align=PP_ALIGN.RIGHT)
     add_text(slide, f"{page:02d}", 12.12, 7.12, 0.5, 0.2, 9, TEAL, True, align=PP_ALIGN.RIGHT)
 
 
@@ -249,12 +329,13 @@ def bar_row(slide, label, value, x, y, label_w, bar_w, value_text, max_value, fi
 
 def build():
     findings = current_findings()
+    build_workflow_diagram()
     prs = Presentation()
     prs.slide_width = Inches(W)
     prs.slide_height = Inches(H)
     prs.core_properties.title = "Mississauga Unheard — Voice AI Findings"
     prs.core_properties.subject = "Speech recognition, 311 routing, census geography, and ElevenLabs prototype"
-    prs.core_properties.author = "Mississauga Unheard project"
+    prs.core_properties.author = AUTHOR
 
     # 1. Cover
     slide = new_slide(prs)
@@ -314,7 +395,7 @@ def build():
         for index, row in enumerate(findings["fleurs"][:8])
     ]
     for i, (name, value, accent) in enumerate(groups):
-        bar_row(slide, name, value, 0.88, 2.12 + 0.48 * i, 1.55, 6.75, f"{value:.2f}%", 30, accent)
+        bar_row(slide, name, value, 0.88, 2.12 + 0.48 * i, 1.55, 6.15, f"{value:.2f}%", 30, accent)
     add_box(slide, 9.9, 2.1, 2.55, 3.85, PANEL)
     add_text(slide, "Read this carefully", 10.15, 2.4, 2.1, 0.36, 15, AMBER, True)
     add_text(
@@ -330,18 +411,43 @@ def build():
         MUTED,
     )
     accent_processed = sum(int(row["samples"]) for row in findings["accent_summary"])
+    baseline = findings["accent_english_baseline"]
+    fleurs_english = next(
+        row for row in findings["fleurs"] if row["language"].casefold() == "english"
+    )
     add_text(
         slide,
-        f"Accent Archive: {accent_processed:,}/{findings['inventory']['accent']:,} English-accent clips processed.",
+        f"English-Canadian Archive baseline: {100 * float(baseline['mean_cer']):.2f}% CER "
+        f"(n={baseline['samples']}); lowest mean among groups with n ≥ 10.",
         0.9,
-        5.91,
+        5.78,
         11.7,
-        0.28,
-        11,
+        0.24,
+        10,
         AMBER,
         True,
     )
-    add_text(slide, "Matched prompt ID 1589: one clip per language. It controls text, not speaker, gender, or dialect.", 0.9, 6.23, 11.7, 0.35, 10, MUTED)
+    add_text(
+        slide,
+        f"FLEURS English: {100 * float(fleurs_english['mean_cer']):.2f}% mean CER. "
+        f"Accent Archive coverage: {accent_processed:,}/{findings['inventory']['accent']:,}.",
+        0.9,
+        6.06,
+        11.7,
+        0.24,
+        10,
+        WHITE,
+    )
+    add_text(
+        slide,
+        "Six one-clip groups scored 0%; sample sizes, speakers, recordings, and prompts limit cross-dataset claims.",
+        0.9,
+        6.34,
+        11.7,
+        0.3,
+        9,
+        MUTED,
+    )
     footer(slide, 3, "Source: outputs/asr_summary.csv and outputs/paired_fleurs_summary.csv; normalized CER/WER.")
 
     # 4. Population geography
@@ -489,7 +595,36 @@ def build():
         "Scores: 2021 census-derived outputs/unheard_index.csv; verify boundary crosswalk.",
     )
 
-    # 8. Prototype
+    # 8. Proposed 311 workflow
+    slide = new_slide(prs)
+    header(
+        slide,
+        "Proposed service design",
+        "A multilingual 311 request—from call to resolution",
+        "A concept for evaluation, not an implemented or connected city service.",
+    )
+    slide.shapes.add_picture(
+        str(WORKFLOW_MAP), Inches(0.65), Inches(1.95), width=Inches(12.02)
+    )
+    add_text(
+        slide,
+        "Use City-approved service content, reviewed translations, privacy controls, and a clear human handoff.",
+        0.85,
+        6.43,
+        11.65,
+        0.34,
+        12,
+        WHITE,
+        True,
+        align=PP_ALIGN.CENTER,
+    )
+    footer(
+        slide,
+        8,
+        "Proposed workflow based on the project concept; validate with City staff and residents before any pilot.",
+    )
+
+    # 9. Prototype
     slide = new_slide(prs)
     header(slide, "05  /  Close the loop", "A Cantonese callback proof of concept", "TTS gives the measured gap a tangible response—but it does not prove service effectiveness.")
     add_box(slide, 0.78, 2.05, 7.0, 3.95, PANEL)
@@ -514,9 +649,9 @@ def build():
         size=13,
         gap=12,
     )
-    footer(slide, 8, "Generated with ElevenLabs TTS voice available to this account. No comprehension study has been run.")
+    footer(slide, 9, "Generated with ElevenLabs TTS voice available to this account. No comprehension study has been run.")
 
-    # 9. What next
+    # 10. What next
     slide = new_slide(prs)
     header(slide, "Next steps", "The evidence is useful—and still incomplete", "The next phase should improve coverage before making service-level claims.")
     add_box(slide, 0.78, 2.02, 5.85, 3.98, PANEL)
@@ -547,7 +682,7 @@ def build():
         gap=10,
     )
     add_text(slide, "Treat these findings as a prioritization signal—not as a count of residents already misunderstood.", 0.9, 6.22, 11.7, 0.42, 12, WHITE, True)
-    footer(slide, 9, "Detailed methods and caveats: outputs/REPORT.md • Original project README preserved.")
+    footer(slide, 10, "Detailed methods and caveats: outputs/REPORT.md • Original project README preserved.")
 
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     prs.save(OUTPUT)

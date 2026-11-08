@@ -18,8 +18,11 @@ population-level probability.
   the fraction of residents who would fail to be understood.
 - **Accented English:** 419/468 Accent Archive clips have been transcribed.
   Mandarin Chinese had the highest mean CER (4.33%, 40 clips), followed by
-  Arabic (4.18%, 40) and Punjabi (3.90%, 11). The archive is still incomplete,
-  and accent groups differ in sample size and speaker mix.
+  Arabic (4.18%, 40) and Punjabi (3.90%, 11). The 45-clip Canadian-English
+  reference group had a mean CER of 0.1384%, the lowest mean among cached
+  groups with at least ten clips. This is a sample-level benchmark, not proof
+  that every English speaker is understood best. The cache also contains all
+  560 FLEURS clips; FLEURS English mean CER was 0.8455% (40 clips).
 - **Intent routing:** The text-only classifier scored 90.6–98.1% across sampled
   MInDS-14 language splits and 55.2–62.1% across Speech-MASSIVE splits. In the
   separate audio-to-transcript-to-classifier smoke test, MInDS-14 was correct
@@ -36,7 +39,7 @@ population-level probability.
   request types were damaged residential bin lids (24,448), property standards
   violations (17,079), and dead-wildlife pickup (15,513). Toronto is only a
   proxy. A brief Cantonese acknowledgment was generated; the remaining
-  remaining 1,664-clip Scribe run is blocked by the account quota.
+  1,664-clip Scribe run is blocked by the account quota.
 
 ## Scope and method
 
@@ -133,10 +136,12 @@ errors, not rates of residents being misunderstood in 311 calls.
 
 ### Speech Accent Archive English results (partial)
 
-419 of 468 clips have been transcribed across all 15 first-language groups.
-All speakers read the same English paragraph. The archive is not yet complete,
-and results remain descriptive: speaker mix, group sample sizes, and accent
-variation limit direct comparisons.
+The benchmark cache contains all 560 FLEURS clips and 419/468 Speech Accent
+Archive clips (all 15 first-language groups), plus five clips each from
+MInDS-14 and Speech-MASSIVE. In the Accent Archive, all speakers read the same
+English paragraph. The archive is not yet complete, and results remain
+descriptive: speaker mix, group sample sizes, and accent variation limit
+direct comparisons.
 
 | First language | Clips | Mean WER | Mean CER | Recorded genders |
 |---|---:|---:|---:|---|
@@ -161,6 +166,17 @@ Among groups with at least ten clips, Mandarin Chinese had the highest CER
 Vietnamese remains a single-clip pilot. These are sample-level results, not
 evidence that accent alone caused an error or a prediction of resident
 understanding.
+
+The 45 English (Canadian) reference clips have **0.1384% mean per-clip CER**
+(17 character edits over 12,285 normalized reference characters), the lowest
+mean CER among all cached dataset/language groups with at least ten clips.
+This is the best-performing multi-clip group in this sample, not a claim that
+all English speech is understood best: six one-clip groups have 0.00% CER.
+The separate 40-clip FLEURS English group has 0.8455% mean per-clip CER, about
+6.1 times the Canadian-English archive baseline. That cross-dataset
+comparison is descriptive, not controlled for speakers, recording, or prompt
+content. Use the Canadian-English clips as the same-paragraph reference when
+comparing the Accent Archive's English-accent groups.
 
 The Mandarin-accented English transcript repeats “We also need a small
 plastic” and includes “sco-scoop,” accounting for many observed insertions.
@@ -446,10 +462,11 @@ and the geography index. Review the current limitation in
 | `mississauga_311_yearly_calls.csv` | Mississauga 311 annual offered/answered calls |
 | `language_coverage.csv` | Home-language speaker and dataset-coverage counts |
 | `311_callback_yue.mp3` | Short Cantonese acknowledgment synthesized with ElevenLabs |
-| `Mississauga_Unheard_Demo.mp4` | Two-minute narrated update with animated benchmark progress, code, ranked ward tiles, and routing results |
+| `Mississauga_Unheard_Demo.mp4` | Two-minute narrated update with animated benchmark progress, code, ranked ward tiles, routing results, the proposed five-step 311 workflow, and a persistent Kunal Dekhane credit |
 | `../slides/Mississauga_Unheard_Ward_Map.png` | Ward choropleth of the exploratory Unheard Index using City boundary geometry |
-| `../slides/Mississauga_Unheard_Findings.pptx` | Refreshed nine-slide findings deck, including the ward map |
-| `../slides/Mississauga_Unheard_Findings.pdf` | Nine-page PDF export of the findings deck |
+| `../slides/Proposed_311_Workflow.png` | Proposed five-step multilingual 311 workflow diagram; not an implemented service |
+| `../slides/Mississauga_Unheard_Findings.pptx` | Refreshed ten-slide findings deck, including the ward map and proposed 311 workflow; credits Kunal Dekhane on every slide |
+| `../slides/Mississauga_Unheard_Findings.pdf` | Ten-page PDF export of the findings deck |
 
 The root [`README.md`](../README.md) is preserved unchanged; see
 [`../PROJECT-README.md`](../PROJECT-README.md) for the workflow overview and
