@@ -1,3 +1,4 @@
+import csv
 from pathlib import Path
 
 from pptx import Presentation
@@ -9,6 +10,7 @@ from pptx.util import Inches, Pt
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = Path(__file__).resolve().parent / "Mississauga_Unheard_Findings.pptx"
+WARD_MAP = Path(__file__).resolve().parent / "Mississauga_Unheard_Ward_Map.png"
 
 W, H = 13.333, 7.5
 BG = "0B1220"
@@ -21,6 +23,101 @@ BLUE = "62A7FF"
 AMBER = "FFBE5C"
 RED = "FF7885"
 GRID = "2B3A50"
+
+
+DATASETS = {
+    "fleurs": ("FLEURS", "02_speech_home_languages_FLEURS"),
+    "accent": ("Accent Archive", "03_accented_english_SpeechAccentArchive"),
+    "minds14": ("MInDS-14", "04_spoken_requests/minds14"),
+    "massive": ("Speech-MASSIVE", "04_spoken_requests/speech_massive"),
+}
+
+
+def read_output(name):
+    with (ROOT / "outputs" / name).open(encoding="utf-8-sig", newline="") as stream:
+        return list(csv.DictReader(stream))
+
+
+def current_findings():
+    data_root = ROOT / "Mississauga_Unheard_ElevenLabs_Track"
+    inventory = {}
+    accent_language_inventory = {}
+    for dataset, (_, folder) in DATASETS.items():
+        with (data_root / folder / "metadata.csv").open(
+            encoding="utf-8-sig", newline=""
+        ) as stream:
+            metadata = list(csv.DictReader(stream))
+            inventory[dataset] = len(metadata)
+            if dataset == "accent":
+                for row in metadata:
+                    language = row["language"]
+                    accent_language_inventory[language] = (
+                        accent_language_inventory.get(language, 0) + 1
+                    )
+
+    transcripts = read_output("asr_benchmark.csv")
+    cached = {
+        dataset: sum(row["dataset"] == dataset for row in transcripts)
+        for dataset in DATASETS
+    }
+    fleurs = sorted(
+        (row for row in read_output("asr_summary.csv") if row["dataset"] == "fleurs"),
+        key=lambda row: float(row["mean_cer"]),
+        reverse=True,
+    )
+    accent_summary = [
+        row for row in read_output("asr_summary.csv") if row["dataset"] == "accent"
+    ]
+    intent_predictions = read_output("audio_intent_predictions.csv")
+    audio_intent = {}
+    for dataset in ("minds14", "massive"):
+        samples = [row for row in intent_predictions if row["dataset"] == dataset]
+        audio_intent[dataset] = (
+            sum(row["correct"].casefold() == "true" for row in samples),
+            len(samples),
+        )
+    text_intent = {}
+    for dataset in ("minds14", "massive"):
+        scores = [
+            float(row["accuracy"])
+            for row in read_output("intent_evaluation.csv")
+            if row["dataset"] == dataset and row["status"] == "ok" and row["accuracy"]
+        ]
+        text_intent[dataset] = (min(scores), max(scores)) if scores else (0.0, 0.0)
+    geographies = read_output("unheard_index.csv")
+    wards = sorted(
+        (
+            row
+            for row in geographies
+            if row["geo_level"] == "ward" and row["unheard_index"]
+        ),
+        key=lambda row: float(row["unheard_index"]),
+        reverse=True,
+    )
+    neighbourhoods = sorted(
+        (
+            row
+            for row in geographies
+            if row["geo_level"] == "neighbourhood"
+            and row["unheard_index"]
+            and int(float(row["population_language_base"])) > 0
+        ),
+        key=lambda row: float(row["unheard_index"]),
+        reverse=True,
+    )
+    return {
+        "inventory": inventory,
+        "cached": cached,
+        "total_inventory": sum(inventory.values()),
+        "total_cached": len(transcripts),
+        "fleurs": fleurs,
+        "accent_inventory": accent_language_inventory,
+        "accent_summary": accent_summary,
+        "audio_intent": audio_intent,
+        "text_intent": text_intent,
+        "wards": wards,
+        "neighbourhoods": neighbourhoods,
+    }
 
 
 def color(hex_value: str) -> RGBColor:
@@ -151,6 +248,7 @@ def bar_row(slide, label, value, x, y, label_w, bar_w, value_text, max_value, fi
 
 
 def build():
+    findings = current_findings()
     prs = Presentation()
     prs.slide_width = Inches(W)
     prs.slide_height = Inches(H)
@@ -184,10 +282,11 @@ def build():
 
     # 2. Executive findings
     slide = new_slide(prs)
-    header(slide, "The signal", "A measurable gap—and a clear caveat", "All 14 FLEURS language groups were processed; open request-audio coverage remains sparse.")
-    metric_card(slide, 0.72, 2.08, 3.8, "26.43%", "Highest mean FLEURS CER", "Cantonese • 40 clips", TEAL)
+    header(slide, "The signal", "A measurable gap—and a clear caveat", "All 14 FLEURS language groups were processed; request-audio coverage is shown separately.")
+    lead_fleurs = findings["fleurs"][0]
+    metric_card(slide, 0.72, 2.08, 3.8, f"{100 * float(lead_fleurs['mean_cer']):.2f}%", "Highest mean FLEURS CER", f"{lead_fleurs['language']} • {lead_fleurs['samples']} clips", TEAL)
     metric_card(slide, 4.77, 2.08, 3.8, "10,765", "Cantonese home-language speakers", "2021 census count", BLUE)
-    metric_card(slide, 8.82, 2.08, 3.8, "659 / 2,653", "Clips transcribed so far", "Scribe quota stopped the full run", AMBER)
+    metric_card(slide, 8.82, 2.08, 3.8, f"{findings['total_cached']:,} / {findings['total_inventory']:,}", "Clips transcribed", "Cached Scribe results across the inventory", AMBER)
     add_box(slide, 0.72, 4.12, 12.0, 1.9, PANEL)
     add_rich_lines(
         slide,
@@ -207,16 +306,12 @@ def build():
 
     # 3. ASR performance
     slide = new_slide(prs)
-    header(slide, "01  /  Understood?", "Cantonese and Urdu stand out on CER", "Mean character error rate across 40 FLEURS clips per language; lower is better.")
+    top_languages = " and ".join(row["language"] for row in findings["fleurs"][:2])
+    header(slide, "01  /  Understood?", f"{top_languages} stand out on CER", "Mean character error rate across 40 FLEURS clips per language; lower is better.")
+    accents = [TEAL, RED, AMBER] + [BLUE] * 5
     groups = [
-        ("Cantonese", 26.4271, TEAL),
-        ("Urdu", 20.5865, RED),
-        ("Punjabi", 8.2493, AMBER),
-        ("Hindi", 6.7597, BLUE),
-        ("Mandarin Chinese", 2.9404, BLUE),
-        ("Tamil", 2.6203, BLUE),
-        ("Gujarati", 1.7254, BLUE),
-        ("Spanish", 0.5666, BLUE),
+        (row["language"], 100 * float(row["mean_cer"]), accents[index])
+        for index, row in enumerate(findings["fleurs"][:8])
     ]
     for i, (name, value, accent) in enumerate(groups):
         bar_row(slide, name, value, 0.88, 2.12 + 0.48 * i, 1.55, 6.75, f"{value:.2f}%", 30, accent)
@@ -234,7 +329,19 @@ def build():
         12,
         MUTED,
     )
-    add_text(slide, "Matched prompt ID 1589: one clip per language. It controls text, not speaker, gender, or dialect.", 0.9, 6.18, 11.7, 0.45, 11, MUTED)
+    accent_processed = sum(int(row["samples"]) for row in findings["accent_summary"])
+    add_text(
+        slide,
+        f"Accent Archive: {accent_processed:,}/{findings['inventory']['accent']:,} English-accent clips processed.",
+        0.9,
+        5.91,
+        11.7,
+        0.28,
+        11,
+        AMBER,
+        True,
+    )
+    add_text(slide, "Matched prompt ID 1589: one clip per language. It controls text, not speaker, gender, or dialect.", 0.9, 6.23, 11.7, 0.35, 10, MUTED)
     footer(slide, 3, "Source: outputs/asr_summary.csv and outputs/paired_fleurs_summary.csv; normalized CER/WER.")
 
     # 4. Population geography
@@ -258,24 +365,28 @@ def build():
 
     # 5. Intent pipeline
     slide = new_slide(prs)
-    header(slide, "03  /  Routed?", "Transcription is only one part of understanding", "The available request-audio sample is a smoke test; neither dataset is a Mississauga 311 corpus.")
+    header(slide, "03  /  Routed?", "Transcription is only one part of understanding", "The request-audio corpora are banking and voice-assistant data, not Mississauga 311 calls.")
     add_box(slide, 0.75, 2.08, 5.78, 3.75, PANEL)
     add_text(slide, "Audio → transcript → intent", 1.05, 2.38, 5.0, 0.38, 17, WHITE, True)
+    minds_correct, minds_total = findings["audio_intent"]["minds14"]
+    massive_correct, massive_total = findings["audio_intent"]["massive"]
     add_text(slide, "MInDS-14", 1.08, 3.05, 1.65, 0.34, 13, MUTED, True)
     add_box(slide, 2.65, 3.08, 2.8, 0.28, GRID, rounded=False)
-    add_box(slide, 2.65, 3.08, 2.8, 0.28, TEAL, rounded=False)
-    add_text(slide, "5 / 5 correct", 5.55, 3.03, 0.75, 0.32, 11, TEAL, True)
+    add_box(slide, 2.65, 3.08, 2.8 * minds_correct / minds_total if minds_total else 0, 0.28, TEAL, rounded=False)
+    add_text(slide, f"{minds_correct:,} / {minds_total:,} correct", 5.55, 3.03, 0.9, 0.32, 11, TEAL, True)
     add_text(slide, "Speech-MASSIVE", 1.08, 3.82, 1.65, 0.34, 13, MUTED, True)
     add_box(slide, 2.65, 3.85, 2.8, 0.28, GRID, rounded=False)
-    add_box(slide, 2.65, 3.85, 0.56, 0.28, AMBER, rounded=False)
-    add_text(slide, "1 / 5 correct", 5.55, 3.8, 0.75, 0.32, 11, AMBER, True)
-    add_text(slide, "Arabic qa → play • Polish recommendation → transport\nPortuguese play → transport • Vietnamese calendar → recommendation", 1.08, 4.6, 5.1, 0.85, 11, WHITE)
+    add_box(slide, 2.65, 3.85, 2.8 * massive_correct / massive_total if massive_total else 0, 0.28, AMBER, rounded=False)
+    add_text(slide, f"{massive_correct:,} / {massive_total:,} correct", 5.55, 3.8, 0.9, 0.32, 11, AMBER, True)
+    add_text(slide, "Audio transcripts are classified against dataset labels. These remain banking and virtual-assistant tasks, not city services.", 1.08, 4.6, 5.1, 0.85, 11, WHITE)
     add_box(slide, 6.83, 2.08, 5.72, 3.75, PANEL_ALT)
     add_text(slide, "Separate text-only baseline", 7.13, 2.38, 5.0, 0.38, 17, WHITE, True)
     add_text(slide, "MInDS-14", 7.15, 3.02, 1.8, 0.3, 13, MUTED, True)
-    add_text(slide, "90.6–98.1%", 9.2, 2.96, 2.5, 0.42, 23, TEAL, True)
+    minds_low, minds_high = findings["text_intent"]["minds14"]
+    add_text(slide, f"{100 * minds_low:.1f}–{100 * minds_high:.1f}%", 9.2, 2.96, 2.5, 0.42, 23, TEAL, True)
     add_text(slide, "Speech-MASSIVE", 7.15, 3.8, 1.8, 0.3, 13, MUTED, True)
-    add_text(slide, "55.2–62.1%", 9.2, 3.74, 2.5, 0.42, 23, AMBER, True)
+    massive_low, massive_high = findings["text_intent"]["massive"]
+    add_text(slide, f"{100 * massive_low:.1f}–{100 * massive_high:.1f}%", 9.2, 3.74, 2.5, 0.42, 23, AMBER, True)
     add_text(slide, "Classifier input is reference text—not Scribe audio output. Tasks are banking and virtual-assistant labels, not city services.", 7.15, 4.55, 4.95, 0.9, 11, MUTED)
     add_text(slide, "Design implication: confirm the interpreted request and offer a human/alternate-language fallback.", 0.9, 6.15, 11.7, 0.42, 12, WHITE, True)
     footer(slide, 5, "Sources: outputs/audio_intent_evaluation.csv; outputs/intent_evaluation.csv; sample sizes n=1 per audio language.")
@@ -286,18 +397,99 @@ def build():
     add_box(slide, 0.75, 2.05, 5.72, 3.92, PANEL)
     add_text(slide, "Wards", 1.05, 2.35, 4.8, 0.36, 18, WHITE, True)
     add_text(slide, "Index score", 1.06, 2.8, 1.3, 0.28, 10, MUTED)
-    ward_index = [("10", 23.096), ("7", 21.574), ("3", 21.359), ("4", 20.237), ("8", 19.398)]
+    ward_index = [
+        (row["geo"], float(row["unheard_index"]))
+        for row in findings["wards"][:5]
+    ]
     for i, (label, value) in enumerate(ward_index):
         bar_row(slide, f"Ward {label}", value, 1.08, 3.25 + 0.49 * i, 1.0, 3.25, f"{value:.1f}", 27, TEAL)
     add_box(slide, 6.82, 2.05, 5.72, 3.92, PANEL)
     add_text(slide, "Populated neighbourhoods", 7.1, 2.35, 4.9, 0.36, 18, WHITE, True)
-    hood_index = [("Cooksville (East)", 25.449), ("Clarkson Village CN", 24.786), ("Churchill Meadows", 24.683), ("Sheridan CN", 23.817), ("Streetsville CN", 23.452)]
+    hood_index = [
+        (row["geo"], float(row["unheard_index"]))
+        for row in findings["neighbourhoods"][:5]
+    ]
     for i, (label, value) in enumerate(hood_index):
         bar_row(slide, label, value, 7.12, 3.0 + 0.49 * i, 1.75, 2.25, f"{value:.1f}", 28, BLUE)
     add_text(slide, "Ward 7 has the largest ward-level weighted-error proxy (4,133.6); index leaders differ from proxy-count leaders.", 0.9, 6.2, 11.7, 0.4, 11, AMBER, True)
     footer(slide, 6, "Source: outputs/unheard_index.csv; 50 geographies. Full FLEURS CER + limited audio-intent evidence.")
 
-    # 7. Prototype
+    # 7. Ward-level map
+    slide = new_slide(prs)
+    header(
+        slide,
+        "04  /  Where to prioritize?",
+        "A geographic view of the exploratory index",
+        "Ward boundaries with population-weighted benchmark signals; not observed caller failures.",
+    )
+    slide.shapes.add_picture(
+        str(WARD_MAP), Inches(0.65), Inches(1.82), height=Inches(5.05)
+    )
+    metric_card(
+        slide,
+        5.02,
+        2.03,
+        3.55,
+        "23.096",
+        "Highest ward index",
+        "Ward 10 • 23.31% coverage",
+        TEAL,
+    )
+    metric_card(
+        slide,
+        8.82,
+        2.03,
+        3.55,
+        "4,133.6",
+        "Largest proxy count",
+        "Ward 7 • not known failed calls",
+        AMBER,
+    )
+    add_box(slide, 5.02, 3.82, 7.35, 1.18, PANEL_ALT)
+    add_text(slide, "Neighbourhood signal", 5.3, 4.04, 2.8, 0.32, 16, WHITE, True)
+    add_text(
+        slide,
+        "Cooksville (East)  •  index 25.449  •  11.96% coverage",
+        5.3,
+        4.45,
+        6.75,
+        0.3,
+        13,
+        BLUE,
+        True,
+    )
+    add_box(slide, 5.02, 5.2, 7.35, 1.35, PANEL)
+    add_text(
+        slide,
+        "Interpret with care",
+        5.3,
+        5.43,
+        2.4,
+        0.3,
+        15,
+        AMBER,
+        True,
+    )
+    add_text(
+        slide,
+        "The index combines available FLEURS CER and pilot intent errors. "
+        "The request-audio pilot has only one clip per language; scores are "
+        "not service-level outcomes or resident-level risk.",
+        5.3,
+        5.82,
+        6.65,
+        0.55,
+        11,
+        MUTED,
+    )
+    footer(
+        slide,
+        7,
+        "Boundaries: City of Mississauga Ward Boundaries service. "
+        "Scores: 2021 census-derived outputs/unheard_index.csv; verify boundary crosswalk.",
+    )
+
+    # 8. Prototype
     slide = new_slide(prs)
     header(slide, "05  /  Close the loop", "A Cantonese callback proof of concept", "TTS gives the measured gap a tangible response—but it does not prove service effectiveness.")
     add_box(slide, 0.78, 2.05, 7.0, 3.95, PANEL)
@@ -322,25 +514,29 @@ def build():
         size=13,
         gap=12,
     )
-    footer(slide, 7, "Generated with ElevenLabs TTS voice available to this account. No comprehension study has been run.")
+    footer(slide, 8, "Generated with ElevenLabs TTS voice available to this account. No comprehension study has been run.")
 
-    # 8. What next
+    # 9. What next
     slide = new_slide(prs)
     header(slide, "Next steps", "The evidence is useful—and still incomplete", "The next phase should improve coverage before making service-level claims.")
     add_box(slide, 0.78, 2.02, 5.85, 3.98, PANEL)
     add_text(slide, "Remaining Scribe inventory", 1.08, 2.34, 4.9, 0.36, 17, WHITE, True)
-    outstanding = [("Accent Archive", 379), ("MInDS-14", 1045), ("Speech-MASSIVE", 570)]
+    outstanding = [
+        (DATASETS[dataset][0], findings["inventory"][dataset] - findings["cached"][dataset])
+        for dataset in ("accent", "minds14", "massive")
+    ]
     for i, (name, value) in enumerate(outstanding):
         bar_row(slide, name, value, 1.1, 3.1 + i * 0.73, 1.55, 2.5, f"{value:,}", 1100, AMBER, bar_h=0.22)
-    add_text(slide, "1,994 clips remain\n21 credits left; next clip needed ≥25", 1.1, 5.35, 4.95, 0.5, 12, AMBER, True)
+    remaining = sum(value for _, value in outstanding)
+    add_text(slide, f"{remaining:,} clips remain\nCached results are preserved for resume.", 1.1, 5.35, 4.95, 0.5, 12, AMBER, True)
     add_box(slide, 6.88, 2.02, 5.65, 3.98, PANEL)
     add_text(slide, "Recommended next", 7.2, 2.34, 4.7, 0.36, 17, WHITE, True)
     add_rich_lines(
         slide,
         [
-            ("01  ", "Resume cached ASR after credits are replenished.", TEAL),
-            ("02  ", "Create consented 311-style speech examples in missing languages.", BLUE),
-            ("03  ", "Validate the Cantonese audio with fluent speakers and listeners.", AMBER),
+            ("01  ", "Expand consented 311-style speech examples in missing languages.", TEAL),
+            ("02  ", "Validate transcripts and routing with fluent speakers.", BLUE),
+            ("03  ", "Test translation, callback comprehension, and human fallback.", AMBER),
             ("04  ", "Revisit geography scores with service-specific outcome evidence.", RED),
         ],
         7.22,
@@ -351,7 +547,7 @@ def build():
         gap=10,
     )
     add_text(slide, "Treat these findings as a prioritization signal—not as a count of residents already misunderstood.", 0.9, 6.22, 11.7, 0.42, 12, WHITE, True)
-    footer(slide, 8, "Detailed methods and caveats: outputs/REPORT.md • Original project README preserved.")
+    footer(slide, 9, "Detailed methods and caveats: outputs/REPORT.md • Original project README preserved.")
 
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     prs.save(OUTPUT)

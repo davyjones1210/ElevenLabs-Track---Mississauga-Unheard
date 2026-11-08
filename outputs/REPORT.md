@@ -3,9 +3,10 @@
 This report consolidates measured results and their interpretation for the
 Mississauga Unheard challenge. The detailed per-clip transcripts, predictions,
 and geographic output remain in the CSV files listed below. All FLEURS clips
-(40 per language) were transcribed. Transcription of the other corpora stopped
-when the ElevenLabs account ran out of usable credits. No reported error rate
-is a population-level probability.
+(40 per language) and 419 Accent Archive clips have been transcribed. The
+current run stopped when the ElevenLabs account had 14 credits remaining and
+the next Scribe request required 22. No reported error rate is a
+population-level probability.
 
 ## Executive findings
 
@@ -15,9 +16,10 @@ is a population-level probability.
   useful. Cantonese home-language speakers number 10,765, concentrated most
   in Ward 6 (2,520) and East Credit (2,225). This is an ASR risk signal, not
   the fraction of residents who would fail to be understood.
-- **Accented English:** Only 89/468 Accent Archive clips have been
-  transcribed: Arabic 40/40, Bengali 21/21, Cantonese 16/35, and one pilot
-  clip in each of 12 other groups. There is not yet a full-corpus ranking.
+- **Accented English:** 419/468 Accent Archive clips have been transcribed.
+  Mandarin Chinese had the highest mean CER (4.33%, 40 clips), followed by
+  Arabic (4.18%, 40) and Punjabi (3.90%, 11). The archive is still incomplete,
+  and accent groups differ in sample size and speaker mix.
 - **Intent routing:** The text-only classifier scored 90.6–98.1% across sampled
   MInDS-14 language splits and 55.2–62.1% across Speech-MASSIVE splits. In the
   separate audio-to-transcript-to-classifier smoke test, MInDS-14 was correct
@@ -27,11 +29,14 @@ is a population-level probability.
   spoken-request pilot, Ward 10 ranks highest among wards (23.096);
   Cooksville (East) ranks highest among populated neighbourhoods (25.449).
   These are prioritization proxies, not observed caller failures.
+- **Coverage:** 560 FLEURS, 419 Accent Archive, five MInDS-14, and five
+  Speech-MASSIVE clips are cached: 989/2,653 total. The remaining 1,664 clips
+  can be processed by resuming after adding Scribe quota.
 - **Service context and prototype:** Toronto's most frequent listed 2025
   request types were damaged residential bin lids (24,448), property standards
   violations (17,079), and dead-wildlife pickup (15,513). Toronto is only a
   proxy. A brief Cantonese acknowledgment was generated; the remaining
-  full-corpus Scribe run is blocked by the account quota.
+  remaining 1,664-clip Scribe run is blocked by the account quota.
 
 ## Scope and method
 
@@ -44,11 +49,11 @@ classifier, and an Unheard Index that weights benchmarked home-language
 speakers by measured speech/intent error.
 
 All 560 FLEURS clips were transcribed (40 in each of 14 languages), including
-the matched sentence-ID 1589 comparison. Overall, 659 of 2,653 clips have
-Scribe results: 560 FLEURS, 89 Speech Accent Archive, five MInDS-14, and five
-Speech-MASSIVE. Outstanding: 379 Accent Archive, 1,045 MInDS-14, and 570
-Speech-MASSIVE clips. The run stopped when ElevenLabs reported 21 credits
-remaining and at least 25 required for the next Scribe request. Spoken-request
+the matched sentence-ID 1589 comparison. Overall, 989 of 2,653 clips have
+Scribe results: 560 FLEURS, 419 Speech Accent Archive, five MInDS-14, and five
+Speech-MASSIVE. Outstanding: 49 Accent Archive, 1,045 MInDS-14, and 570
+Speech-MASSIVE clips. The latest run stopped when ElevenLabs reported 14
+credits remaining and 22 required for the next Scribe request. Spoken-request
 audio routing therefore remains a ten-clip smoke test (one per available
 language), not a full-dataset evaluation.
 
@@ -126,30 +131,36 @@ Cantonese and Urdu CERs are the strongest measured in-language ASR risk
 signals; Punjabi and Hindi follow. These are sample-level transcription
 errors, not rates of residents being misunderstood in 311 calls.
 
-### Speech Accent Archive English results (incomplete)
+### Speech Accent Archive English results (partial)
 
-89 of 468 clips have been transcribed: all 40 Arabic clips, all 21 Bengali
-clips, 16 of 35 Cantonese clips, and one clip in each of the other 12 groups.
-All speakers read the same English paragraph. Most group results are still
-single-speaker smoke tests, not a full-corpus accent ranking.
+419 of 468 clips have been transcribed across all 15 first-language groups.
+All speakers read the same English paragraph. The archive is not yet complete,
+and results remain descriptive: speaker mix, group sample sizes, and accent
+variation limit direct comparisons.
 
 | First language | Clips | Mean WER | Mean CER | Recorded genders |
 |---|---:|---:|---:|---|
-| Arabic | 40 | 7.25% | 4.19% | 20 female, 20 male |
+| Arabic | 40 | 7.25% | 4.18% | 20 female, 20 male |
 | Bengali | 21 | 3.86% | 2.60% | 13 female, 8 male |
-| Cantonese | 16 | 4.08% | 2.36% | 9 female, 7 male |
-| English (Canadian baseline) | 1 | 0.00% | 0.00% | female |
-| Gujarati | 1 | 0.00% | 0.00% | female |
-| Hindi | 1 | 0.00% | 0.00% | male |
-| Mandarin Chinese | 1 | 10.14% | 9.52% | female |
-| Polish | 1 | 1.45% | 1.10% | male |
-| Portuguese | 1 | 0.00% | 0.00% | female |
-| Punjabi | 1 | 1.45% | 0.73% | female |
-| Spanish | 1 | 0.00% | 0.00% | male |
-| Tagalog | 1 | 0.00% | 0.00% | female |
-| Tamil | 1 | 0.00% | 0.00% | female |
-| Urdu | 1 | 1.45% | 1.10% | male |
+| Cantonese | 35 | 4.55% | 2.79% | 20 female, 15 male |
+| English (Canadian baseline) | 45 | 0.23% | 0.14% | 18 female, 27 male |
+| Gujarati | 17 | 3.07% | 1.59% | 10 female, 7 male |
+| Hindi | 34 | 1.62% | 0.98% | 15 female, 19 male |
+| Mandarin Chinese | 40 | 6.34% | 4.33% | 31 female, 9 male |
+| Polish | 38 | 2.17% | 1.47% | 17 female, 21 male |
+| Portuguese | 40 | 2.36% | 1.58% | 23 female, 17 male |
+| Punjabi | 11 | 6.32% | 3.90% | 2 female, 9 male |
+| Spanish | 40 | 2.50% | 1.61% | 23 female, 17 male |
+| Tagalog | 29 | 2.00% | 1.12% | 19 female, 10 male |
+| Tamil | 10 | 0.87% | 0.40% | 8 female, 2 male |
+| Urdu | 18 | 2.09% | 1.51% | 7 female, 11 male |
 | Vietnamese | 1 | 2.90% | 1.47% | male |
+
+Among groups with at least ten clips, Mandarin Chinese had the highest CER
+(4.33%), followed by Arabic (4.18%), Punjabi (3.90%), and Cantonese (2.79%).
+Vietnamese remains a single-clip pilot. These are sample-level results, not
+evidence that accent alone caused an error or a prediction of resident
+understanding.
 
 The Mandarin-accented English transcript repeats “We also need a small
 plastic” and includes “sco-scoop,” accounting for many observed insertions.
@@ -361,16 +372,16 @@ language group, not a complete callback or validated Cantonese service
 translation. Have a fluent Cantonese speaker review the wording and listen for
 dialect/pronunciation before using it. TTS playback alone does not demonstrate
 improved caller comprehension. The separate all-corpus Scribe run remains
-blocked: at the time it stopped, ElevenLabs reported only 21 credits and
-required at least 25 for the next speech-to-text clip.
+blocked: at the time it stopped, ElevenLabs reported 14 credits remaining
+and required 22 for the next speech-to-text clip.
 
 ## Limitations and responsible interpretation
 
 1. **Incomplete/non-representative samples:** FLEURS has 40 clips per language,
    but mostly unmatched prompts and unavailable speaker IDs. Accent Archive
-   has 89/468 transcriptions, and spoken-request audio has only one clip per
-   available language. Reported rates are descriptive, not confidence-tested
-   population estimates.
+   has 419/468 transcriptions, with group sizes from one to 45. Spoken-request
+   audio has only one clip per available language. Reported rates are
+   descriptive, not confidence-tested population estimates.
 2. **Speaker confounding:** FLEURS speaker IDs are unavailable; gender,
    dialect, and language composition vary. Matched prompt text controls only
    sentence content.
@@ -402,11 +413,12 @@ python -m mississauga_unheard index --workspace . --output-dir outputs
 python -m unittest discover -s tests -v
 ```
 
-The unit suite passed all 11 tests. Offline analysis and index generation
+The unit suite passed all 12 tests. Offline analysis and index generation
 completed successfully and produced 50 ward/neighbourhood rows.
 
-Speech results use ElevenLabs credits. The remaining benchmark is resumable
-after credits are replenished:
+Speech results use ElevenLabs credits. The current run processed 989 of 2,653
+clips before the account quota stopped it. Add quota, then resume the remaining
+1,664 clips with:
 
 ```powershell
 python -m mississauga_unheard benchmark --workspace . --output-dir outputs `
@@ -414,8 +426,9 @@ python -m mississauga_unheard benchmark --workspace . --output-dir outputs `
 ```
 
 The cache skips completed clips and saves each newly completed transcript.
-Review the credit limitation in [`../PROJECT-README.md`](../PROJECT-README.md)
-before resuming.
+After transcription, rerun offline analysis to refresh audio-intent results
+and the geography index. Review the current limitation in
+[`../PROJECT-README.md`](../PROJECT-README.md) before resuming.
 
 | Output | Contents |
 |---|---|
@@ -433,6 +446,10 @@ before resuming.
 | `mississauga_311_yearly_calls.csv` | Mississauga 311 annual offered/answered calls |
 | `language_coverage.csv` | Home-language speaker and dataset-coverage counts |
 | `311_callback_yue.mp3` | Short Cantonese acknowledgment synthesized with ElevenLabs |
+| `Mississauga_Unheard_Demo.mp4` | Two-minute narrated update with animated benchmark progress, code, ranked ward tiles, and routing results |
+| `../slides/Mississauga_Unheard_Ward_Map.png` | Ward choropleth of the exploratory Unheard Index using City boundary geometry |
+| `../slides/Mississauga_Unheard_Findings.pptx` | Refreshed nine-slide findings deck, including the ward map |
+| `../slides/Mississauga_Unheard_Findings.pdf` | Nine-page PDF export of the findings deck |
 
 The root [`README.md`](../README.md) is preserved unchanged; see
 [`../PROJECT-README.md`](../PROJECT-README.md) for the workflow overview and

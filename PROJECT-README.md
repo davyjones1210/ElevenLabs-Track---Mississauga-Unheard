@@ -4,8 +4,10 @@
 
 Mississauga is multilingual, but a voice service can fail residents at two
 different steps: recognizing what they say and routing the request correctly.
-This project explores how to measure those gaps with the supplied speech,
-census, and 311 data, and demonstrates a multilingual callback with ElevenLabs.
+This project explores where speech benchmarks signal potential language-access
+barriers, how those signals intersect with census geography, and how a safer
+multilingual 311 voice workflow could be evaluated. It demonstrates a short
+ElevenLabs text-to-speech callback; it does not yet implement a 311 assistant.
 
 The guiding questions are:
 
@@ -14,6 +16,12 @@ The guiding questions are:
   scenario?
 - Where do speakers of languages with weaker measured results live?
 - Could a callback in a resident's language help close part of the service gap?
+
+The project follows four stages: measure speech-recognition gaps; estimate
+potential population reach using census geography; design a multilingual
+service workflow; and demonstrate how that workflow could be evaluated against
+a human-reviewed baseline. Only the benchmark, exploratory index, and short
+text-to-speech callback are implemented today.
 
 ## What it does
 
@@ -48,12 +56,24 @@ Malton: 7,145), and 6,640 Hindi speakers (Ward 5: 1,315; DT Core: 930).
 These are home-language counts, not counts of residents known to have been
 misunderstood or who speak only that language.
 
-The current evidence-based Unheard Index ranks Ward 10 highest among wards
-(23.096) and Cooksville (East) highest among populated neighbourhoods (25.449).
-The index combines FLEURS CER with the available spoken-request intent error
-evidence. Because the intent evidence is still very limited, these scores are
-prioritization proxies, not resident-level probabilities or verified failed
-calls.
+The exploratory Unheard Index ranks Ward 10 highest among wards (23.096) and
+Cooksville (East) highest among populated neighbourhoods (25.449). It
+population-weights available language risk scores, averaging FLEURS CER with
+spoken-request intent error where both are available. The intent evidence is
+very limited, so the scores are prioritization proxies, not counts or
+probabilities of residents experiencing failed calls. The current score has no
+service-urgency weight: the Toronto request data contains no language or
+urgency labels.
+
+The [ward map](slides/Mississauga_Unheard_Ward_Map.png) overlays the index on
+the [City of Mississauga's public ward boundaries](https://www.arcgis.com/home/item.html?id=f1cad02b3a40422dac2ea99b59cc36a5).
+It highlights Ward 10's highest index and Ward 7's largest weighted-error
+proxy; the two measures answer different questions. The boundary layer is the
+City's current municipal boundary service, while the score is joined by ward
+number to 2021-census-derived data. Validate that geography crosswalk before
+operational use. Mapped values are exploratory and do not represent known
+caller outcomes. Check the City's [terms of use](https://smartcity.mississauga.ca/wp-content/uploads/2021/04/CityofMississauga_TermsofUse.pdf)
+before external republication.
 
 **Intent and service context:** A text-only character n-gram baseline reached
 90.6–98.1% held-out accuracy across the tested MInDS-14 language splits and
@@ -75,6 +95,52 @@ should review the wording and pronunciation before service use.
 
 For the detailed results, full FLEURS table, partial Accent Archive results,
 limitations, and all source-output files, see [outputs/REPORT.md](outputs/REPORT.md).
+
+## Proposed 311 voice-assistant workflow
+
+The following is a design direction, not implemented product functionality.
+The current project has a resumable transcription benchmark, offline intent
+baselines, geographic summaries, and a short TTS callback. It does not have a
+connected ElevenLabs Agent, a Mississauga service-catalogue integration, live
+311 telephony, automatic translation, or an end-to-end city-request test.
+
+| Stage | Proposed behavior | Safety and accessibility guardrail |
+|---|---|---|
+| 1. Start and choose language | A caller reaches 311, selects or says a preferred language, and can request a human at any point. | Keep language selection easy to repeat; provide an accessible route for callers who cannot use speech. |
+| 2. Recognize speech | ElevenLabs Scribe converts the request to text in a supported language. | Treat recognition as uncertain; protect transcripts and audio, minimize retention, and disclose recording and processing before collecting them. |
+| 3. Identify the service | An intent component matches the transcript to an approved Mississauga service and gathers only the details needed for that request. | Use the City's maintained service information, not Toronto request counts as a routing catalogue. Do not treat benchmark labels as validated city intents. |
+| 4. Confirm before action | The assistant reads back the interpreted request and proposed destination in the caller's preferred language, then asks the caller to confirm or correct it. | Do not submit or dispatch a request until the caller confirms. Offer repeat, correction, and human fallback when recognition or intent confidence is low. |
+| 5. Respond and route | ElevenLabs text-to-speech can speak an approved response; a confirmed request can be handed to the authorized department or a human representative. | Use reviewed translations and city-approved instructions. Preserve a clear human path and follow official procedures for emergency or out-of-scope requests. |
+| 6. Close the loop | Provide a reference number or next step in speech and another accessible format where possible. | Audit failures and handoffs with privacy controls; never claim resolution until the receiving service confirms it. |
+
+ElevenLabs Agents could be evaluated later as the conversation-orchestration
+layer, with Scribe for speech recognition and Text-to-Speech for spoken
+responses. Dubbing may help publish reviewed, prerecorded municipal
+announcements in more languages, but it is not a substitute for an interactive
+request-and-confirm workflow. Each component would need separate usability,
+translation, privacy, security, and service-routing validation.
+
+## Evaluation plan
+
+Before any service pilot, co-design test scenarios with residents and fluent
+speakers, then run a consented, human-reviewed evaluation using representative
+311-style requests across languages, accents, devices, and noisy conditions.
+Compare the proposed flow with a human-reviewed baseline and report results by
+language, including:
+
+- WER and CER against verified transcripts, plus language-identification
+  failures;
+- intent and destination accuracy, unsupported-request detection, caller
+  corrections, and erroneous or duplicate submissions;
+- successful completion, human handoff, abandonment, and time to resolution;
+- performance with common accessibility needs and noisy or interrupted calls;
+- privacy, security, retention, and auditability under City-approved policy.
+
+Set acceptance thresholds with the City and community participants before
+testing. A low average error rate must not conceal a high-impact failure for a
+smaller language group. The open banking and voice-assistant corpora in this
+project are development smoke tests, not evidence that a 311 assistant is
+ready for residents.
 
 ## How we built it
 
@@ -111,6 +177,12 @@ python -m mississauga_unheard benchmark --workspace . --output-dir outputs `
   --datasets fleurs,accent,minds14,massive --per-group 10000
 ```
 
+The latest run cached 989/2,653 clips: all 560 FLEURS clips, 419 Accent
+Archive clips, and five clips each from MInDS-14 and Speech-MASSIVE. It stopped
+with 14 ElevenLabs credits remaining when the next Scribe request required 22.
+The 1,664 outstanding clips are resumable after adding quota. The API key must
+have the `speech_to_text` permission.
+
 To generate a callback, provide reviewed text in the target language and a
 voice available to the account:
 
@@ -127,11 +199,11 @@ review [LICENSES.md](LICENSES.md) before publishing or reusing their data.
 
 ## Challenges we ran into
 
-- **API credits:** The full inventory is 2,653 clips. Scribe results were
-  saved for 659: all 560 FLEURS clips, 89 of 468 Accent Archive clips, five of
-  1,050 MInDS-14 clips, and five of 575 Speech-MASSIVE clips. The run stopped
-  when ElevenLabs reported 21 credits remaining and at least 25 required for
-  the next request. The remaining 1,994 clips are not processed.
+- **API credits:** The full inventory is 2,653 clips. Scribe results are
+  cached for 989: all 560 FLEURS clips, 419 of 468 Accent Archive clips, five
+  of 1,050 MInDS-14 clips, and five of 575 Speech-MASSIVE clips. The latest
+  run stopped when ElevenLabs reported 14 credits remaining and 22 required
+  for the next request. The remaining 1,664 clips are not processed yet.
 - **Language and speaker effects:** The matched FLEURS prompt controls text
   content for only one clip per language. Speaker IDs are unavailable, and
   gender and dialect differ across groups. The full 40-clip language groups
@@ -139,9 +211,14 @@ review [LICENSES.md](LICENSES.md) before publishing or reusing their data.
 - **Metric comparability:** Chinese character spacing can produce near-100%
   WER even when CER is lower. CER is necessary alongside WER and is the
   primary comparison used here for scripts with inconsistent word boundaries.
-- **Accent coverage:** The Speech Accent Archive is incomplete: Arabic is
-  40/40, Bengali 21/21, Cantonese 16/35, and 12 other groups have one clip
-  each. It is not yet possible to make a complete accent-group ranking.
+- **Accent coverage:** The Speech Accent Archive is still incomplete, with
+  419/468 clips processed across all 15 first-language groups (423 non-native
+  English recordings and 45 Canadian-English baseline recordings in the
+  supplied inventory). Among groups with at least ten clips, Mandarin
+  Chinese had the highest mean CER (4.33%, 40 clips), followed by Arabic
+  (4.18%, 40), Punjabi (3.90%, 11), and Cantonese (2.79%, 35). These
+  descriptive results do not isolate accent from speaker or recording
+  effects.
 - **Request-data mismatch:** Only ten request clips have been processed. The
   audio pipeline got 5/5 MInDS-14 and 1/5 Speech-MASSIVE sampled clips right;
   that is a smoke test, not a reliable rate. These are not 311 requests.
@@ -160,6 +237,8 @@ review [LICENSES.md](LICENSES.md) before publishing or reusing their data.
 
 - Transcribed all 560 FLEURS clips, yielding a stronger comparison than the
   initial one-clip-per-language pilot.
+- Expanded Speech Accent Archive coverage from 89 to 419 of 468 clips; the
+  full per-group transcript scores are in `outputs/asr_summary.csv`.
 - Identified Cantonese as the highest measured FLEURS CER group and connected
   that finding to census counts by ward and neighbourhood.
 - Corrected the index to use all available FLEURS clip-level CER results when
@@ -167,8 +246,11 @@ review [LICENSES.md](LICENSES.md) before publishing or reusing their data.
 - Built a resumable benchmark that writes results incrementally, allowing
   completed work to be retained when API credits run out.
 - Generated an ElevenLabs Cantonese acknowledgment for the highest-CER group.
+- Mapped the exploratory ward index using the City of Mississauga's public
+  ward-boundary service; the mapped scores remain proxies, not resident
+  outcomes.
 - Preserved the supplied root [README.md](README.md) unchanged.
-- Passed all 11 unit tests after the index update.
+- Passed all 12 unit tests after the findings refresh.
 
 ## What we learned
 
@@ -193,18 +275,35 @@ review [LICENSES.md](LICENSES.md) before publishing or reusing their data.
 
 ## What's next for ElevenLabs Track - Mississauga Unheard
 
-1. Replenish the ElevenLabs Scribe credits and resume the cached benchmark for
-   the remaining Accent Archive, MInDS-14, and Speech-MASSIVE recordings.
-2. Recompute the Accent Archive group comparisons and expand spoken-request
-   routing evaluation before drawing language-level conclusions.
-3. Collect or create ethically reviewed, consented 311-style request examples
-   for languages missing from the open request corpora; test intent accuracy
-   and safe human fallback behavior.
-4. Ask fluent Cantonese speakers to review the callback wording/audio, then
-   test comprehension with community participants before considering service
-   use.
-5. Improve geographic estimates with language-specific service outcomes and
-   validated methods for accounting for overlapping language populations.
+1. **Finish the benchmark:** add Scribe quota and resume the cached run for
+   the remaining 49 Accent Archive, 1,045 MInDS-14, and 570 Speech-MASSIVE
+   clips. Refresh the analysis and label these corpora as proxies, not 311
+   requests.
+2. **Design the service workflow with residents and City staff:** settle
+   language choice, service-intent taxonomy, confirmation wording, accessible
+   interaction, privacy and retention policy, and when/how to transfer to a
+   person before selecting an automated routing design.
+3. **Build a contained prototype:** evaluate Scribe for speech recognition,
+   an intent-to-service matcher grounded in City-approved information, and
+   reviewed ElevenLabs TTS responses. Require caller confirmation before
+   submission; support corrections and human fallback. Treat ElevenLabs
+   Agents as a candidate orchestration layer, not a feature already present in
+   this project.
+4. **Validate before a live pilot:** collect consented, representative
+   311-style examples with fluent-speaker references; compare the human
+   baseline and prototype by language; predefine thresholds for recognition,
+   intent, routing, task completion, fallback, latency, accessibility, and
+   privacy. Test unsafe and out-of-scope requests and verify every service
+   handoff.
+5. **Review the callback and translated content:** have fluent Cantonese
+   speakers review wording and pronunciation, then test comprehension with
+   community participants. Consider Dubbing only for reviewed, prerecorded
+   announcements.
+6. **Strengthen the geography:** verify the current-boundary/2021-census
+   ward crosswalk, increase language-specific service-outcome coverage, and
+   account for overlapping language populations. Add service urgency only
+   when reliable service-level labels are available; the current index does
+   not use an urgency weight.
 
 The detailed findings and reproducibility outputs are in
 [outputs/REPORT.md](outputs/REPORT.md). The root README remains unchanged.

@@ -49,6 +49,67 @@ class BenchmarkTests(unittest.TestCase):
             self.assertEqual(rows[0]["cer"], "0.500000")
             self.assertTrue((output / "asr_summary.csv").is_file())
 
+    def test_refreshes_summary_when_transcription_stops_on_api_error(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            dataset = root / "02_speech_home_languages_FLEURS"
+            audio = dataset / "audio"
+            audio.mkdir(parents=True)
+            (audio / "cached.flac").write_bytes(b"cached audio")
+            (audio / "new.flac").write_bytes(b"new audio")
+            with (dataset / "metadata.csv").open("w", encoding="utf-8", newline="") as stream:
+                writer = csv.DictWriter(
+                    stream,
+                    fieldnames=["file", "language", "transcription"],
+                )
+                writer.writeheader()
+                writer.writerows(
+                    [
+                        {
+                            "file": "audio/cached.flac",
+                            "language": "Arabic",
+                            "transcription": "مرحبا",
+                        },
+                        {
+                            "file": "audio/new.flac",
+                            "language": "Urdu",
+                            "transcription": "سلام",
+                        },
+                    ]
+                )
+
+            output = root / "outputs"
+            write_csv(
+                output / "asr_benchmark.csv",
+                [
+                    {
+                        "dataset": "fleurs",
+                        "language": "Arabic",
+                        "file": "audio/cached.flac",
+                        "wer": "0.000000",
+                        "cer": "0.000000",
+                        "detected_language": "ara",
+                        "speaker_gender": "female",
+                        "variety_note": "",
+                    }
+                ],
+            )
+            fake_client = SimpleNamespace()
+            with (
+                patch("mississauga_unheard.benchmark._client", return_value=fake_client),
+                patch(
+                    "mississauga_unheard.benchmark._transcribe",
+                    side_effect=RuntimeError("quota exceeded"),
+                ),
+                self.assertRaisesRegex(RuntimeError, "quota exceeded"),
+            ):
+                run_benchmark(root, output, root, ["fleurs"], 1)
+
+            summary = read_csv(output / "asr_summary.csv")
+            self.assertEqual(len(summary), 1)
+            self.assertEqual(summary[0]["language"], "Arabic")
+            self.assertEqual(summary[0]["samples"], "1")
+
     def test_paired_fleurs_reuses_cached_clips_and_transcribes_missing_languages(self):
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)

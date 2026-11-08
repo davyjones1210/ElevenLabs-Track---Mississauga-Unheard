@@ -161,11 +161,25 @@ def run_benchmark(
                     raise ValueError(f"Audio path escapes dataset directory: {row['file']}")
                 if not audio_path.is_file():
                     raise FileNotFoundError(audio_path)
-                response = _transcribe(client, audio_path)
-                existing[(dataset, row["file"])] = _result_row(
-                    dataset, language, row, response
-                )
-                write_csv(output_path, list(existing.values()))
+                try:
+                    response = _transcribe(client, audio_path)
+                except RuntimeError:
+                    _write_asr_summary(
+                        output_dir,
+                        sorted(
+                            existing.values(),
+                            key=lambda item: (
+                                item["dataset"],
+                                item["language"],
+                                item["file"],
+                            ),
+                        ),
+                    )
+                    raise
+                result = _result_row(dataset, language, row, response)
+                write_csv(output_path, [*existing.values(), result])
+                existing[(dataset, row["file"])] = result
+                _write_asr_summary(output_dir, list(existing.values()))
     results = sorted(existing.values(), key=lambda row: (row["dataset"], row["language"], row["file"]))
     write_csv(output_path, results)
     _write_asr_summary(output_dir, results)

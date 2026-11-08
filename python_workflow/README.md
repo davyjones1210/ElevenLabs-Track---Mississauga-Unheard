@@ -22,6 +22,12 @@ It requires Node.js and may open a browser for sign-in/authorization. The key sh
 $env:ELEVENLABS_API_KEY = "your-key"
 ```
 
+For Scribe transcription, the API key must have the **Speech to Text**
+(`speech_to_text`) permission. To switch accounts, replace the
+`ELEVENLABS_API_KEY` value in the project-root `.env` file; do not commit or
+share the key. A missing permission returns an authentication error before a
+clip is transcribed.
+
 No key is required for offline analysis. Never add a real key to source control or include it in analysis outputs.
 
 ## Run the workflow
@@ -56,6 +62,19 @@ python -m mississauga_unheard benchmark --workspace . --output-dir outputs --pai
 ```
 
 Completed clips are retained in `outputs/asr_benchmark.csv` and skipped on reruns. Group summaries are written to `outputs/asr_summary.csv`; matched results are in `outputs/paired_fleurs_summary.csv` and `outputs/paired_fleurs_benchmark.csv`. Remove or move those outputs only if you intentionally want to retranscribe the clips.
+
+To process the complete audio inventory, including all four datasets, use a
+high per-language limit. Existing cached clips are skipped, and each completed
+clip is written to the cache so the same command can resume after an API,
+network, or quota interruption:
+
+```powershell
+python -m mississauga_unheard benchmark --workspace . --output-dir outputs `
+  --datasets fleurs,accent,minds14,massive --per-group 10000
+```
+
+The supplied inventory contains 2,653 clips across these datasets. This
+command makes one Scribe request for each clip not already in the cache.
 
 The benchmark defaults to auto language detection; it does not pass a language hint that could make the comparison less neutral. FLEURS references are the supplied normalized text; the accent archive uses its shared elicitation paragraph. WER and CER are normalized consistently and reported together; use CER when word boundaries differ, especially for Chinese and Indic scripts. The matched prompt controls content but not speaker identity or dialect, and FLEURS has no speaker IDs. These measurements are small-sample diagnostics, not proof of citywide accuracy.
 
@@ -100,3 +119,23 @@ python -m mississauga_unheard prototype --workspace . `
 ```
 
 This voice ID was used for the English and Spanish demonstration clips. The Spanish audio is `outputs/311_callback_es.mp3`; its sample translation needs fluent-speaker review. This generated audio demonstrates a callback, not a deployed agent or validated city-service translation.
+
+## Refresh the slide deck and PDF
+
+The deck reads current benchmark and analysis outputs when rebuilt. Install its
+optional dependency and regenerate the PowerPoint from the project root:
+
+```powershell
+python -m pip install -e ".[slides]"
+python .\slides\build_deck.py
+```
+
+With LibreOffice installed, export the refreshed deck to PDF:
+
+```powershell
+soffice --headless --convert-to pdf --outdir .\slides `
+  .\slides\Mississauga_Unheard_Findings.pptx
+```
+
+On this Windows setup, if `soffice` is not on `PATH`, use
+`C:\Program Files\LibreOffice\program\soffice.com` in its place.
