@@ -1,7 +1,7 @@
 ﻿dataset,language,samples,mean_wer,mean_cer,gender_counts,detected_languages,variety_notes
-accent,Arabic,1,0.000000,0.000000,female:1,eng,
-accent,Bengali,1,0.000000,0.000000,male:1,eng,
-accent,Cantonese,1,0.043478,0.029304,male:1,eng,
+accent,Arabic,40,0.072464,0.041850,female:20;male:20,eng,
+accent,Bengali,21,0.038647,0.025990,female:13;male:8,eng,
+accent,Cantonese,16,0.040761,0.023581,female:9;male:7,eng,
 accent,English,1,0.000000,0.000000,female:1,eng,
 accent,Gujarati,1,0.000000,0.000000,female:1,eng,
 accent,Hindi,1,0.000000,0.000000,male:1,eng,
@@ -14,20 +14,20 @@ accent,Tagalog,1,0.000000,0.000000,female:1,eng,
 accent,Tamil,1,0.000000,0.000000,female:1,eng,
 accent,Urdu,1,0.014493,0.010989,male:1,eng,
 accent,Vietnamese,1,0.028986,0.014652,male:1,eng,
-fleurs,Arabic,2,0.000000,0.000000,female:2,ara,Egyptian Arabic
-fleurs,Cantonese,1,1.000000,0.000000,female:1,zho,"Traditional script, Hong Kong"
-fleurs,English,2,0.000000,0.000000,female:1;male:1,eng,US English
-fleurs,Gujarati,2,0.035114,0.037607,female:1;male:1,guj,
-fleurs,Hindi,2,0.000000,0.000000,female:1;male:1,hin,
-fleurs,Mandarin Chinese,2,1.000000,0.000000,female:2,zho,Simplified script
-fleurs,Polish,2,0.000000,0.000000,female:1;male:1,pol,
-fleurs,Portuguese,2,0.000000,0.000000,male:2,por,Brazilian
-fleurs,Punjabi,2,0.123810,0.014084,female:2,pan,Gurmukhi script
-fleurs,Spanish,2,0.000000,0.000000,male:2,spa,Latin American
-fleurs,Tagalog,2,0.106316,0.012603,male:2,fil,
-fleurs,Tamil,2,0.063025,0.025974,female:1;male:1,tam,India
-fleurs,Urdu,1,0.095238,0.021978,female:1,urd,Pakistan
-fleurs,Vietnamese,2,0.000000,0.000000,male:2,vie,
+fleurs,Arabic,40,0.061916,0.011394,female:40,ara,Egyptian Arabic
+fleurs,Cantonese,40,0.998431,0.264271,female:24;male:16,jpn;zho,"Traditional script, Hong Kong"
+fleurs,English,40,0.016993,0.008455,female:26;male:14,eng,US English
+fleurs,Gujarati,40,0.041052,0.017254,female:13;male:27,guj,
+fleurs,Hindi,40,0.055958,0.067597,female:15;male:25,hin,
+fleurs,Mandarin Chinese,40,0.999074,0.029404,female:15;male:25,zho,Simplified script
+fleurs,Polish,40,0.018271,0.010321,female:7;male:33,pol,
+fleurs,Portuguese,40,0.028262,0.016681,male:40,por,Brazilian
+fleurs,Punjabi,40,0.116265,0.082493,female:40,hin;mar;pan,Gurmukhi script
+fleurs,Spanish,40,0.011645,0.005666,female:10;male:30,spa,Latin American
+fleurs,Tagalog,40,0.043514,0.014373,male:40,fil,
+fleurs,Tamil,40,0.040212,0.026203,female:18;male:22,tam,India
+fleurs,Urdu,40,0.356555,0.205865,female:40,hin;urd,Pakistan
+fleurs,Vietnamese,40,0.009580,0.006906,male:40,vie,
 massive,Arabic,1,0.333333,0.062500,Female:1,ara,
 massive,Polish,1,0.000000,0.000000,Male:1,pol,
 massive,Portuguese,1,0.153846,0.017857,Female:1,por,

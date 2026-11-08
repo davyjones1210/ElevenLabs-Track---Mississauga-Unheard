@@ -10,7 +10,17 @@ def build_unheard_index(data_root: Path, output_dir: Path) -> list[dict[str, str
     paired_fleurs_path = output_dir / "paired_fleurs_summary.csv"
     asr_by_language: dict[str, list[float]] = defaultdict(list)
     asr_sample_counts: dict[str, int] = defaultdict(int)
-    if paired_fleurs_path.exists():
+    if asr_path.exists():
+        for row in read_csv(asr_path):
+            if row.get("dataset") != "fleurs":
+                continue
+            try:
+                language = row["language"].casefold()
+                asr_by_language[language].append(float(row["cer"]))
+                asr_sample_counts[language] += 1
+            except (ValueError, KeyError):
+                continue
+    elif paired_fleurs_path.exists():
         for row in read_csv(paired_fleurs_path):
             try:
                 language = row["language"].casefold()
@@ -18,15 +28,6 @@ def build_unheard_index(data_root: Path, output_dir: Path) -> list[dict[str, str
                 asr_sample_counts[language] += int(row["samples"])
             except (ValueError, KeyError):
                 continue
-    elif asr_path.exists():
-        for row in read_csv(asr_path):
-            if row["dataset"] == "fleurs":
-                try:
-                    language = row["language"].casefold()
-                    asr_by_language[language].append(float(row["cer"]))
-                    asr_sample_counts[language] += 1
-                except (ValueError, KeyError):
-                    continue
 
     audio_intent_path = output_dir / "audio_intent_evaluation.csv"
     audio_intent_rows = (

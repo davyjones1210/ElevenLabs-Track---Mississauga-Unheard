@@ -75,8 +75,8 @@ class IndexTests(unittest.TestCase):
 
             result = build_unheard_index(root, output)[0]
 
-            self.assertEqual(result["unheard_index"], "35.000")
-            self.assertEqual(result["weighted_error_count_proxy"], "70.0")
+            self.assertEqual(result["unheard_index"], "30.000")
+            self.assertEqual(result["weighted_error_count_proxy"], "60.0")
             self.assertIn("FLEURS_CER", result["risk_sources"])
             self.assertIn("audio_intent_error", result["risk_sources"])
 
